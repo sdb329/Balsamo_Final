@@ -32,12 +32,88 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/why-NJ\/ig1.png" : {
+      "ft" : 32768,
+      "iS" : 312282,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/why-NJ\/ig1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/why-NJ\/ig2.png" : {
+      "ft" : 32768,
+      "iS" : 263387,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/why-NJ\/ig2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/why-NJ\/ig3.png" : {
+      "ft" : 32768,
+      "iS" : 214265,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/why-NJ\/ig3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/why-NJ\/ig4.png" : {
+      "ft" : 32768,
+      "iS" : 250816,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/why-NJ\/ig4.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 0
+    },
     "\/design\/structure-tags.sketch" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/design\/structure-tags.sketch",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/why-NJ.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/why-NJ.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
