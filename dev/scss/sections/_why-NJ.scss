@@ -1,0 +1,185 @@
+/* =============
+    Why NJ
+============= */
+
+#why-nj{
+
+   @include xl{
+    grid-template-columns: auto 1200px auto;
+
+   }
+
+display: grid;
+grid-template-columns: 16px auto 16px;
+grid-template-areas: 
+". text ."
+". ig1 ."
+". ig2 ."
+". button .";
+
+#nj-title{
+    grid-area: text;
+}
+#ig-contain-1{
+    grid-area: ig1;
+}
+#ig-contain-4{
+    grid-area: ig2;
+}
+#ig-button{
+    grid-area: button;
+}
+
+    a{
+
+
+
+    #ig1{
+
+            background-image: url("../img/why-NJ/ig1.png");
+            background-position: center;
+            background-size: cover;
+            height: 228px;
+        }
+
+    #ig2{
+
+        background-image: url("../img/why-NJ/ig2.png");
+        background-position: center;
+        background-size: cover;
+        height: 228px;
+
+        display: none;
+
+        @include md{
+            display: list-item;
+        }
+
+    }
+    #ig3{
+
+        background-image: url("../img/why-NJ/ig3.png");
+        background-position: center;
+        background-size: cover;
+        height: 228px;
+
+        display: none;
+        @include md{
+            display: list-item;
+        }
+
+    }
+    #ig4{
+
+        background-image: url("../img/why-NJ/ig4.png");
+        background-position: center;
+        background-size: cover;
+        height: 228px;
+
+  
+
+    }
+
+ 
+    }
+
+
+    .nj-description{
+        display: none;
+    }
+
+
+    @include md{
+
+       
+        .nj-description{
+            display: list-item;
+        }
+
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas:
+        "text text"
+        "ig1 p1"
+        "ig2 ig3"
+        "p2 ig4";
+
+        #nj-title{
+   
+            grid-area: text;
+
+        }
+        #ig-contain-1{
+
+            grid-area: ig1;
+            }
+        
+        #ig-p1{
+
+            grid-area: p1;
+            }
+
+        #ig-contain-2{
+
+            grid-area: ig2;
+            }
+        #ig-contain-3{
+
+            grid-area: ig3;
+            }
+        #ig-p2{
+
+            grid-area: p2;
+            }
+        #ig-contain-4{
+
+            grid-area: ig4;
+            }
+
+        #ig-button{
+            display: none;
+        }
+    }
+
+
+    @include lg{
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "ig1 ig1 p1 p1 . . . ."
+        ". . ig2 ig2 ig3 ig2 . ."
+        ". . . . p2 p2 ig4 ig4";
+
+        #ig-contain-1{
+
+            grid-area: ig1;
+            border: 1px solid red;
+            }
+    
+        #ig-p1{
+
+            grid-area: p1;
+            border: 1px solid red;
+            }
+
+        #ig-contain-2{
+
+            grid-area: ig2;
+            border: 1px solid red;
+            }
+        #ig-contain-3{
+
+            grid-area: ig3;
+            border: 1px solid red;
+            }
+        #ig-p2{
+
+            grid-area: p2;
+            border: 1px solid red;
+            }
+        #ig-contain-4{
+
+            grid-area: ig4;
+            border: 1px solid red;
+            }
+    }
+}
