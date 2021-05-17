@@ -82,13 +82,15 @@
 
         @include lg{
 
+            border: 1px solid red;
+
             display: grid;
-            grid-template-columns: repeat(8, auto);
+            grid-template-columns: 10% auto 10% 10% auto 10%;
             grid-template-areas: 
-            "title title title title title title title title"
-            "photo1 photo1 p1 p1 . . . ."
-            ". . photo2 photo2 photo3 photo3 . ."
-            ". . . . p2 p2 photo4 photo4";
+            "title title title title title title"
+            "photo1 photo1 p1 p1 p1 p1"
+            ". photo2 photo2 photo3 photo3 ."
+            "p2 p2 p2 p2 photo4 photo4";
 
             #nj-title{
                 grid-area: title;
