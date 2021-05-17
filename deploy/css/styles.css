@@ -390,6 +390,12 @@ ul {
 /* =============
     Why NJ
 ============= */
+@media (min-width: 1200px) {
+  #why-nj {
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". content .";
+  }
+}
 #why-nj ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -417,6 +423,34 @@ ul {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "title title" "photo1 p1" "photo2 photo3" "p2 photo4";
+  }
+  #why-nj ul #nj-title {
+    grid-area: title;
+  }
+  #why-nj ul #ig-contain-1 {
+    grid-area: photo1;
+  }
+  #why-nj ul #ig-contain-2 {
+    grid-area: photo2;
+  }
+  #why-nj ul #ig-p1 {
+    grid-area: p1;
+  }
+  #why-nj ul #ig-contain-3 {
+    grid-area: photo3;
+  }
+  #why-nj ul #ig-p2 {
+    grid-area: p2;
+  }
+  #why-nj ul #ig-contain-4 {
+    grid-area: photo4;
+  }
+}
+@media (min-width: 1024px) {
+  #why-nj ul {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-areas: "title title title title title title title title" "photo1 photo1 p1 p1 . . . ." ". . photo2 photo2 photo3 photo3 . ." ". . . . p2 p2 photo4 photo4";
   }
   #why-nj ul #nj-title {
     grid-area: title;
