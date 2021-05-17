@@ -352,6 +352,16 @@ template {
 /* =============
     Base
 ============= */
+ul.ba {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Typography
 ============= */
@@ -380,35 +390,63 @@ template {
 /* =============
     Why NJ
 ============= */
-#why-nj {
+#why-nj ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". text ." ". ig1 ." ". ig2 ." ". button .";
+  grid-template-areas: ". title ." ". photo1 ." ". photo4 ." ". button .";
 }
-@media (min-width: 1200px) {
-  #why-nj {
-    grid-template-columns: auto 1200px auto;
-  }
+#why-nj ul #nj-title {
+  grid-area: title;
 }
-#why-nj #nj-title {
-  grid-area: text;
+#why-nj ul #ig-contain-1 {
+  grid-area: photo1;
 }
-#why-nj #ig-contain-1 {
-  grid-area: ig1;
+#why-nj ul #ig-contain-4 {
+  grid-area: photo4;
 }
-#why-nj #ig-contain-4 {
-  grid-area: ig2;
-}
-#why-nj #ig-button {
+#why-nj ul #ig-button {
   grid-area: button;
 }
-#why-nj a #ig1 {
+@media (min-width: 768px) {
+  #why-nj ul #ig-button {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #why-nj ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "title title" "photo1 p1" "photo2 photo3" "p2 photo4";
+  }
+  #why-nj ul #nj-title {
+    grid-area: title;
+  }
+  #why-nj ul #ig-contain-1 {
+    grid-area: photo1;
+  }
+  #why-nj ul #ig-contain-2 {
+    grid-area: photo2;
+  }
+  #why-nj ul #ig-p1 {
+    grid-area: p1;
+  }
+  #why-nj ul #ig-contain-3 {
+    grid-area: photo3;
+  }
+  #why-nj ul #ig-p2 {
+    grid-area: p2;
+  }
+  #why-nj ul #ig-contain-4 {
+    grid-area: photo4;
+  }
+}
+#why-nj ul #ig1 {
   background-image: url("../img/why-NJ/ig1.png");
   background-position: center;
   background-size: cover;
   height: 228px;
 }
-#why-nj a #ig2 {
+#why-nj ul #ig2 {
   background-image: url("../img/why-NJ/ig2.png");
   background-position: center;
   background-size: cover;
@@ -416,11 +454,11 @@ template {
   display: none;
 }
 @media (min-width: 768px) {
-  #why-nj a #ig2 {
+  #why-nj ul #ig2 {
     display: list-item;
   }
 }
-#why-nj a #ig3 {
+#why-nj ul #ig3 {
   background-image: url("../img/why-NJ/ig3.png");
   background-position: center;
   background-size: cover;
@@ -428,11 +466,11 @@ template {
   display: none;
 }
 @media (min-width: 768px) {
-  #why-nj a #ig3 {
+  #why-nj ul #ig3 {
     display: list-item;
   }
 }
-#why-nj a #ig4 {
+#why-nj ul #ig4 {
   background-image: url("../img/why-NJ/ig4.png");
   background-position: center;
   background-size: cover;
@@ -442,66 +480,7 @@ template {
   display: none;
 }
 @media (min-width: 768px) {
-  #why-nj {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "text text" "ig1 p1" "ig2 ig3" "p2 ig4";
-  }
   #why-nj .nj-description {
     display: list-item;
-  }
-  #why-nj #nj-title {
-    grid-area: text;
-  }
-  #why-nj #ig-contain-1 {
-    grid-area: ig1;
-  }
-  #why-nj #ig-p1 {
-    grid-area: p1;
-  }
-  #why-nj #ig-contain-2 {
-    grid-area: ig2;
-  }
-  #why-nj #ig-contain-3 {
-    grid-area: ig3;
-  }
-  #why-nj #ig-p2 {
-    grid-area: p2;
-  }
-  #why-nj #ig-contain-4 {
-    grid-area: ig4;
-  }
-  #why-nj #ig-button {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  #why-nj {
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    grid-template-areas: "ig1 ig1 p1 p1 . . . ." ". . ig2 ig2 ig3 ig2 . ." ". . . . p2 p2 ig4 ig4";
-  }
-  #why-nj #ig-contain-1 {
-    grid-area: ig1;
-    border: 1px solid red;
-  }
-  #why-nj #ig-p1 {
-    grid-area: p1;
-    border: 1px solid red;
-  }
-  #why-nj #ig-contain-2 {
-    grid-area: ig2;
-    border: 1px solid red;
-  }
-  #why-nj #ig-contain-3 {
-    grid-area: ig3;
-    border: 1px solid red;
-  }
-  #why-nj #ig-p2 {
-    grid-area: p2;
-    border: 1px solid red;
-  }
-  #why-nj #ig-contain-4 {
-    grid-area: ig4;
-    border: 1px solid red;
   }
 }
