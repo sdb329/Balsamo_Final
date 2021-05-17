@@ -392,11 +392,11 @@ ul {
 ============= */
 @media (min-width: 1200px) {
   #why-nj {
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". content .";
+    grid-template-columns: auto 1000px auto;
   }
 }
 #why-nj #new-jersey {
+  display: grid;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". title ." ". photo1 ." ". photo4 ." ". button .";
@@ -462,13 +462,13 @@ ul {
   #why-nj #new-jersey #ig-contain-2 {
     grid-area: photo2;
   }
-  #why-nj #new-jersey #ig-p1 {
+  #why-nj #new-jersey #ig-par1 {
     grid-area: p1;
   }
   #why-nj #new-jersey #ig-contain-3 {
     grid-area: photo3;
   }
-  #why-nj #new-jersey #ig-p2 {
+  #why-nj #new-jersey #ig-par2 {
     grid-area: p2;
   }
   #why-nj #new-jersey #ig-contain-4 {
@@ -481,6 +481,11 @@ ul {
   background-size: cover;
   height: 228px;
 }
+@media (min-width: 1024px) {
+  #why-nj #ig1 {
+    height: 325px;
+  }
+}
 #why-nj #ig2 {
   background-image: url("../img/why-NJ/ig2.png");
   background-position: center;
@@ -491,6 +496,11 @@ ul {
 @media (min-width: 768px) {
   #why-nj #ig2 {
     display: list-item;
+  }
+}
+@media (min-width: 1024px) {
+  #why-nj #ig2 {
+    height: 325px;
   }
 }
 #why-nj #ig3 {
@@ -505,11 +515,21 @@ ul {
     display: list-item;
   }
 }
+@media (min-width: 1024px) {
+  #why-nj #ig3 {
+    height: 325px;
+  }
+}
 #why-nj #ig4 {
   background-image: url("../img/why-NJ/ig4.png");
   background-position: center;
   background-size: cover;
   height: 228px;
+}
+@media (min-width: 1024px) {
+  #why-nj #ig4 {
+    height: 325px;
+  }
 }
 
 .nj-description {
@@ -539,6 +559,44 @@ ul {
   #regions #regions-list #region-1 {
     display: grid;
     grid-template-columns: 60% 30% auto;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions #regions-list #region-1 > h1 {
+    grid-area: region;
+  }
+  #regions #regions-list #region-1 > div {
+    grid-area: text;
+  }
+  #regions #regions-list #region-1 > button {
+    grid-area: button;
+  }
+  #regions #regions-list #region-1 #region1-image {
+    grid-area: image1;
+  }
+}
+@media (min-width: 1024px) {
+  #regions #regions-list #region-1 {
+    display: grid;
+    grid-template-columns: 60% 30% 16px;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions #regions-list #region-1 > h1 {
+    grid-area: region;
+  }
+  #regions #regions-list #region-1 > div {
+    grid-area: text;
+  }
+  #regions #regions-list #region-1 > button {
+    grid-area: button;
+  }
+  #regions #regions-list #region-1 #region1-image {
+    grid-area: image1;
+  }
+}
+@media (min-width: 1200px) {
+  #regions #regions-list #region-1 {
+    display: grid;
+    grid-template-columns: 40% 30% auto;
     grid-template-areas: "region region ." "text image1 ." "button image1 .";
   }
   #regions #regions-list #region-1 > h1 {
@@ -691,9 +749,311 @@ ul {
     grid-area: image1;
   }
 }
+@media (min-width: 1024px) {
+  #regions .beach #region-2 {
+    display: grid;
+    grid-template-columns: 16px 30% 60%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-2 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-2 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-2 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-2 #region2-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-3 {
+    display: grid;
+    grid-template-columns: 60% 30% 16px;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions .beach #region-3 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-3 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-3 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-3 #region3-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-4 {
+    display: grid;
+    grid-template-columns: 16px 30% 60%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-4 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-4 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-4 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-4 #region4-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-5 {
+    display: grid;
+    grid-template-columns: 60% 30% 16px;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions .beach #region-5 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-5 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-5 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-5 #region5-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-6 {
+    display: grid;
+    grid-template-columns: 16px 30% 60%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-6 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-6 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-6 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-6 #region6-image {
+    grid-area: image1;
+  }
+}
+@media (min-width: 1200px) {
+  #regions .beach #region-2 {
+    display: grid;
+    grid-template-columns: auto 30% 40%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-2 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-2 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-2 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-2 #region2-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-3 {
+    display: grid;
+    grid-template-columns: 40% 30% auto;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions .beach #region-3 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-3 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-3 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-3 #region3-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-4 {
+    display: grid;
+    grid-template-columns: auto 30% 40%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-4 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-4 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-4 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-4 #region4-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-5 {
+    display: grid;
+    grid-template-columns: 40% 30% auto;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions .beach #region-5 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-5 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-5 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-5 #region5-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-6 {
+    display: grid;
+    grid-template-columns: auto 30% 40%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-6 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-6 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-6 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-6 #region6-image {
+    grid-area: image1;
+  }
+}
 #regions #beach-hero {
   background-image: url("../img/regions/beach.png");
   background-position: center;
   background-size: cover;
   height: 500px;
+}
+
+#places-to-visit aside {
+  display: none;
+}
+@media (min-width: 768px) {
+  #places-to-visit aside {
+    display: list-item;
+  }
+}
+#places-to-visit #v-img-1 {
+  background-image: url("../img/places-to-visit/place1.png");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+#places-to-visit #v-img-2 {
+  background-image: url("../img/places-to-visit/place2.png");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+#places-to-visit #v-img-3 {
+  background-image: url("../img/places-to-visit/place3.png");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+#places-to-visit ul #visit-1 {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-areas: "nb content" "nb button";
+}
+#places-to-visit ul #visit-1 #no-1 {
+  grid-area: nb;
+}
+#places-to-visit ul #visit-1 #v-content-1 {
+  grid-area: content;
+}
+#places-to-visit ul #visit-1 #v-button-1 {
+  grid-area: button;
+}
+@media (min-width: 768px) {
+  #places-to-visit ul #visit-1 #v-button-1 {
+    display: none;
+  }
+}
+#places-to-visit ul #visit-2 {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-areas: "nb content" "nb button";
+}
+#places-to-visit ul #visit-2 #no-2 {
+  grid-area: nb;
+}
+#places-to-visit ul #visit-2 #v-content-2 {
+  grid-area: content;
+}
+#places-to-visit ul #visit-2 #v-button-2 {
+  grid-area: button;
+}
+@media (min-width: 768px) {
+  #places-to-visit ul #visit-2 #v-button-2 {
+    display: none;
+  }
+}
+#places-to-visit ul #visit-3 {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-areas: "nb content" "nb button";
+}
+#places-to-visit ul #visit-3 #no-3 {
+  grid-area: nb;
+}
+#places-to-visit ul #visit-3 #v-content-3 {
+  grid-area: content;
+}
+#places-to-visit ul #visit-3 #v-button-3 {
+  grid-area: button;
+}
+@media (min-width: 768px) {
+  #places-to-visit ul #visit-3 #v-button-3 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #places-to-visit ul #visit-1 {
+    display: grid;
+    grid-template-columns: 30px 20% auto 150px;
+    grid-template-areas: ". nb content ." ". nb button .";
+  }
+  #places-to-visit ul #visit-1 #no-1 {
+    grid-area: nb;
+  }
+  #places-to-visit ul #visit-1 #v-content-1 {
+    grid-area: content;
+  }
+  #places-to-visit ul #visit-1 > aside {
+    grid-area: button;
+  }
+  #places-to-visit ul #visit-2 {
+    display: grid;
+    grid-template-columns: 30px 20% auto 150px;
+    grid-template-areas: ". nb content ." ". nb button .";
+  }
+  #places-to-visit ul #visit-2 #no-2 {
+    grid-area: nb;
+  }
+  #places-to-visit ul #visit-2 #v-content-2 {
+    grid-area: content;
+  }
+  #places-to-visit ul #visit-2 > aside {
+    grid-area: button;
+  }
+  #places-to-visit ul #visit-3 {
+    display: grid;
+    grid-template-columns: 30px 20% auto 150px;
+    grid-template-areas: ". nb content ." ". nb button .";
+  }
+  #places-to-visit ul #visit-3 #no-3 {
+    grid-area: nb;
+  }
+  #places-to-visit ul #visit-3 #v-content-3 {
+    grid-area: content;
+  }
+  #places-to-visit ul #visit-3 > aside {
+    grid-area: button;
+  }
 }

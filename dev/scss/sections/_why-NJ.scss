@@ -3,13 +3,16 @@
 ============= */
 
 #why-nj{
-
     @include xl {
-        grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". content .";
+        grid-template-columns: auto 1000px auto;
     }
 
+
     #new-jersey{
+        display: grid;
+
+
+
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: 
@@ -92,19 +95,24 @@
             ". photo2 photo2 photo3 photo3 ."
             "p2 p2 p2 p2 photo4 photo4";
 
+            // question -- so here the grid is mostly working but the paragraphs are not cooperating
+
+
             #nj-title{
                 grid-area: title;
             }
     
             #ig-contain-1{
                 grid-area: photo1;
+
+                
             }
 
             #ig-contain-2{
                 grid-area: photo2;
             }
 
-            #ig-p1{
+            #ig-par1{
                 grid-area: p1;
             }
 
@@ -112,7 +120,7 @@
                 grid-area: photo3;
             }
 
-            #ig-p2{
+            #ig-par2{
                 grid-area: p2;
             }
     
@@ -130,6 +138,11 @@
         background-position: center;
         background-size: cover;
         height: 228px;
+
+        @include lg{
+            height: 325px;
+
+        }
         }
 
     #ig2{
@@ -143,6 +156,10 @@
 
         @include md{
             display: list-item;
+        }
+        @include lg{
+            height: 325px;
+
         }
 
     }
@@ -158,6 +175,10 @@
         @include md{
             display: list-item;
         }
+        @include lg{
+            height: 325px;
+
+        }
 
     }
     #ig4{
@@ -166,6 +187,11 @@
         background-position: center;
         background-size: cover;
         height: 228px;
+
+        @include lg{
+            height: 325px;
+
+        }
     }
 
  

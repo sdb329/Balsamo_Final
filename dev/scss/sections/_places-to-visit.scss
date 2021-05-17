@@ -1,0 +1,156 @@
+#places-to-visit{
+
+   aside{
+       display: none;
+
+       @include md{
+           display: list-item;
+       }
+   } 
+
+   #v-img-1{
+    background-image: url("../img/places-to-visit/place1.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+   }
+
+   #v-img-2{
+    background-image: url("../img/places-to-visit/place2.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+   }
+
+   #v-img-3{
+    background-image: url("../img/places-to-visit/place3.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+   }
+
+   ul{
+    #visit-1{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-areas: 
+    "nb content"
+    "nb button";
+
+    #no-1{
+        grid-area: nb;
+    }
+    #v-content-1{
+        grid-area: content;
+    }
+    #v-button-1{
+        grid-area: button;
+        @include md{
+            display: none;
+        }
+    }
+   }
+
+
+   #visit-2{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-areas: 
+    "nb content"
+    "nb button";
+
+    #no-2{
+        grid-area: nb;
+    }
+    #v-content-2{
+        grid-area: content;
+    }
+    #v-button-2{
+        grid-area: button;
+        @include md{
+            display: none;
+        }
+    }
+   }
+
+   #visit-3{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-areas: 
+    "nb content"
+    "nb button";
+
+    #no-3{
+        grid-area: nb;
+    }
+    #v-content-3{
+        grid-area: content;
+    }
+    #v-button-3{
+        grid-area: button;
+        @include md{
+            display: none;
+        }
+    }
+   }
+
+   @include md{
+
+    #visit-1{
+        display: grid;
+        grid-template-columns: 30px 20% auto 150px;
+        grid-template-areas: 
+        ". nb content ."
+        ". nb button .";
+    
+        #no-1{
+            grid-area: nb;
+        }
+        #v-content-1{
+            grid-area: content;
+        }
+        >aside{
+            grid-area: button;
+        }
+       }
+       #visit-2{
+        display: grid;
+        grid-template-columns: 30px 20% auto 150px;
+        grid-template-areas: 
+        ". nb content ."
+        ". nb button .";
+    
+        #no-2{
+            grid-area: nb;
+        }
+        #v-content-2{
+            grid-area: content;
+        }
+        >aside{
+            grid-area: button;
+        }
+       }
+       #visit-3{
+        display: grid;
+        grid-template-columns: 30px 20% auto 150px;
+        grid-template-areas: 
+        ". nb content ."
+        ". nb button .";
+    
+        #no-3{
+            grid-area: nb;
+        }
+        #v-content-3{
+            grid-area: content;
+        }
+        >aside{
+            grid-area: button;
+        }
+       }
+    
+      
+    
+       
+   }
+}
+}
