@@ -1,0 +1,242 @@
+#regions {
+
+    #map-image {
+        background-image: url("../img/regions/map.png");
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+
+    #regions-list {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". content .";
+
+        #region-1 {
+            grid-area: content;
+        }
+
+
+        @include md {
+            #region-1{
+                display: grid;
+                grid-template-columns: 60% 30% auto;
+                grid-template-areas: 
+                "region region ."
+                "text image1 ."
+                "button image1 .";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+                >button{
+                    grid-area: button;
+                }
+                #region1-image{
+                    grid-area: image1;
+                }
+                
+            }
+
+        }
+
+        
+    }
+
+
+    #region1-image {
+        background-image: url("../img/regions/region1.png");
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+    }
+
+    #region2-image {
+        background-image: url("../img/regions/region2.png");
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+    }
+
+    #region3-image {
+        background-image: url("../img/regions/region3.png");
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+    }
+    #region4-image {
+        background-image: url("../img/regions/region4.png");
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+    }
+    #region5-image {
+        background-image: url("../img/regions/region5.png");
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+    }
+    #region6-image {
+        background-image: url("../img/regions/region6.png");
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+    }
+
+
+
+
+
+
+    #shore-p2 {
+        display: none;
+
+        @include md {
+            display: list-item;
+        }
+    }
+
+    .beach {
+        display: none;
+
+        @include md {
+            display: list-item;
+
+            #region-2{
+                display: grid;
+                grid-template-columns: auto 30% 60%;
+                grid-template-areas: 
+                "region region ."
+                ". image1 text"
+                ". image1 button";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+                >button{
+                    grid-area: button;
+                }
+                #region2-image{
+                    grid-area: image1;
+                }
+                
+            }
+
+   
+                #region-3{
+                    display: grid;
+                    grid-template-columns: 60% 30% auto;
+                    grid-template-areas: 
+                    "region region ."
+                    "text image1 ."
+                    "button image1 .";
+    
+                    >h1{
+                        grid-area: region;
+                    }
+    
+                    >div{
+                        grid-area: text;
+                    }
+                    >button{
+                        grid-area: button;
+                    }
+                    #region3-image{
+                        grid-area: image1;
+                    }
+                }
+
+
+
+
+            #region-4{
+                display: grid;
+                grid-template-columns: auto 30% 60%;
+                grid-template-areas: 
+                "region region ."
+                ". image1 text"
+                ". image1 button";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+                >button{
+                    grid-area: button;
+                }
+                #region4-image{
+                    grid-area: image1;
+                }
+                
+            }
+
+            #region-5{
+                display: grid;
+                grid-template-columns: 60% 30% auto;
+                grid-template-areas: 
+                "region region ."
+                "text image1 ."
+                "button image1 .";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+                >button{
+                    grid-area: button;
+                }
+                #region5-image{
+                    grid-area: image1;
+                }
+            }
+
+            #region-6{
+                display: grid;
+                grid-template-columns: auto 30% 60%;
+                grid-template-areas: 
+                "region region ."
+                ". image1 text"
+                ". image1 button";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+                >button{
+                    grid-area: button;
+                }
+                #region6-image{
+                    grid-area: image1;
+                }
+                
+            }
+        }
+    }
+
+    #beach-hero {
+        background-image: url("../img/regions/beach.png");
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+
+
+
+}

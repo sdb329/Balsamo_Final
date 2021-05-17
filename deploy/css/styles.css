@@ -396,81 +396,81 @@ ul {
     grid-template-areas: ". content .";
   }
 }
-#why-nj ul {
+#why-nj #new-jersey {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". title ." ". photo1 ." ". photo4 ." ". button .";
 }
-#why-nj ul #nj-title {
+#why-nj #new-jersey #nj-title {
   grid-area: title;
 }
-#why-nj ul #ig-contain-1 {
+#why-nj #new-jersey #ig-contain-1 {
   grid-area: photo1;
 }
-#why-nj ul #ig-contain-4 {
+#why-nj #new-jersey #ig-contain-4 {
   grid-area: photo4;
 }
-#why-nj ul #ig-button {
+#why-nj #new-jersey #ig-button {
   grid-area: button;
 }
 @media (min-width: 768px) {
-  #why-nj ul #ig-button {
+  #why-nj #new-jersey #ig-button {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  #why-nj ul {
+  #why-nj #new-jersey {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "title title" "photo1 p1" "photo2 photo3" "p2 photo4";
   }
-  #why-nj ul #nj-title {
+  #why-nj #new-jersey #nj-title {
     grid-area: title;
   }
-  #why-nj ul #ig-contain-1 {
+  #why-nj #new-jersey #ig-contain-1 {
     grid-area: photo1;
   }
-  #why-nj ul #ig-contain-2 {
+  #why-nj #new-jersey #ig-contain-2 {
     grid-area: photo2;
   }
-  #why-nj ul #ig-p1 {
+  #why-nj #new-jersey #ig-p1 {
     grid-area: p1;
   }
-  #why-nj ul #ig-contain-3 {
+  #why-nj #new-jersey #ig-contain-3 {
     grid-area: photo3;
   }
-  #why-nj ul #ig-p2 {
+  #why-nj #new-jersey #ig-p2 {
     grid-area: p2;
   }
-  #why-nj ul #ig-contain-4 {
+  #why-nj #new-jersey #ig-contain-4 {
     grid-area: photo4;
   }
 }
 @media (min-width: 1024px) {
-  #why-nj ul {
+  #why-nj #new-jersey {
     display: grid;
     grid-template-columns: repeat(8, auto);
     grid-template-areas: "title title title title title title title title" "photo1 photo1 p1 p1 . . . ." ". . photo2 photo2 photo3 photo3 . ." ". . . . p2 p2 photo4 photo4";
   }
-  #why-nj ul #nj-title {
+  #why-nj #new-jersey #nj-title {
     grid-area: title;
   }
-  #why-nj ul #ig-contain-1 {
+  #why-nj #new-jersey #ig-contain-1 {
     grid-area: photo1;
   }
-  #why-nj ul #ig-contain-2 {
+  #why-nj #new-jersey #ig-contain-2 {
     grid-area: photo2;
   }
-  #why-nj ul #ig-p1 {
+  #why-nj #new-jersey #ig-p1 {
     grid-area: p1;
   }
-  #why-nj ul #ig-contain-3 {
+  #why-nj #new-jersey #ig-contain-3 {
     grid-area: photo3;
   }
-  #why-nj ul #ig-p2 {
+  #why-nj #new-jersey #ig-p2 {
     grid-area: p2;
   }
-  #why-nj ul #ig-contain-4 {
+  #why-nj #new-jersey #ig-contain-4 {
     grid-area: photo4;
   }
 }
@@ -518,4 +518,181 @@ ul {
   .nj-description {
     display: list-item;
   }
+}
+
+#regions #map-image {
+  background-image: url("../img/regions/map.png");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+#regions #regions-list {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+#regions #regions-list #region-1 {
+  grid-area: content;
+}
+@media (min-width: 768px) {
+  #regions #regions-list #region-1 {
+    display: grid;
+    grid-template-columns: 60% 30% auto;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions #regions-list #region-1 > h1 {
+    grid-area: region;
+  }
+  #regions #regions-list #region-1 > div {
+    grid-area: text;
+  }
+  #regions #regions-list #region-1 > button {
+    grid-area: button;
+  }
+  #regions #regions-list #region-1 #region1-image {
+    grid-area: image1;
+  }
+}
+#regions #region1-image {
+  background-image: url("../img/regions/region1.png");
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
+#regions #region2-image {
+  background-image: url("../img/regions/region2.png");
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
+#regions #region3-image {
+  background-image: url("../img/regions/region3.png");
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
+#regions #region4-image {
+  background-image: url("../img/regions/region4.png");
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
+#regions #region5-image {
+  background-image: url("../img/regions/region5.png");
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
+#regions #region6-image {
+  background-image: url("../img/regions/region6.png");
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
+#regions #shore-p2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #regions #shore-p2 {
+    display: list-item;
+  }
+}
+#regions .beach {
+  display: none;
+}
+@media (min-width: 768px) {
+  #regions .beach {
+    display: list-item;
+  }
+  #regions .beach #region-2 {
+    display: grid;
+    grid-template-columns: auto 30% 60%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-2 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-2 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-2 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-2 #region2-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-3 {
+    display: grid;
+    grid-template-columns: 60% 30% auto;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions .beach #region-3 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-3 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-3 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-3 #region3-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-4 {
+    display: grid;
+    grid-template-columns: auto 30% 60%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-4 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-4 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-4 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-4 #region4-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-5 {
+    display: grid;
+    grid-template-columns: 60% 30% auto;
+    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+  }
+  #regions .beach #region-5 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-5 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-5 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-5 #region5-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-6 {
+    display: grid;
+    grid-template-columns: auto 30% 60%;
+    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+  }
+  #regions .beach #region-6 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-6 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-6 > button {
+    grid-area: button;
+  }
+  #regions .beach #region-6 #region6-image {
+    grid-area: image1;
+  }
+}
+#regions #beach-hero {
+  background-image: url("../img/regions/beach.png");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
 }
