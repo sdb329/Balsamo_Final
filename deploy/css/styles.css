@@ -462,13 +462,13 @@ ul {
   #why-nj #new-jersey #ig-contain-2 {
     grid-area: photo2;
   }
-  #why-nj #new-jersey #ig-par1 {
+  #why-nj #new-jersey #ig-p1 {
     grid-area: p1;
   }
   #why-nj #new-jersey #ig-contain-3 {
     grid-area: photo3;
   }
-  #why-nj #new-jersey #ig-par2 {
+  #why-nj #new-jersey #ig-p2 {
     grid-area: p2;
   }
   #why-nj #new-jersey #ig-contain-4 {
@@ -1046,6 +1046,50 @@ ul {
     display: grid;
     grid-template-columns: 30px 20% auto 150px;
     grid-template-areas: ". nb content ." ". nb button .";
+  }
+  #places-to-visit ul #visit-3 #no-3 {
+    grid-area: nb;
+  }
+  #places-to-visit ul #visit-3 #v-content-3 {
+    grid-area: content;
+  }
+  #places-to-visit ul #visit-3 > aside {
+    grid-area: button;
+  }
+}
+@media (min-width: 1024px) {
+  #places-to-visit ul #visit-1 {
+    display: grid;
+    grid-template-columns: auto 10% 30% 30% auto;
+    grid-template-areas: ". nb content button .";
+  }
+  #places-to-visit ul #visit-1 #no-1 {
+    grid-area: nb;
+  }
+  #places-to-visit ul #visit-1 #v-content-1 {
+    grid-area: content;
+  }
+  #places-to-visit ul #visit-1 > aside {
+    grid-area: button;
+  }
+  #places-to-visit ul #visit-2 {
+    display: grid;
+    grid-template-columns: auto 10% 30% 30% auto;
+    grid-template-areas: ". nb content button .";
+  }
+  #places-to-visit ul #visit-2 #no-2 {
+    grid-area: nb;
+  }
+  #places-to-visit ul #visit-2 #v-content-2 {
+    grid-area: content;
+  }
+  #places-to-visit ul #visit-2 > aside {
+    grid-area: button;
+  }
+  #places-to-visit ul #visit-3 {
+    display: grid;
+    grid-template-columns: auto 10% 30% 30% auto;
+    grid-template-areas: ". nb content button .";
   }
   #places-to-visit ul #visit-3 #no-3 {
     grid-area: nb;

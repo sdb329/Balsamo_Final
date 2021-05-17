@@ -152,5 +152,63 @@
     
        
    }
+
+   @include lg{
+
+    #visit-1{
+        display: grid;
+        grid-template-columns: auto 10% 30% 30% auto;
+        grid-template-areas: 
+        ". nb content button .";
+    
+        #no-1{
+            grid-area: nb;
+        }
+        #v-content-1{
+            grid-area: content;
+        }
+        >aside{
+            grid-area: button;
+        }
+       }
+       #visit-2{
+        display: grid;
+        grid-template-columns: auto 10% 30% 30% auto;
+        grid-template-areas: 
+        ". nb content button .";
+    
+    
+        #no-2{
+            grid-area: nb;
+        }
+        #v-content-2{
+            grid-area: content;
+        }
+        >aside{
+            grid-area: button;
+        }
+       }
+       #visit-3{
+        display: grid;
+        grid-template-columns: auto 10% 30% 30% auto;
+        grid-template-areas: 
+        ". nb content button .";
+    
+    
+        #no-3{
+            grid-area: nb;
+        }
+        #v-content-3{
+            grid-area: content;
+        }
+        >aside{
+            grid-area: button;
+        }
+       }
+    
+      
+    
+       
+   }
 }
 }
