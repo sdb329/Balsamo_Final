@@ -440,13 +440,13 @@ ul {
     grid-area: photo4;
   }
 }
-#why-nj ul #ig1 {
+#why-nj #ig1 {
   background-image: url("../img/why-NJ/ig1.png");
   background-position: center;
   background-size: cover;
   height: 228px;
 }
-#why-nj ul #ig2 {
+#why-nj #ig2 {
   background-image: url("../img/why-NJ/ig2.png");
   background-position: center;
   background-size: cover;
@@ -454,11 +454,11 @@ ul {
   display: none;
 }
 @media (min-width: 768px) {
-  #why-nj ul #ig2 {
+  #why-nj #ig2 {
     display: list-item;
   }
 }
-#why-nj ul #ig3 {
+#why-nj #ig3 {
   background-image: url("../img/why-NJ/ig3.png");
   background-position: center;
   background-size: cover;
@@ -466,21 +466,22 @@ ul {
   display: none;
 }
 @media (min-width: 768px) {
-  #why-nj ul #ig3 {
+  #why-nj #ig3 {
     display: list-item;
   }
 }
-#why-nj ul #ig4 {
+#why-nj #ig4 {
   background-image: url("../img/why-NJ/ig4.png");
   background-position: center;
   background-size: cover;
   height: 228px;
 }
-#why-nj .nj-description {
+
+.nj-description {
   display: none;
 }
 @media (min-width: 768px) {
-  #why-nj .nj-description {
+  .nj-description {
     display: list-item;
   }
 }

@@ -35,41 +35,43 @@
         }
 
         @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: 
-                "title title"
-                "photo1 p1"
-                "photo2 photo3"
-                "p2 photo4";
+
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "title title"
+            "photo1 p1"
+            "photo2 photo3"
+            "p2 photo4";
+
+            #nj-title{
+                grid-area: title;
+            }
     
-                #nj-title{
-                    grid-area: title;
-                }
-        
-                #ig-contain-1{
-                    grid-area: photo1;
-                }
+            #ig-contain-1{
+                grid-area: photo1;
+            }
+
+            #ig-contain-2{
+                grid-area: photo2;
+            }
+
+            #ig-p1{
+                grid-area: p1;
+            }
+
+            #ig-contain-3{
+                grid-area: photo3;
+            }
+
+            #ig-p2{
+                grid-area: p2;
+            }
     
-                #ig-contain-2{
-                    grid-area: photo2;
-                }
-    
-                #ig-p1{
-                    grid-area: p1;
-                }
-    
-                #ig-contain-3{
-                    grid-area: photo3;
-                }
-    
-                #ig-p2{
-                    grid-area: p2;
-                }
-        
-                #ig-contain-4{
-                    grid-area: photo4;
-                }
+            #ig-contain-4{
+                grid-area: photo4;
+            }
+        }
     }
 
 
@@ -130,5 +132,9 @@
         }
     }
 
+   
 
-}
+    
+    
+
+
