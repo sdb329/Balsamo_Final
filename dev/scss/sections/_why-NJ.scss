@@ -2,135 +2,132 @@
     Why NJ
 ============= */
 
-#why-nj{
-    // @include xl{
-    //     display: grid;
-    //     grid-template-columns: auto 1200px auto;
-    //     grid-template-areas: ". content .";
-
-    //     ul{
-    //         grid-area: content;
-    //     }
-    // }
-
-
-    #new-jersey{
+#why-nj {
+    @include xl{
         display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". content-nj .";
+    }
 
 
+    #new-jersey {
+        border: 1px solid red;
+
+        @include xl{
+            grid-area: content-nj;
+        }
+
+    
 
         display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: 
-        ". title ."
-        ". photo1 ."
-        ". photo4 ."
-        ". button .";
+        grid-template-areas:
+            ". title ."
+            ". photo1 ."
+            ". photo4 ."
+            ". button .";
 
 
-        #nj-title{
+        #nj-title {
             grid-area: title;
         }
 
-        #ig-contain-1{
+        #ig-contain-1 {
             grid-area: photo1;
         }
 
-        #ig-contain-4{
+        #ig-contain-4 {
             grid-area: photo4;
         }
 
-        #ig-button{
+        #ig-button {
             grid-area: button;
 
-            @include md{
+            @include md {
                 display: none;
             }
         }
 
-        @include md{
+        @include md {
 
-            display: grid;
+
             grid-template-columns: 50% auto;
-            grid-template-areas: 
-            "title title"
-            "photo1 p1"
-            "photo2 photo3"
-            "p2 photo4";
+            grid-template-areas:
+                "title title"
+                "photo1 p1"
+                "photo2 photo3"
+                "p2 photo4";
 
-            #nj-title{
+            #nj-title {
                 grid-area: title;
             }
-    
-            #ig-contain-1{
+
+            #ig-contain-1 {
                 grid-area: photo1;
             }
 
-            #ig-contain-2{
+            #ig-contain-2 {
                 grid-area: photo2;
             }
 
-            #ig-p1{
+            #ig-p1 {
                 grid-area: p1;
             }
 
-            #ig-contain-3{
+            #ig-contain-3 {
                 grid-area: photo3;
             }
 
-            #ig-p2{
+            #ig-p2 {
                 grid-area: p2;
             }
-    
-            #ig-contain-4{
+
+            #ig-contain-4 {
                 grid-area: photo4;
             }
         }
 
 
 
-        @include lg{
+        @include lg {
 
-            border: 1px solid red;
+           
 
-            display: grid;
             grid-template-columns: 10% auto 10% 10% auto 10%;
-            grid-template-areas: 
-            "title title title title title title"
-            "photo1 photo1 p1 p1 p1 p1"
-            ". photo2 photo2 photo3 photo3 ."
-            "p2 p2 p2 p2 photo4 photo4";
+            grid-template-areas:
+                "title title title title title title"
+                "photo1 photo1 p1 p1 p1 p1"
+                ". photo2 photo2 photo3 photo3 ."
+                "p2 p2 p2 p2 photo4 photo4";
 
             // question -- so here the grid is mostly working but the paragraphs are not cooperating
 
 
-            #nj-title{
+            #nj-title {
                 grid-area: title;
             }
-    
-            #ig-contain-1{
-                grid-area: photo1;
 
-                
+            #ig-contain-1 {
+                grid-area: photo1;
             }
 
-            #ig-contain-2{
+            #ig-contain-2 {
                 grid-area: photo2;
             }
 
-            #ig-p1{
+            #ig-p1 {
                 grid-area: p1;
             }
 
-            #ig-contain-3{
+            #ig-contain-3 {
                 grid-area: photo3;
             }
 
-            #ig-p2{
+            #ig-p2 {
                 grid-area: p2;
             }
-    
-            #ig-contain-4{
+
+            #ig-contain-4 {
                 grid-area: photo4;
             }
         }
@@ -139,102 +136,92 @@
 
 
 
-    #ig1{
+    #ig1 {
         background-image: url("../img/why-NJ/ig1.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
 
-        @include md{
+        @include md {
             height: 330px;
 
         }
 
-        @include lg{
+        @include lg {
             height: 350px;
 
         }
-     
-        }
 
-    #ig2{
+    }
+
+    #ig2 {
 
         background-image: url("../img/why-NJ/ig2.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
 
+        display: none;
 
-        @include md{
+
+        @include md {
             height: 330px;
+            display: list-item;
 
         }
 
-        @include lg{
+        @include lg {
             height: 350px;
 
         }
-
-       
-
     }
-    #ig3{
+
+    #ig3 {
 
         background-image: url("../img/why-NJ/ig3.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
 
-   
+        display: none;
 
-        @include md{
+        @include md {
             height: 330px;
+
+            display: list-item;
 
         }
 
-        @include lg{
+        @include lg {
             height: 350px;
 
         }
-
-       
-
     }
-    #ig4{
+
+    #ig4 {
 
         background-image: url("../img/why-NJ/ig4.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
 
-        @include md{
+        @include md {
             height: 330px;
 
         }
 
-        @include lg{
+        @include lg {
             height: 350px;
 
         }
-
-       
     }
+}
 
- 
+
+.nj-description {
+    display: none;
+
+    @include md {
+        display: list-item;
     }
-
-
-    .nj-description{
-        display: none;
-
-        @include md{
-            display: list-item;
-        }
-    }
-
-   
-
-    
-    
-
-
+}
