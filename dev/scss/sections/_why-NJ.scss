@@ -3,9 +3,15 @@
 ============= */
 
 #why-nj{
-    @include xl {
-        grid-template-columns: auto 1000px auto;
-    }
+    // @include xl{
+    //     display: grid;
+    //     grid-template-columns: auto 1200px auto;
+    //     grid-template-areas: ". content .";
+
+    //     ul{
+    //         grid-area: content;
+    //     }
+    // }
 
 
     #new-jersey{

@@ -1,0 +1,230 @@
+#dining{
+    
+    ul{
+
+   
+       display: grid;
+       grid-template-columns: 16px auto 16px;
+       grid-template-areas: 
+       ". title ."
+       ". sub ."
+       ". b1 ."
+       ". b2 ."
+       ". b3 ."
+       ". b4 ."
+       ". b5 .";
+
+       #ds-title{
+           grid-area: title;
+       }
+       #ds-sub1{
+           grid-area: sub;
+       }
+       #ds-button1{
+           grid-area: b1;
+       }
+       #ds-button2{
+        grid-area: b2;
+    }
+    #ds-button3{
+        grid-area: b3;
+    }
+    #ds-button4{
+        grid-area: b4;
+    }
+    #ds-button5{
+        grid-area: b5;
+    }
+
+    @include lg{
+        display: grid;
+       grid-template-columns: 95px auto 95px;
+       grid-template-areas: 
+       ". title ."
+       ". sub ."
+       ". b1 ."
+       ". b2 ."
+       ". b3 ."
+       ". b4 ."
+       ". b5 .";
+
+       #ds-title{
+        grid-area: title;
+    }
+    #ds-sub1{
+        grid-area: sub;
+    }
+    #ds-button1{
+        grid-area: b1;
+    }
+    #ds-button2{
+     grid-area: b2;
+ }
+ #ds-button3{
+     grid-area: b3;
+ }
+ #ds-button4{
+     grid-area: b4;
+ }
+ #ds-button5{
+     grid-area: b5;
+ }
+
+ 
+
+   
+
+        
+    }
+
+    @include xl{
+        display: grid;
+       grid-template-columns: auto 1200px auto;
+       grid-template-areas: 
+       ". title ."
+       ". sub ."
+       ". b1 ."
+       ". b2 ."
+       ". b3 ."
+       ". b4 ."
+       ". b5 .";
+
+       #ds-title{
+        grid-area: title;
+    }
+    #ds-sub1{
+        grid-area: sub;
+    }
+    #ds-button1{
+        grid-area: b1;
+    }
+    #ds-button2{
+     grid-area: b2;
+ }
+ #ds-button3{
+     grid-area: b3;
+ }
+ #ds-button4{
+     grid-area: b4;
+ }
+ #ds-button5{
+     grid-area: b5;
+ }
+}
+
+
+   
+   }
+}
+
+#shopping{
+    #img-outlet{
+        background-image: url("../img/shopping/shopping1.png");
+        background-position: center;
+        background-size: cover;
+        height: 228px;
+    }
+    #img-mall{
+        background-image: url("../img/shopping/shopping2.png");
+        background-position: center;
+        background-size: cover;
+        height: 228px;
+    }
+    #img-business{
+        background-image: url("../img/local-businesses/business.png");
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+    }
+ul{
+    li{
+        >div{
+            >aside{
+                display: none;
+
+                @include md{
+                    display: list-item;
+                }
+            }
+        }
+    }
+
+    display: grid;
+       grid-template-columns: 16px auto 16px;
+       grid-template-areas: 
+       ". sub2 ."
+       ". outlet ."
+       ". mall .";
+       #ds-sub2{
+        grid-area: sub2;
+    }
+    #ds-outlet{
+        grid-area: outlet;
+    }
+    #ds-mall{
+        grid-area: mall;
+    }
+
+    @include lg{
+        #ds-outlet{
+ 
+           display: grid;
+           grid-template-columns: 50% 40% auto;
+           grid-template-areas:
+           "title . ."
+           "image content .";
+          
+           #outlet{
+               grid-area: title;
+           }
+           #img-outlet{
+               grid-area: image;
+           }
+           #outlet-content{
+               grid-area: content;
+           }
+          }
+       
+       
+       #ds-mall{
+  
+           display: grid;
+           grid-template-columns: 50% 40% auto;
+           grid-template-areas:
+           "title . ."
+           "image content .";
+          
+           #mall{
+               grid-area: title;
+           }
+           #img-mall{
+               grid-area: image;
+           }
+           #mall-content{
+               grid-area: content;
+           }
+          }
+    }
+
+    @include xl{
+        display: grid;
+       grid-template-columns: auto 1200px auto;
+       grid-template-areas: 
+       ". sub2 ."
+       ". outlet ."
+       ". mall .";
+       #ds-sub2{
+        grid-area: sub2;
+    }
+    #ds-outlet{
+        grid-area: outlet;
+    }
+    #ds-mall{
+        grid-area: mall;
+    }
+
+
+    }
+
+}
+}

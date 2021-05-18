@@ -1,0 +1,108 @@
+#places-to-stay{
+
+    #pts-img1{
+        background-image: url("../img/places-to-stay/stay1.png");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    }
+
+    #pts-img2{
+        background-image: url("../img/places-to-stay/stay2.png");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    }
+
+    #pts-img3{
+        background-image: url("../img/places-to-stay/stay3.png");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    }
+
+    #pts-img4{
+        background-image: url("../img/places-to-stay/stay4.png");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    }
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". content .";
+    }
+
+    ul{
+
+        grid-area: content;
+
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: 
+        ". title ."
+        ". c1 ."
+        ". c2 ."
+        ". c3 ."
+        ". c4 .";
+
+        #pts-title{
+            grid-area: title;
+        }
+        #pts-content1{
+            grid-area: c1;
+        }
+        #pts-content2{
+            grid-area: c2;
+        }
+        #pts-content3{
+            grid-area: c3;
+        }
+        #pts-content4{
+            grid-area: c4;
+        }
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "title title"
+            "c1 c2"
+            "c3 c4";
+
+            #pts-title{
+                grid-area: title;
+            }
+
+            #pts-content1{
+                grid-area: c1;
+            }
+            #pts-content2{
+                grid-area: c2;
+            }
+            #pts-content3{
+                grid-area: c3;
+            }
+            #pts-content4{
+                grid-area: c4;
+            }
+        }
+
+
+        li{
+
+            .pts-par{
+                display: none;
+                @include md{
+                    display: list-item;
+                }
+            }
+
+        }
+    }
+
+    
+
+   
+}

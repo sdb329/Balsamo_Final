@@ -352,10 +352,6 @@ template {
 /* =============
     Base
 ============= */
-ul.ba {
-  list-style-type: none;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -390,11 +386,6 @@ ul {
 /* =============
     Why NJ
 ============= */
-@media (min-width: 1200px) {
-  #why-nj {
-    grid-template-columns: auto 1000px auto;
-  }
-}
 #why-nj #new-jersey {
   display: grid;
   display: grid;
@@ -1099,5 +1090,258 @@ ul {
   }
   #places-to-visit ul #visit-3 > aside {
     grid-area: button;
+  }
+}
+
+#places-to-stay #pts-img1 {
+  background-image: url("../img/places-to-stay/stay1.png");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+#places-to-stay #pts-img2 {
+  background-image: url("../img/places-to-stay/stay2.png");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+#places-to-stay #pts-img3 {
+  background-image: url("../img/places-to-stay/stay3.png");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+#places-to-stay #pts-img4 {
+  background-image: url("../img/places-to-stay/stay4.png");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+@media (min-width: 1200px) {
+  #places-to-stay {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". content .";
+  }
+}
+#places-to-stay ul {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". title ." ". c1 ." ". c2 ." ". c3 ." ". c4 .";
+}
+#places-to-stay ul #pts-title {
+  grid-area: title;
+}
+#places-to-stay ul #pts-content1 {
+  grid-area: c1;
+}
+#places-to-stay ul #pts-content2 {
+  grid-area: c2;
+}
+#places-to-stay ul #pts-content3 {
+  grid-area: c3;
+}
+#places-to-stay ul #pts-content4 {
+  grid-area: c4;
+}
+@media (min-width: 1024px) {
+  #places-to-stay ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "title title" "c1 c2" "c3 c4";
+  }
+  #places-to-stay ul #pts-title {
+    grid-area: title;
+  }
+  #places-to-stay ul #pts-content1 {
+    grid-area: c1;
+  }
+  #places-to-stay ul #pts-content2 {
+    grid-area: c2;
+  }
+  #places-to-stay ul #pts-content3 {
+    grid-area: c3;
+  }
+  #places-to-stay ul #pts-content4 {
+    grid-area: c4;
+  }
+}
+#places-to-stay ul li .pts-par {
+  display: none;
+}
+@media (min-width: 768px) {
+  #places-to-stay ul li .pts-par {
+    display: list-item;
+  }
+}
+
+#dining ul {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". title ." ". sub ." ". b1 ." ". b2 ." ". b3 ." ". b4 ." ". b5 .";
+}
+#dining ul #ds-title {
+  grid-area: title;
+}
+#dining ul #ds-sub1 {
+  grid-area: sub;
+}
+#dining ul #ds-button1 {
+  grid-area: b1;
+}
+#dining ul #ds-button2 {
+  grid-area: b2;
+}
+#dining ul #ds-button3 {
+  grid-area: b3;
+}
+#dining ul #ds-button4 {
+  grid-area: b4;
+}
+#dining ul #ds-button5 {
+  grid-area: b5;
+}
+@media (min-width: 1024px) {
+  #dining ul {
+    display: grid;
+    grid-template-columns: 95px auto 95px;
+    grid-template-areas: ". title ." ". sub ." ". b1 ." ". b2 ." ". b3 ." ". b4 ." ". b5 .";
+  }
+  #dining ul #ds-title {
+    grid-area: title;
+  }
+  #dining ul #ds-sub1 {
+    grid-area: sub;
+  }
+  #dining ul #ds-button1 {
+    grid-area: b1;
+  }
+  #dining ul #ds-button2 {
+    grid-area: b2;
+  }
+  #dining ul #ds-button3 {
+    grid-area: b3;
+  }
+  #dining ul #ds-button4 {
+    grid-area: b4;
+  }
+  #dining ul #ds-button5 {
+    grid-area: b5;
+  }
+}
+@media (min-width: 1200px) {
+  #dining ul {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". title ." ". sub ." ". b1 ." ". b2 ." ". b3 ." ". b4 ." ". b5 .";
+  }
+  #dining ul #ds-title {
+    grid-area: title;
+  }
+  #dining ul #ds-sub1 {
+    grid-area: sub;
+  }
+  #dining ul #ds-button1 {
+    grid-area: b1;
+  }
+  #dining ul #ds-button2 {
+    grid-area: b2;
+  }
+  #dining ul #ds-button3 {
+    grid-area: b3;
+  }
+  #dining ul #ds-button4 {
+    grid-area: b4;
+  }
+  #dining ul #ds-button5 {
+    grid-area: b5;
+  }
+}
+
+#shopping #img-outlet {
+  background-image: url("../img/shopping/shopping1.png");
+  background-position: center;
+  background-size: cover;
+  height: 228px;
+}
+#shopping #img-mall {
+  background-image: url("../img/shopping/shopping2.png");
+  background-position: center;
+  background-size: cover;
+  height: 228px;
+}
+#shopping #img-business {
+  background-image: url("../img/local-businesses/business.png");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+#shopping ul {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". sub2 ." ". outlet ." ". mall .";
+}
+#shopping ul li > div > aside {
+  display: none;
+}
+@media (min-width: 768px) {
+  #shopping ul li > div > aside {
+    display: list-item;
+  }
+}
+#shopping ul #ds-sub2 {
+  grid-area: sub2;
+}
+#shopping ul #ds-outlet {
+  grid-area: outlet;
+}
+#shopping ul #ds-mall {
+  grid-area: mall;
+}
+@media (min-width: 1024px) {
+  #shopping ul #ds-outlet {
+    display: grid;
+    grid-template-columns: 50% 40% auto;
+    grid-template-areas: "title . ." "image content .";
+  }
+  #shopping ul #ds-outlet #outlet {
+    grid-area: title;
+  }
+  #shopping ul #ds-outlet #img-outlet {
+    grid-area: image;
+  }
+  #shopping ul #ds-outlet #outlet-content {
+    grid-area: content;
+  }
+  #shopping ul #ds-mall {
+    display: grid;
+    grid-template-columns: 50% 40% auto;
+    grid-template-areas: "title . ." "image content .";
+  }
+  #shopping ul #ds-mall #mall {
+    grid-area: title;
+  }
+  #shopping ul #ds-mall #img-mall {
+    grid-area: image;
+  }
+  #shopping ul #ds-mall #mall-content {
+    grid-area: content;
+  }
+}
+@media (min-width: 1200px) {
+  #shopping ul {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". sub2 ." ". outlet ." ". mall .";
+  }
+  #shopping ul #ds-sub2 {
+    grid-area: sub2;
+  }
+  #shopping ul #ds-outlet {
+    grid-area: outlet;
+  }
+  #shopping ul #ds-mall {
+    grid-area: mall;
   }
 }
