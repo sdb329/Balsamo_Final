@@ -140,64 +140,84 @@
 
 
     #ig1{
-        background-image: url("../img/why-NJ/ig1.png");
+        background-image: url("../img/why-NJ/ig1.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
 
-        @include lg{
-            height: 325px;
+        @include md{
+            height: 330px;
 
         }
+
+        @include lg{
+            height: 350px;
+
+        }
+     
         }
 
     #ig2{
 
-        background-image: url("../img/why-NJ/ig2.png");
+        background-image: url("../img/why-NJ/ig2.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
 
-        display: none;
 
         @include md{
-            display: list-item;
-        }
-        @include lg{
-            height: 325px;
+            height: 330px;
 
         }
+
+        @include lg{
+            height: 350px;
+
+        }
+
+       
 
     }
     #ig3{
 
-        background-image: url("../img/why-NJ/ig3.png");
+        background-image: url("../img/why-NJ/ig3.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
 
-        display: none;
+   
 
         @include md{
-            display: list-item;
-        }
-        @include lg{
-            height: 325px;
+            height: 330px;
 
         }
+
+        @include lg{
+            height: 350px;
+
+        }
+
+       
 
     }
     #ig4{
 
-        background-image: url("../img/why-NJ/ig4.png");
+        background-image: url("../img/why-NJ/ig4.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
 
-        @include lg{
-            height: 325px;
+        @include md{
+            height: 330px;
 
         }
+
+        @include lg{
+            height: 350px;
+
+        }
+
+       
     }
 
  

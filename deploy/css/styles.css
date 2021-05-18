@@ -377,10 +377,15 @@ ul {
     Footer
 ============= */
 #hero {
-  background-image: url("../img/hero/hero.png");
+  background-image: url("../img/hero/hero.jpg");
   background-position: center;
   background-size: cover;
   height: 360px;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 840px;
+  }
 }
 
 /* =============
@@ -467,59 +472,67 @@ ul {
   }
 }
 #why-nj #ig1 {
-  background-image: url("../img/why-NJ/ig1.png");
+  background-image: url("../img/why-NJ/ig1.jpg");
   background-position: center;
   background-size: cover;
   height: 228px;
+}
+@media (min-width: 768px) {
+  #why-nj #ig1 {
+    height: 330px;
+  }
 }
 @media (min-width: 1024px) {
   #why-nj #ig1 {
-    height: 325px;
+    height: 350px;
   }
 }
 #why-nj #ig2 {
-  background-image: url("../img/why-NJ/ig2.png");
+  background-image: url("../img/why-NJ/ig2.jpg");
   background-position: center;
   background-size: cover;
   height: 228px;
-  display: none;
 }
 @media (min-width: 768px) {
   #why-nj #ig2 {
-    display: list-item;
+    height: 330px;
   }
 }
 @media (min-width: 1024px) {
   #why-nj #ig2 {
-    height: 325px;
+    height: 350px;
   }
 }
 #why-nj #ig3 {
-  background-image: url("../img/why-NJ/ig3.png");
+  background-image: url("../img/why-NJ/ig3.jpg");
   background-position: center;
   background-size: cover;
   height: 228px;
-  display: none;
 }
 @media (min-width: 768px) {
   #why-nj #ig3 {
-    display: list-item;
+    height: 330px;
   }
 }
 @media (min-width: 1024px) {
   #why-nj #ig3 {
-    height: 325px;
+    height: 350px;
   }
 }
 #why-nj #ig4 {
-  background-image: url("../img/why-NJ/ig4.png");
+  background-image: url("../img/why-NJ/ig4.jpg");
   background-position: center;
   background-size: cover;
   height: 228px;
 }
+@media (min-width: 768px) {
+  #why-nj #ig4 {
+    height: 330px;
+  }
+}
 @media (min-width: 1024px) {
   #why-nj #ig4 {
-    height: 325px;
+    height: 350px;
   }
 }
 
@@ -533,10 +546,10 @@ ul {
 }
 
 #regions #map-image {
-  background-image: url("../img/regions/map.png");
+  background-image: url("../img/regions/map.jpg");
   background-position: center;
   background-size: cover;
-  height: 500px;
+  height: 355px;
 }
 #regions #regions-list {
   display: grid;
@@ -604,37 +617,37 @@ ul {
   }
 }
 #regions #region1-image {
-  background-image: url("../img/regions/region1.png");
+  background-image: url("../img/regions/region1.jpg");
   background-position: center;
   background-size: cover;
   height: 250px;
 }
 #regions #region2-image {
-  background-image: url("../img/regions/region2.png");
+  background-image: url("../img/regions/region2.jpg");
   background-position: center;
   background-size: cover;
   height: 250px;
 }
 #regions #region3-image {
-  background-image: url("../img/regions/region3.png");
+  background-image: url("../img/regions/region3.jpg");
   background-position: center;
   background-size: cover;
   height: 250px;
 }
 #regions #region4-image {
-  background-image: url("../img/regions/region4.png");
+  background-image: url("../img/regions/region4.jpg");
   background-position: center;
   background-size: cover;
   height: 250px;
 }
 #regions #region5-image {
-  background-image: url("../img/regions/region5.png");
+  background-image: url("../img/regions/region5.jpg");
   background-position: center;
   background-size: cover;
   height: 250px;
 }
 #regions #region6-image {
-  background-image: url("../img/regions/region6.png");
+  background-image: url("../img/regions/region6.jpg");
   background-position: center;
   background-size: cover;
   height: 250px;
@@ -915,7 +928,7 @@ ul {
   }
 }
 #regions #beach-hero {
-  background-image: url("../img/regions/beach.png");
+  background-image: url("../img/regions/beach.jpg");
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -930,19 +943,19 @@ ul {
   }
 }
 #places-to-visit #v-img-1 {
-  background-image: url("../img/places-to-visit/place1.png");
+  background-image: url("../img/places-to-visit/place1.jpg");
   background-position: center;
   background-size: cover;
   height: 500px;
 }
 #places-to-visit #v-img-2 {
-  background-image: url("../img/places-to-visit/place2.png");
+  background-image: url("../img/places-to-visit/place2.jpg");
   background-position: center;
   background-size: cover;
   height: 500px;
 }
 #places-to-visit #v-img-3 {
-  background-image: url("../img/places-to-visit/place3.png");
+  background-image: url("../img/places-to-visit/place3.jpg");
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -1094,25 +1107,25 @@ ul {
 }
 
 #places-to-stay #pts-img1 {
-  background-image: url("../img/places-to-stay/stay1.png");
+  background-image: url("../img/places-to-stay/stay1.jpg");
   background-position: center;
   background-size: cover;
   height: 600px;
 }
 #places-to-stay #pts-img2 {
-  background-image: url("../img/places-to-stay/stay2.png");
+  background-image: url("../img/places-to-stay/stay2.jpg");
   background-position: center;
   background-size: cover;
   height: 600px;
 }
 #places-to-stay #pts-img3 {
-  background-image: url("../img/places-to-stay/stay3.png");
+  background-image: url("../img/places-to-stay/stay3.jpg");
   background-position: center;
   background-size: cover;
   height: 600px;
 }
 #places-to-stay #pts-img4 {
-  background-image: url("../img/places-to-stay/stay4.png");
+  background-image: url("../img/places-to-stay/stay4.jpg");
   background-position: center;
   background-size: cover;
   height: 600px;
@@ -1260,19 +1273,19 @@ ul {
 }
 
 #shopping #img-outlet {
-  background-image: url("../img/shopping/shopping1.png");
+  background-image: url("../img/shopping/shopping1.jpg");
   background-position: center;
   background-size: cover;
   height: 228px;
 }
 #shopping #img-mall {
-  background-image: url("../img/shopping/shopping2.png");
+  background-image: url("../img/shopping/shopping2.jpg");
   background-position: center;
   background-size: cover;
   height: 228px;
 }
 #shopping #img-business {
-  background-image: url("../img/local-businesses/business.png");
+  background-image: url("../img/local-businesses/business.jpg");
   background-position: center;
   background-size: cover;
   height: 600px;
@@ -1316,8 +1329,8 @@ ul {
   }
   #shopping ul #ds-mall {
     display: grid;
-    grid-template-columns: 50% 40% auto;
-    grid-template-areas: "title . ." "image content .";
+    grid-template-columns: auto 40% 50%;
+    grid-template-areas: ". . title" ". content image";
   }
   #shopping ul #ds-mall #mall {
     grid-area: title;

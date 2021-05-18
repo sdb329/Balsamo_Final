@@ -1,8 +1,12 @@
 
 #hero{
-    background-image: url("../img/hero/hero.png");
+    background-image: url("../img/hero/hero.jpg");
     background-position: center;
     background-size: cover;
     height: 360px;
+
+    @include md{
+        height: 840px;
+    }
 
 }

@@ -119,19 +119,19 @@
 
 #shopping{
     #img-outlet{
-        background-image: url("../img/shopping/shopping1.png");
+        background-image: url("../img/shopping/shopping1.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
     }
     #img-mall{
-        background-image: url("../img/shopping/shopping2.png");
+        background-image: url("../img/shopping/shopping2.jpg");
         background-position: center;
         background-size: cover;
         height: 228px;
     }
     #img-business{
-        background-image: url("../img/local-businesses/business.png");
+        background-image: url("../img/local-businesses/business.jpg");
         background-position: center;
         background-size: cover;
         height: 600px;
@@ -189,10 +189,10 @@ ul{
        #ds-mall{
   
            display: grid;
-           grid-template-columns: 50% 40% auto;
+           grid-template-columns: auto 40% 50%;
            grid-template-areas:
-           "title . ."
-           "image content .";
+           ". . title"
+           ". content image";
           
            #mall{
                grid-area: title;
