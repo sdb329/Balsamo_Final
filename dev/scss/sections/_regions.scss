@@ -11,97 +11,7 @@
 
     
 
-    #regions-list {
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". content .";
-
-        #region-1 {
-            grid-area: content;
-        }
-
-
-        @include md {
-            #region-1{
-                display: grid;
-                grid-template-columns: 60% 30% auto;
-                grid-template-areas: 
-                "region region ."
-                "text image1 ."
-                "button image1 .";
-
-                >h1{
-                    grid-area: region;
-                }
-
-                >div{
-                    grid-area: text;
-                }
-                >button{
-                    grid-area: button;
-                }
-                #region1-image{
-                    grid-area: image1;
-                }
-                
-            }
-
-        }
-
-        @include lg {
-            #region-1{
-                display: grid;
-                grid-template-columns: 60% 30% 16px;
-                grid-template-areas: 
-                "region region ."
-                "text image1 ."
-                "button image1 .";
-
-                >h1{
-                    grid-area: region;
-                }
-
-                >div{
-                    grid-area: text;
-                }
-                >button{
-                    grid-area: button;
-                }
-                #region1-image{
-                    grid-area: image1;
-                }
-                
-            }
-        }
-
-        @include xl {
-            #region-1{
-                display: grid;
-                grid-template-columns: 40% 30% auto;
-                grid-template-areas: 
-                "region region ."
-                "text image1 ."
-                "button image1 .";
-
-                >h1{
-                    grid-area: region;
-                }
-
-                >div{
-                    grid-area: text;
-                }
-                >button{
-                    grid-area: button;
-                }
-                #region1-image{
-                    grid-area: image1;
-                }
-                
-            }
-        }
-
-        
-    }
+   
 
     .region-img-ht {
         height: 250px;;
@@ -147,11 +57,6 @@
 
     }
 
-
-
-
-
-
     #shore-p2 {
         display: none;
 
@@ -173,6 +78,7 @@
 
         #region-1 {
             grid-area: region1;
+           
         }
 
         #region-2 {
@@ -193,15 +99,12 @@
         
 
         @include md {
-            
-
-            #region-2{
+            #region-1{
                 display: grid;
-                grid-template-columns: auto 30% 60%;
+                grid-template-columns: 60% 30% auto;
                 grid-template-areas: 
                 "region region ."
-                ". image1 text"
-                ". image1 button";
+                "text image1 .";
 
                 >h1{
                     grid-area: region;
@@ -210,9 +113,28 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
+               
+                #region1-image{
+                    grid-area: image1;
                 }
+                
+            }
+
+            #region-2{
+                display: grid;
+                grid-template-columns: auto 30% 60%;
+                grid-template-areas: 
+                ". region region"
+                ". image1 text";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+               
                 #region2-image{
                     grid-area: image1;
                 }
@@ -220,28 +142,26 @@
             }
 
    
-                #region-3{
-                    display: grid;
-                    grid-template-columns: 60% 30% auto;
-                    grid-template-areas: 
-                    "region region ."
-                    "text image1 ."
-                    "button image1 .";
-    
-                    >h1{
-                        grid-area: region;
-                    }
-    
-                    >div{
-                        grid-area: text;
-                    }
-                    >button{
-                        grid-area: button;
-                    }
-                    #region3-image{
-                        grid-area: image1;
-                    }
+            #region-3{
+                display: grid;
+                grid-template-columns: 60% 30% auto;
+                grid-template-areas: 
+                "region region ."
+                "text image1 .";
+
+                >h1{
+                    grid-area: region;
                 }
+
+                >div{
+                    grid-area: text;
+                }
+               
+                #region3-image{
+                    grid-area: image1;
+                }
+                
+            }
 
 
 
@@ -250,9 +170,8 @@
                 display: grid;
                 grid-template-columns: auto 30% 60%;
                 grid-template-areas: 
-                "region region ."
-                ". image1 text"
-                ". image1 button";
+                ". region region"
+                ". image1 text";
 
                 >h1{
                     grid-area: region;
@@ -261,9 +180,7 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
-                }
+               
                 #region4-image{
                     grid-area: image1;
                 }
@@ -275,8 +192,7 @@
                 grid-template-columns: 60% 30% auto;
                 grid-template-areas: 
                 "region region ."
-                "text image1 ."
-                "button image1 .";
+                "text image1 .";
 
                 >h1{
                     grid-area: region;
@@ -285,9 +201,7 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
-                }
+               
                 #region5-image{
                     grid-area: image1;
                 }
@@ -297,9 +211,8 @@
                 display: grid;
                 grid-template-columns: auto 30% 60%;
                 grid-template-areas: 
-                "region region ."
-                ". image1 text"
-                ". image1 button";
+                ". region region"
+                ". image1 text";
 
                 >h1{
                     grid-area: region;
@@ -308,9 +221,7 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
-                }
+               
                 #region6-image{
                     grid-area: image1;
                 }
@@ -321,14 +232,12 @@
 
 
         @include lg {
-
-            #region-2{
+            #region-1{
                 display: grid;
-                grid-template-columns: 16px 30% 60%;
+                grid-template-columns: 60% 30% 16px;
                 grid-template-areas: 
                 "region region ."
-                ". image1 text"
-                ". image1 button";
+                "text image1 .";
 
                 >h1{
                     grid-area: region;
@@ -337,9 +246,28 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
+               
+                #region1-image{
+                    grid-area: image1;
                 }
+                
+            }
+
+            #region-2{
+                display: grid;
+                grid-template-columns: 16px 30% 60%;
+                grid-template-areas: 
+                ". region region"
+                ". image1 text";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+               
                 #region2-image{
                     grid-area: image1;
                 }
@@ -352,22 +280,19 @@
                     grid-template-columns: 60% 30% 16px;
                     grid-template-areas: 
                     "region region ."
-                    "text image1 ."
-                    "button image1 .";
-    
-                    >h1{
-                        grid-area: region;
-                    }
-    
-                    >div{
-                        grid-area: text;
-                    }
-                    >button{
-                        grid-area: button;
-                    }
-                    #region3-image{
-                        grid-area: image1;
-                    }
+                "text image1 .";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+               
+                #region3-image{
+                    grid-area: image1;
+                }
                 }
 
 
@@ -377,9 +302,8 @@
                 display: grid;
                 grid-template-columns: 16px 30% 60%;
                 grid-template-areas: 
-                "region region ."
-                ". image1 text"
-                ". image1 button";
+                ". region region"
+                ". image1 text";
 
                 >h1{
                     grid-area: region;
@@ -388,9 +312,7 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
-                }
+               
                 #region4-image{
                     grid-area: image1;
                 }
@@ -402,8 +324,7 @@
                 grid-template-columns: 60% 30% 16px;
                 grid-template-areas: 
                 "region region ."
-                "text image1 ."
-                "button image1 .";
+                "text image1 .";
 
                 >h1{
                     grid-area: region;
@@ -412,9 +333,7 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
-                }
+               
                 #region5-image{
                     grid-area: image1;
                 }
@@ -424,9 +343,8 @@
                 display: grid;
                 grid-template-columns: 16px 30% 60%;
                 grid-template-areas: 
-                "region region ."
-                ". image1 text"
-                ". image1 button";
+                ". region region"
+                ". image1 text";
 
                 >h1{
                     grid-area: region;
@@ -435,9 +353,7 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
-                }
+               
                 #region6-image{
                     grid-area: image1;
                 }
@@ -449,13 +365,12 @@
 
         @include xl {
 
-            #region-2{
+            #region-1{
                 display: grid;
-                grid-template-columns: auto 30% 40%;
+                grid-template-columns: 40% 30% auto;
                 grid-template-areas: 
                 "region region ."
-                ". image1 text"
-                ". image1 button";
+                "text image1 .";
 
                 >h1{
                     grid-area: region;
@@ -464,9 +379,27 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
+               
+                #region1-image{
+                    grid-area: image1;
                 }
+                
+            }
+            #region-2{
+                display: grid;
+                grid-template-columns: auto 30% 40%;
+                grid-template-areas: 
+                ". region region"
+                ". image1 text";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+               
                 #region2-image{
                     grid-area: image1;
                 }
@@ -479,34 +412,7 @@
                     grid-template-columns: 40% 30% auto;
                     grid-template-areas: 
                     "region region ."
-                    "text image1 ."
-                    "button image1 .";
-    
-                    >h1{
-                        grid-area: region;
-                    }
-    
-                    >div{
-                        grid-area: text;
-                    }
-                    >button{
-                        grid-area: button;
-                    }
-                    #region3-image{
-                        grid-area: image1;
-                    }
-                }
-
-
-
-
-            #region-4{
-                display: grid;
-                grid-template-columns: auto 30% 40%;
-                grid-template-areas: 
-                "region region ."
-                ". image1 text"
-                ". image1 button";
+                "text image1 .";
 
                 >h1{
                     grid-area: region;
@@ -515,9 +421,31 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
+               
+                #region3-image{
+                    grid-area: image1;
                 }
+                }
+
+
+
+
+            #region-4{
+                
+                display: grid;
+                grid-template-columns: auto 30% 40%;
+                grid-template-areas: 
+                ". region region"
+                ". image1 text";
+
+                >h1{
+                    grid-area: region;
+                }
+
+                >div{
+                    grid-area: text;
+                }
+               
                 #region4-image{
                     grid-area: image1;
                 }
@@ -529,8 +457,7 @@
                 grid-template-columns: 40% 30% auto;
                 grid-template-areas: 
                 "region region ."
-                "text image1 ."
-                "button image1 .";
+                "text image1 .";
 
                 >h1{
                     grid-area: region;
@@ -539,9 +466,7 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
-                }
+               
                 #region5-image{
                     grid-area: image1;
                 }
@@ -551,9 +476,8 @@
                 display: grid;
                 grid-template-columns: auto 30% 40%;
                 grid-template-areas: 
-                "region region ."
-                ". image1 text"
-                ". image1 button";
+                ". region region"
+                ". image1 text";
 
                 >h1{
                     grid-area: region;
@@ -562,9 +486,7 @@
                 >div{
                     grid-area: text;
                 }
-                >button{
-                    grid-area: button;
-                }
+               
                 #region6-image{
                     grid-area: image1;
                 }

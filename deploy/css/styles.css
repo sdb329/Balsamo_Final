@@ -564,71 +564,6 @@ ul {
   background-size: cover;
   height: 355px;
 }
-#regions #regions-list {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". content .";
-}
-#regions #regions-list #region-1 {
-  grid-area: content;
-}
-@media (min-width: 768px) {
-  #regions #regions-list #region-1 {
-    display: grid;
-    grid-template-columns: 60% 30% auto;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
-  }
-  #regions #regions-list #region-1 > h1 {
-    grid-area: region;
-  }
-  #regions #regions-list #region-1 > div {
-    grid-area: text;
-  }
-  #regions #regions-list #region-1 > button {
-    grid-area: button;
-  }
-  #regions #regions-list #region-1 #region1-image {
-    grid-area: image1;
-  }
-}
-@media (min-width: 1024px) {
-  #regions #regions-list #region-1 {
-    display: grid;
-    grid-template-columns: 60% 30% 16px;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
-  }
-  #regions #regions-list #region-1 > h1 {
-    grid-area: region;
-  }
-  #regions #regions-list #region-1 > div {
-    grid-area: text;
-  }
-  #regions #regions-list #region-1 > button {
-    grid-area: button;
-  }
-  #regions #regions-list #region-1 #region1-image {
-    grid-area: image1;
-  }
-}
-@media (min-width: 1200px) {
-  #regions #regions-list #region-1 {
-    display: grid;
-    grid-template-columns: 40% 30% auto;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
-  }
-  #regions #regions-list #region-1 > h1 {
-    grid-area: region;
-  }
-  #regions #regions-list #region-1 > div {
-    grid-area: text;
-  }
-  #regions #regions-list #region-1 > button {
-    grid-area: button;
-  }
-  #regions #regions-list #region-1 #region1-image {
-    grid-area: image1;
-  }
-}
 #regions .region-img-ht {
   height: 250px;
 }
@@ -694,10 +629,24 @@ ul {
   grid-area: region6;
 }
 @media (min-width: 768px) {
+  #regions .beach #region-1 {
+    display: grid;
+    grid-template-columns: 60% 30% auto;
+    grid-template-areas: "region region ." "text image1 .";
+  }
+  #regions .beach #region-1 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-1 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-1 #region1-image {
+    grid-area: image1;
+  }
   #regions .beach #region-2 {
     display: grid;
     grid-template-columns: auto 30% 60%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-2 > h1 {
     grid-area: region;
@@ -705,16 +654,13 @@ ul {
   #regions .beach #region-2 > div {
     grid-area: text;
   }
-  #regions .beach #region-2 > button {
-    grid-area: button;
-  }
   #regions .beach #region-2 #region2-image {
     grid-area: image1;
   }
   #regions .beach #region-3 {
     display: grid;
     grid-template-columns: 60% 30% auto;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+    grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-3 > h1 {
     grid-area: region;
@@ -722,16 +668,13 @@ ul {
   #regions .beach #region-3 > div {
     grid-area: text;
   }
-  #regions .beach #region-3 > button {
-    grid-area: button;
-  }
   #regions .beach #region-3 #region3-image {
     grid-area: image1;
   }
   #regions .beach #region-4 {
     display: grid;
     grid-template-columns: auto 30% 60%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-4 > h1 {
     grid-area: region;
@@ -739,16 +682,13 @@ ul {
   #regions .beach #region-4 > div {
     grid-area: text;
   }
-  #regions .beach #region-4 > button {
-    grid-area: button;
-  }
   #regions .beach #region-4 #region4-image {
     grid-area: image1;
   }
   #regions .beach #region-5 {
     display: grid;
     grid-template-columns: 60% 30% auto;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+    grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-5 > h1 {
     grid-area: region;
@@ -756,35 +696,43 @@ ul {
   #regions .beach #region-5 > div {
     grid-area: text;
   }
-  #regions .beach #region-5 > button {
-    grid-area: button;
-  }
   #regions .beach #region-5 #region5-image {
     grid-area: image1;
   }
   #regions .beach #region-6 {
     display: grid;
     grid-template-columns: auto 30% 60%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-6 > h1 {
     grid-area: region;
   }
   #regions .beach #region-6 > div {
     grid-area: text;
-  }
-  #regions .beach #region-6 > button {
-    grid-area: button;
   }
   #regions .beach #region-6 #region6-image {
     grid-area: image1;
   }
 }
 @media (min-width: 1024px) {
+  #regions .beach #region-1 {
+    display: grid;
+    grid-template-columns: 60% 30% 16px;
+    grid-template-areas: "region region ." "text image1 .";
+  }
+  #regions .beach #region-1 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-1 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-1 #region1-image {
+    grid-area: image1;
+  }
   #regions .beach #region-2 {
     display: grid;
     grid-template-columns: 16px 30% 60%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-2 > h1 {
     grid-area: region;
@@ -792,16 +740,13 @@ ul {
   #regions .beach #region-2 > div {
     grid-area: text;
   }
-  #regions .beach #region-2 > button {
-    grid-area: button;
-  }
   #regions .beach #region-2 #region2-image {
     grid-area: image1;
   }
   #regions .beach #region-3 {
     display: grid;
     grid-template-columns: 60% 30% 16px;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+    grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-3 > h1 {
     grid-area: region;
@@ -809,16 +754,13 @@ ul {
   #regions .beach #region-3 > div {
     grid-area: text;
   }
-  #regions .beach #region-3 > button {
-    grid-area: button;
-  }
   #regions .beach #region-3 #region3-image {
     grid-area: image1;
   }
   #regions .beach #region-4 {
     display: grid;
     grid-template-columns: 16px 30% 60%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-4 > h1 {
     grid-area: region;
@@ -826,16 +768,13 @@ ul {
   #regions .beach #region-4 > div {
     grid-area: text;
   }
-  #regions .beach #region-4 > button {
-    grid-area: button;
-  }
   #regions .beach #region-4 #region4-image {
     grid-area: image1;
   }
   #regions .beach #region-5 {
     display: grid;
     grid-template-columns: 60% 30% 16px;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+    grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-5 > h1 {
     grid-area: region;
@@ -843,35 +782,43 @@ ul {
   #regions .beach #region-5 > div {
     grid-area: text;
   }
-  #regions .beach #region-5 > button {
-    grid-area: button;
-  }
   #regions .beach #region-5 #region5-image {
     grid-area: image1;
   }
   #regions .beach #region-6 {
     display: grid;
     grid-template-columns: 16px 30% 60%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-6 > h1 {
     grid-area: region;
   }
   #regions .beach #region-6 > div {
     grid-area: text;
-  }
-  #regions .beach #region-6 > button {
-    grid-area: button;
   }
   #regions .beach #region-6 #region6-image {
     grid-area: image1;
   }
 }
 @media (min-width: 1200px) {
+  #regions .beach #region-1 {
+    display: grid;
+    grid-template-columns: 40% 30% auto;
+    grid-template-areas: "region region ." "text image1 .";
+  }
+  #regions .beach #region-1 > h1 {
+    grid-area: region;
+  }
+  #regions .beach #region-1 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-1 #region1-image {
+    grid-area: image1;
+  }
   #regions .beach #region-2 {
     display: grid;
     grid-template-columns: auto 30% 40%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-2 > h1 {
     grid-area: region;
@@ -879,16 +826,13 @@ ul {
   #regions .beach #region-2 > div {
     grid-area: text;
   }
-  #regions .beach #region-2 > button {
-    grid-area: button;
-  }
   #regions .beach #region-2 #region2-image {
     grid-area: image1;
   }
   #regions .beach #region-3 {
     display: grid;
     grid-template-columns: 40% 30% auto;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+    grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-3 > h1 {
     grid-area: region;
@@ -896,16 +840,13 @@ ul {
   #regions .beach #region-3 > div {
     grid-area: text;
   }
-  #regions .beach #region-3 > button {
-    grid-area: button;
-  }
   #regions .beach #region-3 #region3-image {
     grid-area: image1;
   }
   #regions .beach #region-4 {
     display: grid;
     grid-template-columns: auto 30% 40%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-4 > h1 {
     grid-area: region;
@@ -913,16 +854,13 @@ ul {
   #regions .beach #region-4 > div {
     grid-area: text;
   }
-  #regions .beach #region-4 > button {
-    grid-area: button;
-  }
   #regions .beach #region-4 #region4-image {
     grid-area: image1;
   }
   #regions .beach #region-5 {
     display: grid;
     grid-template-columns: 40% 30% auto;
-    grid-template-areas: "region region ." "text image1 ." "button image1 .";
+    grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-5 > h1 {
     grid-area: region;
@@ -930,25 +868,19 @@ ul {
   #regions .beach #region-5 > div {
     grid-area: text;
   }
-  #regions .beach #region-5 > button {
-    grid-area: button;
-  }
   #regions .beach #region-5 #region5-image {
     grid-area: image1;
   }
   #regions .beach #region-6 {
     display: grid;
     grid-template-columns: auto 30% 40%;
-    grid-template-areas: "region region ." ". image1 text" ". image1 button";
+    grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-6 > h1 {
     grid-area: region;
   }
   #regions .beach #region-6 > div {
     grid-area: text;
-  }
-  #regions .beach #region-6 > button {
-    grid-area: button;
   }
   #regions .beach #region-6 #region6-image {
     grid-area: image1;
