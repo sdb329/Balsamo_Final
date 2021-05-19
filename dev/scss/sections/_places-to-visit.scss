@@ -8,28 +8,49 @@
        }
    } 
 
+   .v-img-ht{
+    height: 114px;
+
+    @include md{
+        height: 380px;
+    }
+
+
+
+   }
+
    #v-img-1{
     background-image: url("../img/places-to-visit/place1.jpg");
     background-position: center;
     background-size: cover;
-    height: 500px;
+    
    }
 
    #v-img-2{
     background-image: url("../img/places-to-visit/place2.jpg");
     background-position: center;
     background-size: cover;
-    height: 500px;
+
    }
 
    #v-img-3{
     background-image: url("../img/places-to-visit/place3.jpg");
     background-position: center;
     background-size: cover;
-    height: 500px;
+ 
    }
 
+   >section{
+@include xl{
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". contain-visitplaces ."
+}
    ul{
+@include xl{
+    grid-area: contain-visitplaces;
+
+}
     #visit-1{
     display: grid;
     grid-template-columns: 20% 70%;
@@ -169,6 +190,10 @@
         }
         >aside{
             grid-area: button;
+            display: flex;
+            margin-top: auto;
+            text-align: justify;
+            
         }
        }
        #visit-2{
@@ -186,6 +211,9 @@
         }
         >aside{
             grid-area: button;
+            display: flex;
+            margin-top: auto;
+            text-align: justify;
         }
        }
        #visit-3{
@@ -203,6 +231,9 @@
         }
         >aside{
             grid-area: button;
+            display: flex;
+            margin-top: auto;
+            text-align: justify;
         }
        }
     
@@ -210,5 +241,6 @@
     
        
    }
+}
 }
 }

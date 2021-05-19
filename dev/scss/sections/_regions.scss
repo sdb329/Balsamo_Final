@@ -5,6 +5,10 @@
         background-position: center;
         background-size: cover;
         height: 355px;
+
+        @include md{
+            height: 515px;
+        }
         
     }
 
@@ -15,6 +19,14 @@
 
     .region-img-ht {
         height: 250px;;
+
+        @include md{
+            height: 176px;;
+        }
+
+        @include lg{
+            height: 313px;;
+        }
     }
 
 
@@ -34,7 +46,7 @@
 
     #region3-image {
         background-image: url("../img/regions/region3.jpg");
-        background-position: center;
+        background-position: top;
         background-size: cover;
 
     }
@@ -46,7 +58,7 @@
     }
     #region5-image {
         background-image: url("../img/regions/region5.jpg");
-        background-position: center;
+        background-position: top left;
         background-size: cover;
   
     }

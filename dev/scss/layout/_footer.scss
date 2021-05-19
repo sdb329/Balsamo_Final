@@ -1,3 +1,38 @@
 /* =============
     Footer
 ============= */
+#footer{
+    >ul{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: 
+        "travel phone"
+        "travel socials"
+        "info info";
+
+        #footer-phone{
+            grid-area: phone;
+        }
+
+        #footer-travel{
+            grid-area: travel;
+        }
+
+        #footer-socials{
+            grid-area: socials;
+        }
+
+        #footer-info{
+            grid-area: info;
+        }
+
+        @include lg{
+            display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 
+        "phone travel socials"
+        "info info info";
+
+        }
+    }
+}

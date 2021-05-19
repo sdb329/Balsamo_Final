@@ -376,6 +376,31 @@ ul {
 /* =============
     Footer
 ============= */
+#footer > ul {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "travel phone" "travel socials" "info info";
+}
+#footer > ul #footer-phone {
+  grid-area: phone;
+}
+#footer > ul #footer-travel {
+  grid-area: travel;
+}
+#footer > ul #footer-socials {
+  grid-area: socials;
+}
+#footer > ul #footer-info {
+  grid-area: info;
+}
+@media (min-width: 1024px) {
+  #footer > ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "phone travel socials" "info info info";
+  }
+}
+
 #hero {
   background-image: url("../img/hero/hero.jpg");
   background-position: center;
@@ -564,8 +589,23 @@ ul {
   background-size: cover;
   height: 355px;
 }
+@media (min-width: 768px) {
+  #regions #map-image {
+    height: 515px;
+  }
+}
 #regions .region-img-ht {
   height: 250px;
+}
+@media (min-width: 768px) {
+  #regions .region-img-ht {
+    height: 176px;
+  }
+}
+@media (min-width: 1024px) {
+  #regions .region-img-ht {
+    height: 313px;
+  }
 }
 #regions #region1-image {
   background-image: url("../img/regions/region1.jpg");
@@ -579,7 +619,7 @@ ul {
 }
 #regions #region3-image {
   background-image: url("../img/regions/region3.jpg");
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 #regions #region4-image {
@@ -589,7 +629,7 @@ ul {
 }
 #regions #region5-image {
   background-image: url("../img/regions/region5.jpg");
-  background-position: center;
+  background-position: top left;
   background-size: cover;
 }
 #regions #region6-image {
@@ -911,193 +951,228 @@ ul {
     display: list-item;
   }
 }
+#places-to-visit .v-img-ht {
+  height: 114px;
+}
+@media (min-width: 768px) {
+  #places-to-visit .v-img-ht {
+    height: 380px;
+  }
+}
 #places-to-visit #v-img-1 {
   background-image: url("../img/places-to-visit/place1.jpg");
   background-position: center;
   background-size: cover;
-  height: 500px;
 }
 #places-to-visit #v-img-2 {
   background-image: url("../img/places-to-visit/place2.jpg");
   background-position: center;
   background-size: cover;
-  height: 500px;
 }
 #places-to-visit #v-img-3 {
   background-image: url("../img/places-to-visit/place3.jpg");
   background-position: center;
   background-size: cover;
-  height: 500px;
 }
-#places-to-visit ul #visit-1 {
+@media (min-width: 1200px) {
+  #places-to-visit > section {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". contain-visitplaces .";
+  }
+}
+@media (min-width: 1200px) {
+  #places-to-visit > section ul {
+    grid-area: contain-visitplaces;
+  }
+}
+#places-to-visit > section ul #visit-1 {
   display: grid;
   grid-template-columns: 20% 70%;
   grid-template-areas: "nb content" "nb button";
 }
-#places-to-visit ul #visit-1 #no-1 {
+#places-to-visit > section ul #visit-1 #no-1 {
   grid-area: nb;
 }
-#places-to-visit ul #visit-1 #v-content-1 {
+#places-to-visit > section ul #visit-1 #v-content-1 {
   grid-area: content;
 }
-#places-to-visit ul #visit-1 #v-button-1 {
+#places-to-visit > section ul #visit-1 #v-button-1 {
   grid-area: button;
 }
 @media (min-width: 768px) {
-  #places-to-visit ul #visit-1 #v-button-1 {
+  #places-to-visit > section ul #visit-1 #v-button-1 {
     display: none;
   }
 }
-#places-to-visit ul #visit-2 {
+#places-to-visit > section ul #visit-2 {
   display: grid;
   grid-template-columns: 20% 70%;
   grid-template-areas: "nb content" "nb button";
 }
-#places-to-visit ul #visit-2 #no-2 {
+#places-to-visit > section ul #visit-2 #no-2 {
   grid-area: nb;
 }
-#places-to-visit ul #visit-2 #v-content-2 {
+#places-to-visit > section ul #visit-2 #v-content-2 {
   grid-area: content;
 }
-#places-to-visit ul #visit-2 #v-button-2 {
+#places-to-visit > section ul #visit-2 #v-button-2 {
   grid-area: button;
 }
 @media (min-width: 768px) {
-  #places-to-visit ul #visit-2 #v-button-2 {
+  #places-to-visit > section ul #visit-2 #v-button-2 {
     display: none;
   }
 }
-#places-to-visit ul #visit-3 {
+#places-to-visit > section ul #visit-3 {
   display: grid;
   grid-template-columns: 20% 70%;
   grid-template-areas: "nb content" "nb button";
 }
-#places-to-visit ul #visit-3 #no-3 {
+#places-to-visit > section ul #visit-3 #no-3 {
   grid-area: nb;
 }
-#places-to-visit ul #visit-3 #v-content-3 {
+#places-to-visit > section ul #visit-3 #v-content-3 {
   grid-area: content;
 }
-#places-to-visit ul #visit-3 #v-button-3 {
+#places-to-visit > section ul #visit-3 #v-button-3 {
   grid-area: button;
 }
 @media (min-width: 768px) {
-  #places-to-visit ul #visit-3 #v-button-3 {
+  #places-to-visit > section ul #visit-3 #v-button-3 {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  #places-to-visit ul #visit-1 {
+  #places-to-visit > section ul #visit-1 {
     display: grid;
     grid-template-columns: 30px 20% auto 150px;
     grid-template-areas: ". nb content ." ". nb button .";
   }
-  #places-to-visit ul #visit-1 #no-1 {
+  #places-to-visit > section ul #visit-1 #no-1 {
     grid-area: nb;
   }
-  #places-to-visit ul #visit-1 #v-content-1 {
+  #places-to-visit > section ul #visit-1 #v-content-1 {
     grid-area: content;
   }
-  #places-to-visit ul #visit-1 > aside {
+  #places-to-visit > section ul #visit-1 > aside {
     grid-area: button;
   }
-  #places-to-visit ul #visit-2 {
+  #places-to-visit > section ul #visit-2 {
     display: grid;
     grid-template-columns: 30px 20% auto 150px;
     grid-template-areas: ". nb content ." ". nb button .";
   }
-  #places-to-visit ul #visit-2 #no-2 {
+  #places-to-visit > section ul #visit-2 #no-2 {
     grid-area: nb;
   }
-  #places-to-visit ul #visit-2 #v-content-2 {
+  #places-to-visit > section ul #visit-2 #v-content-2 {
     grid-area: content;
   }
-  #places-to-visit ul #visit-2 > aside {
+  #places-to-visit > section ul #visit-2 > aside {
     grid-area: button;
   }
-  #places-to-visit ul #visit-3 {
+  #places-to-visit > section ul #visit-3 {
     display: grid;
     grid-template-columns: 30px 20% auto 150px;
     grid-template-areas: ". nb content ." ". nb button .";
   }
-  #places-to-visit ul #visit-3 #no-3 {
+  #places-to-visit > section ul #visit-3 #no-3 {
     grid-area: nb;
   }
-  #places-to-visit ul #visit-3 #v-content-3 {
+  #places-to-visit > section ul #visit-3 #v-content-3 {
     grid-area: content;
   }
-  #places-to-visit ul #visit-3 > aside {
+  #places-to-visit > section ul #visit-3 > aside {
     grid-area: button;
   }
 }
 @media (min-width: 1024px) {
-  #places-to-visit ul #visit-1 {
+  #places-to-visit > section ul #visit-1 {
     display: grid;
     grid-template-columns: auto 10% 30% 30% auto;
     grid-template-areas: ". nb content button .";
   }
-  #places-to-visit ul #visit-1 #no-1 {
+  #places-to-visit > section ul #visit-1 #no-1 {
     grid-area: nb;
   }
-  #places-to-visit ul #visit-1 #v-content-1 {
+  #places-to-visit > section ul #visit-1 #v-content-1 {
     grid-area: content;
   }
-  #places-to-visit ul #visit-1 > aside {
+  #places-to-visit > section ul #visit-1 > aside {
     grid-area: button;
+    display: flex;
+    margin-top: auto;
+    text-align: justify;
   }
-  #places-to-visit ul #visit-2 {
+  #places-to-visit > section ul #visit-2 {
     display: grid;
     grid-template-columns: auto 10% 30% 30% auto;
     grid-template-areas: ". nb content button .";
   }
-  #places-to-visit ul #visit-2 #no-2 {
+  #places-to-visit > section ul #visit-2 #no-2 {
     grid-area: nb;
   }
-  #places-to-visit ul #visit-2 #v-content-2 {
+  #places-to-visit > section ul #visit-2 #v-content-2 {
     grid-area: content;
   }
-  #places-to-visit ul #visit-2 > aside {
+  #places-to-visit > section ul #visit-2 > aside {
     grid-area: button;
+    display: flex;
+    margin-top: auto;
+    text-align: justify;
   }
-  #places-to-visit ul #visit-3 {
+  #places-to-visit > section ul #visit-3 {
     display: grid;
     grid-template-columns: auto 10% 30% 30% auto;
     grid-template-areas: ". nb content button .";
   }
-  #places-to-visit ul #visit-3 #no-3 {
+  #places-to-visit > section ul #visit-3 #no-3 {
     grid-area: nb;
   }
-  #places-to-visit ul #visit-3 #v-content-3 {
+  #places-to-visit > section ul #visit-3 #v-content-3 {
     grid-area: content;
   }
-  #places-to-visit ul #visit-3 > aside {
+  #places-to-visit > section ul #visit-3 > aside {
     grid-area: button;
+    display: flex;
+    margin-top: auto;
+    text-align: justify;
   }
 }
 
+#places-to-stay .pts-img-ht {
+  height: 220px;
+}
+@media (min-width: 768px) {
+  #places-to-stay .pts-img-ht {
+    height: 439px;
+  }
+}
+@media (min-width: 1024px) {
+  #places-to-stay .pts-img-ht {
+    height: 940px;
+  }
+}
 #places-to-stay #pts-img1 {
   background-image: url("../img/places-to-stay/stay1.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
 }
 #places-to-stay #pts-img2 {
   background-image: url("../img/places-to-stay/stay2.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
 }
 #places-to-stay #pts-img3 {
   background-image: url("../img/places-to-stay/stay3.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
 }
 #places-to-stay #pts-img4 {
   background-image: url("../img/places-to-stay/stay4.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
 }
 @media (min-width: 1200px) {
   #places-to-stay {
@@ -1165,24 +1240,31 @@ ul {
 }
 #dining ul #ds-title {
   grid-area: title;
+  text-align: center;
 }
 #dining ul #ds-sub1 {
   grid-area: sub;
+  text-align: center;
 }
 #dining ul #ds-button1 {
   grid-area: b1;
+  text-align: center;
 }
 #dining ul #ds-button2 {
   grid-area: b2;
+  text-align: center;
 }
 #dining ul #ds-button3 {
   grid-area: b3;
+  text-align: center;
 }
 #dining ul #ds-button4 {
   grid-area: b4;
+  text-align: center;
 }
 #dining ul #ds-button5 {
   grid-area: b5;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   #dining ul {
@@ -1243,21 +1325,41 @@ ul {
 
 #shopping #img-outlet {
   background-image: url("../img/shopping/shopping1.jpg");
-  background-position: center;
+  background-position: top;
   background-size: cover;
-  height: 228px;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  #shopping #img-outlet {
+    height: 350px;
+  }
 }
 #shopping #img-mall {
   background-image: url("../img/shopping/shopping2.jpg");
   background-position: center;
   background-size: cover;
-  height: 228px;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  #shopping #img-mall {
+    height: 350px;
+  }
 }
 #shopping #img-business {
   background-image: url("../img/local-businesses/business.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 325px;
+}
+@media (min-width: 768px) {
+  #shopping #img-business {
+    height: 479px;
+  }
+}
+@media (min-width: 768px) {
+  #shopping #img-business {
+    height: 679px;
+  }
 }
 #shopping ul {
   display: grid;
@@ -1280,6 +1382,22 @@ ul {
 }
 #shopping ul #ds-mall {
   grid-area: mall;
+}
+@media (min-width: 768px) {
+  #shopping ul {
+    display: grid;
+    grid-template-columns: 140px auto 140px;
+    grid-template-areas: ". sub2 ." ". outlet ." ". mall .";
+  }
+  #shopping ul #ds-sub2 {
+    grid-area: sub2;
+  }
+  #shopping ul #ds-outlet {
+    grid-area: outlet;
+  }
+  #shopping ul #ds-mall {
+    grid-area: mall;
+  }
 }
 @media (min-width: 1024px) {
   #shopping ul #ds-outlet {
