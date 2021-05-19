@@ -161,10 +161,39 @@
     }
 
     .beach {
-        display: none;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: 
+        ". region1 ."
+        ". region2 ."
+        ". region3 ."
+        ". region4 ."
+        ". region5 ."
+        ". region6 .";
+
+        #region-1 {
+            grid-area: region1;
+        }
+
+        #region-2 {
+            grid-area: region2;
+        }
+        #region-3 {
+            grid-area: region3;
+        }
+        #region-4 {
+            grid-area: region4;
+        }
+        #region-5 {
+            grid-area: region5;
+        }
+        #region-6 {
+            grid-area: region6;
+        }
+        
 
         @include md {
-            display: list-item;
+            
 
             #region-2{
                 display: grid;

@@ -671,12 +671,29 @@ ul {
   }
 }
 #regions .beach {
-  display: none;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". region1 ." ". region2 ." ". region3 ." ". region4 ." ". region5 ." ". region6 .";
+}
+#regions .beach #region-1 {
+  grid-area: region1;
+}
+#regions .beach #region-2 {
+  grid-area: region2;
+}
+#regions .beach #region-3 {
+  grid-area: region3;
+}
+#regions .beach #region-4 {
+  grid-area: region4;
+}
+#regions .beach #region-5 {
+  grid-area: region5;
+}
+#regions .beach #region-6 {
+  grid-area: region6;
 }
 @media (min-width: 768px) {
-  #regions .beach {
-    display: list-item;
-  }
   #regions .beach #region-2 {
     display: grid;
     grid-template-columns: auto 30% 60%;
