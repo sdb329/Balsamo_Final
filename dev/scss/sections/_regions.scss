@@ -75,6 +75,7 @@
         @include md {
             display: list-item;
         }
+        
     }
 
     .beach {
@@ -87,6 +88,11 @@
         ". region4 ."
         ". region5 ."
         ". region6 .";
+
+        @include md{
+            display: list-item;
+        }
+        
 
         #region-1 {
             grid-area: region1;
@@ -267,7 +273,7 @@
 
             #region-2{
                 display: grid;
-                grid-template-columns: 16px 30% 60%;
+                grid-template-columns: auto 30% 60%;
                 grid-template-areas: 
                 ". region region"
                 ". image1 text";
@@ -312,7 +318,7 @@
 
             #region-4{
                 display: grid;
-                grid-template-columns: 16px 30% 60%;
+                grid-template-columns: auto 30% 60%;
                 grid-template-areas: 
                 ". region region"
                 ". image1 text";
@@ -353,7 +359,7 @@
 
             #region-6{
                 display: grid;
-                grid-template-columns: 16px 30% 60%;
+                grid-template-columns: auto 30% 60%;
                 grid-template-areas: 
                 ". region region"
                 ". image1 text";

@@ -11,6 +11,13 @@
             height: 940px;
         }
 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        h2{
+            color: white;
+        }
+
     }
 
     #pts-img1{
@@ -44,6 +51,19 @@
     }
 
     ul{
+
+        >li{
+
+.pts-button{
+    display: flex;
+    justify-content: center;
+    text-align: flex-end;
+            >button{
+                display: flex;
+                border: none;
+            }
+        }
+        }
 
         grid-area: content;
 
@@ -97,6 +117,8 @@
                 grid-area: c4;
             }
         }
+
+
 
 
         li{

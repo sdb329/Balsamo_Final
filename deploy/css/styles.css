@@ -650,6 +650,11 @@ ul {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". region1 ." ". region2 ." ". region3 ." ". region4 ." ". region5 ." ". region6 .";
 }
+@media (min-width: 768px) {
+  #regions .beach {
+    display: list-item;
+  }
+}
 #regions .beach #region-1 {
   grid-area: region1;
 }
@@ -771,7 +776,7 @@ ul {
   }
   #regions .beach #region-2 {
     display: grid;
-    grid-template-columns: 16px 30% 60%;
+    grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-2 > h1 {
@@ -799,7 +804,7 @@ ul {
   }
   #regions .beach #region-4 {
     display: grid;
-    grid-template-columns: 16px 30% 60%;
+    grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-4 > h1 {
@@ -827,7 +832,7 @@ ul {
   }
   #regions .beach #region-6 {
     display: grid;
-    grid-template-columns: 16px 30% 60%;
+    grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-6 > h1 {
@@ -1143,6 +1148,9 @@ ul {
 
 #places-to-stay .pts-img-ht {
   height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 @media (min-width: 768px) {
   #places-to-stay .pts-img-ht {
@@ -1153,6 +1161,9 @@ ul {
   #places-to-stay .pts-img-ht {
     height: 940px;
   }
+}
+#places-to-stay .pts-img-ht h2 {
+  color: white;
 }
 #places-to-stay #pts-img1 {
   background-image: url("../img/places-to-stay/stay1.jpg");
@@ -1186,6 +1197,15 @@ ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". title ." ". c1 ." ". c2 ." ". c3 ." ". c4 .";
+}
+#places-to-stay ul > li .pts-button {
+  display: flex;
+  justify-content: center;
+  text-align: flex-end;
+}
+#places-to-stay ul > li .pts-button > button {
+  display: flex;
+  border: none;
 }
 #places-to-stay ul #pts-title {
   grid-area: title;
