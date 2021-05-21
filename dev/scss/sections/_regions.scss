@@ -15,7 +15,32 @@
 
     
 
-   
+   .region-formatting{
+       >h1{
+           font-variation-settings: "wght" 300;
+           font-size: rem-calc(72px);
+           line-height: .85;
+           color: $greenblue;
+
+           @include md{
+            font-variation-settings: "wght" 200;
+            font-size: rem-calc(150px);
+           }
+       }
+       >div{
+        background-color: $lightblue;
+
+       }
+       >button{
+        &:hover {
+            background-color: $lightblue;
+            color: $green;
+            border: 1px solid $green;
+         
+    }
+       }
+
+   }
 
     .region-img-ht {
         height: 250px;;

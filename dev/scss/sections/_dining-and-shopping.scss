@@ -2,6 +2,25 @@
     
     ul{
 
+        >li{
+            >button{
+                width: 100%;
+                margin: 24px 0px;
+                font-variation-settings: "wght" 290;
+                font-size: rem-calc(40);
+                border-radius: 20px;
+
+                @include md{
+                    font-size: rem-calc(72);
+                    margin: 32px 0px;
+                }
+
+                @include lg{
+                    padding: 20px 0;
+                }
+            }
+        }
+
    
        display: grid;
        grid-template-columns: 16px auto 16px;
@@ -17,15 +36,39 @@
        #ds-title{
            grid-area: title;
            text-align: center;
+           font-size: rem-calc(40);
+           font-variation-settings: "wght" 600;
+           line-height: .85;
+           color: $darkblue;
+           margin-bottom: 30px;
+           margin-top: 52px;
+
+           @include md{
+            font-size: rem-calc(65);
+           }
+           @include xl{
+               display: list-item;
+           }
        }
        #ds-sub1{
            grid-area: sub;
            text-align: center;
+           font-size: rem-calc(40);
+           font-variation-settings: "wght" 290;
+           color: $darkblue;
+
+           @include md{
+            font-size: rem-calc(72);
+           }
+           
        }
        #ds-button1{
            grid-area: b1;
            text-align: center;
-       }
+         
+
+                
+    }
        #ds-button2{
         grid-area: b2;
         text-align: center;

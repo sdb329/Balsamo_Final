@@ -1,6 +1,9 @@
 
 #hero{
-    background-image: url("../img/hero/hero.jpg");
+
+    #hero-image{
+
+        background-image: url("../img/hero/hero.jpg");
     background-position: center;
     background-size: cover;
     height: 360px;
@@ -8,5 +11,33 @@
     @include md{
         height: 840px;
     }
+
+   
+
+    >a{
+        height: 300px;
+        @include md{
+            height: 785px;
+        }
+
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        i{
+            font-size: rem-calc(100);
+            text-decoration: none;
+
+            @include md{
+                font-size: rem-calc(150);
+            }
+            
+        }
+      
+    }
+
+
+    }
+    
 
 }

@@ -361,9 +361,44 @@ ul {
 /* =============
     Typography
 ============= */
+html, body, h1, h2, h3, h4, h5 {
+  font-family: "Dosis", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p, input, button, address, h6 {
+  font-family: "Karla", sans-serif;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  border-radius: 10px;
+  background-color: #0A7A2A;
+  color: #B3ECFF;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-variation-settings: "wght" 600;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.25s;
+}
+button:hover {
+  background-color: #15344F;
+  color: #B3ECFF;
+}
+
 /* =============
     Forms
 ============= */
@@ -401,15 +436,35 @@ ul {
   }
 }
 
-#hero {
+#hero #hero-image {
   background-image: url("../img/hero/hero.jpg");
   background-position: center;
   background-size: cover;
   height: 360px;
 }
 @media (min-width: 768px) {
-  #hero {
+  #hero #hero-image {
     height: 840px;
+  }
+}
+#hero #hero-image > a {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #hero #hero-image > a {
+    height: 785px;
+  }
+}
+#hero #hero-image > a i {
+  font-size: 6.25rem;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  #hero #hero-image > a i {
+    font-size: 9.375rem;
   }
 }
 
@@ -593,6 +648,26 @@ ul {
   #regions #map-image {
     height: 515px;
   }
+}
+#regions .region-formatting > h1 {
+  font-variation-settings: "wght" 300;
+  font-size: 4.5rem;
+  line-height: 0.85;
+  color: #249379;
+}
+@media (min-width: 768px) {
+  #regions .region-formatting > h1 {
+    font-variation-settings: "wght" 200;
+    font-size: 9.375rem;
+  }
+}
+#regions .region-formatting > div {
+  background-color: #B3ECFF;
+}
+#regions .region-formatting > button:hover {
+  background-color: #B3ECFF;
+  color: #0A7A2A;
+  border: 1px solid #0A7A2A;
 }
 #regions .region-img-ht {
   height: 250px;
@@ -1206,6 +1281,7 @@ ul {
 #places-to-stay ul > li .pts-button > button {
   display: flex;
   border: none;
+  border-radius: 5px;
 }
 #places-to-stay ul #pts-title {
   grid-area: title;
@@ -1258,13 +1334,55 @@ ul {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". title ." ". sub ." ". b1 ." ". b2 ." ". b3 ." ". b4 ." ". b5 .";
 }
+#dining ul > li > button {
+  width: 100%;
+  margin: 24px 0px;
+  font-variation-settings: "wght" 290;
+  font-size: 2.5rem;
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  #dining ul > li > button {
+    font-size: 4.5rem;
+    margin: 32px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #dining ul > li > button {
+    padding: 20px 0;
+  }
+}
 #dining ul #ds-title {
   grid-area: title;
   text-align: center;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 600;
+  line-height: 0.85;
+  color: #15344F;
+  margin-bottom: 30px;
+  margin-top: 52px;
+}
+@media (min-width: 768px) {
+  #dining ul #ds-title {
+    font-size: 4.0625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #dining ul #ds-title {
+    display: list-item;
+  }
 }
 #dining ul #ds-sub1 {
   grid-area: sub;
   text-align: center;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 290;
+  color: #15344F;
+}
+@media (min-width: 768px) {
+  #dining ul #ds-sub1 {
+    font-size: 4.5rem;
+  }
 }
 #dining ul #ds-button1 {
   grid-area: b1;
