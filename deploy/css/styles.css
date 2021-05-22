@@ -398,6 +398,12 @@ button:hover {
   background-color: #15344F;
   color: #B3ECFF;
 }
+@media (min-width: 768px) {
+  button {
+    font-size: 1.5rem;
+    padding: 10px 40px;
+  }
+}
 
 /* =============
     Forms
@@ -436,34 +442,44 @@ button:hover {
   }
 }
 
-#hero #hero-image {
+#hero a {
+  text-decoration: none;
+}
+#hero a #hero-image {
   background-image: url("../img/hero/hero.jpg");
-  background-position: center;
+  background-position: bottom left;
   background-size: cover;
   height: 360px;
 }
 @media (min-width: 768px) {
-  #hero #hero-image {
+  #hero a #hero-image {
     height: 840px;
   }
 }
-#hero #hero-image > a {
-  height: 300px;
+#hero a #hero-image > h1 {
+  font-variation-settings: "wght" 300;
+  font-size: 4.5rem;
+  color: #15344F;
+  line-height: 0.8;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  #hero a #hero-image {
+    height: 785px;
+  }
+}
+#hero a #hero-image > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 768px) {
-  #hero #hero-image > a {
-    height: 785px;
-  }
-}
-#hero #hero-image > a i {
+#hero a #hero-image > div i {
   font-size: 6.25rem;
   text-decoration: none;
+  color: white;
 }
 @media (min-width: 768px) {
-  #hero #hero-image > a i {
+  #hero a #hero-image > div i {
     font-size: 9.375rem;
   }
 }
@@ -638,6 +654,41 @@ button:hover {
   }
 }
 
+#regions {
+  margin: 48px 0px;
+}
+@media (min-width: 768px) {
+  #regions {
+    margin: 72px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #regions {
+    margin: 104px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #regions {
+    margin: 112px 0px;
+  }
+}
+#regions > div {
+  display: flex;
+  justify-content: center;
+}
+#regions > div > h4 {
+  font-variation-settings: "wght" 600;
+  font-size: 3.125rem;
+  color: #15344F;
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #regions > div > h4 {
+    font-variation-settings: "wght" 600;
+    font-size: 6.25rem;
+    padding-bottom: 32px;
+  }
+}
 #regions #map-image {
   background-image: url("../img/regions/map.jpg");
   background-position: center;
@@ -649,11 +700,25 @@ button:hover {
     height: 515px;
   }
 }
+@media (min-width: 1024px) {
+  #regions #map-image {
+    height: 1000px;
+  }
+}
+#regions .region-formatting {
+  margin: 32px 0px;
+}
+@media (min-width: 768px) {
+  #regions .region-formatting {
+    margin: 48px 0px;
+  }
+}
 #regions .region-formatting > h1 {
   font-variation-settings: "wght" 300;
   font-size: 4.5rem;
   line-height: 0.85;
   color: #249379;
+  padding: 0px 0px 16px 0px;
 }
 @media (min-width: 768px) {
   #regions .region-formatting > h1 {
@@ -663,23 +728,39 @@ button:hover {
 }
 #regions .region-formatting > div {
   background-color: #B3ECFF;
+  padding: 16px;
 }
-#regions .region-formatting > button:hover {
-  background-color: #B3ECFF;
-  color: #0A7A2A;
-  border: 1px solid #0A7A2A;
+#regions .region-formatting > div > p {
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  #regions .region-formatting > div {
+    padding: 20px 22px;
+  }
+}
+@media (min-width: 1024px) {
+  #regions .region-formatting > div {
+    padding: 10% 10%;
+  }
+}
+#regions .region-formatting > div > div {
+  display: flex;
+  justify-content: flex-end;
+}
+#regions .region-formatting > div > div > button {
+  margin-top: 16px;
 }
 #regions .region-img-ht {
   height: 250px;
 }
 @media (min-width: 768px) {
   #regions .region-img-ht {
-    height: 176px;
+    height: 170px;
   }
 }
 @media (min-width: 1024px) {
   #regions .region-img-ht {
-    height: 313px;
+    height: 350px;
   }
 }
 #regions #region1-image {
@@ -712,11 +793,12 @@ button:hover {
   background-position: center;
   background-size: cover;
 }
-#regions #shore-p2 {
+#regions .shore-p2 {
   display: none;
+  padding-top: 24px;
 }
-@media (min-width: 768px) {
-  #regions #shore-p2 {
+@media (min-width: 1024px) {
+  #regions .shore-p2 {
     display: list-item;
   }
 }
@@ -751,7 +833,7 @@ button:hover {
 @media (min-width: 768px) {
   #regions .beach #region-1 {
     display: grid;
-    grid-template-columns: 60% 30% auto;
+    grid-template-columns: 50% 40% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-1 > h1 {
@@ -765,21 +847,25 @@ button:hover {
   }
   #regions .beach #region-2 {
     display: grid;
-    grid-template-columns: auto 30% 60%;
+    grid-template-columns: auto 40% 50%;
     grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-2 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-2 > div {
     grid-area: text;
+  }
+  #regions .beach #region-2 > div > p {
+    text-align: right;
   }
   #regions .beach #region-2 #region2-image {
     grid-area: image1;
   }
   #regions .beach #region-3 {
     display: grid;
-    grid-template-columns: 60% 30% auto;
+    grid-template-columns: 50% 40% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-3 > h1 {
@@ -793,21 +879,25 @@ button:hover {
   }
   #regions .beach #region-4 {
     display: grid;
-    grid-template-columns: auto 30% 60%;
+    grid-template-columns: auto 40% 50%;
     grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-4 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-4 > div {
     grid-area: text;
+  }
+  #regions .beach #region-4 > div > p {
+    text-align: right;
   }
   #regions .beach #region-4 #region4-image {
     grid-area: image1;
   }
   #regions .beach #region-5 {
     display: grid;
-    grid-template-columns: 60% 30% auto;
+    grid-template-columns: 50% 40% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-5 > h1 {
@@ -821,14 +911,18 @@ button:hover {
   }
   #regions .beach #region-6 {
     display: grid;
-    grid-template-columns: auto 30% 60%;
+    grid-template-columns: auto 40% 50%;
     grid-template-areas: ". region region" ". image1 text";
   }
   #regions .beach #region-6 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-6 > div {
     grid-area: text;
+  }
+  #regions .beach #region-6 > div > p {
+    text-align: right;
   }
   #regions .beach #region-6 #region6-image {
     grid-area: image1;
@@ -837,7 +931,7 @@ button:hover {
 @media (min-width: 1024px) {
   #regions .beach #region-1 {
     display: grid;
-    grid-template-columns: 60% 30% 16px;
+    grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-1 > h1 {
@@ -845,6 +939,9 @@ button:hover {
   }
   #regions .beach #region-1 > div {
     grid-area: text;
+  }
+  #regions .beach #region-1 > div > p {
+    text-align: justify;
   }
   #regions .beach #region-1 #region1-image {
     grid-area: image1;
@@ -856,16 +953,20 @@ button:hover {
   }
   #regions .beach #region-2 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-2 > div {
     grid-area: text;
+  }
+  #regions .beach #region-2 > div > p {
+    text-align: justify;
   }
   #regions .beach #region-2 #region2-image {
     grid-area: image1;
   }
   #regions .beach #region-3 {
     display: grid;
-    grid-template-columns: 60% 30% 16px;
+    grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-3 > h1 {
@@ -873,6 +974,9 @@ button:hover {
   }
   #regions .beach #region-3 > div {
     grid-area: text;
+  }
+  #regions .beach #region-3 > div > p {
+    text-align: justify;
   }
   #regions .beach #region-3 #region3-image {
     grid-area: image1;
@@ -884,16 +988,20 @@ button:hover {
   }
   #regions .beach #region-4 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-4 > div {
     grid-area: text;
+  }
+  #regions .beach #region-4 > div > p {
+    text-align: justify;
   }
   #regions .beach #region-4 #region4-image {
     grid-area: image1;
   }
   #regions .beach #region-5 {
     display: grid;
-    grid-template-columns: 60% 30% 16px;
+    grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
   #regions .beach #region-5 > h1 {
@@ -901,6 +1009,9 @@ button:hover {
   }
   #regions .beach #region-5 > div {
     grid-area: text;
+  }
+  #regions .beach #region-5 > div > p {
+    text-align: justify;
   }
   #regions .beach #region-5 #region5-image {
     grid-area: image1;
@@ -912,9 +1023,13 @@ button:hover {
   }
   #regions .beach #region-6 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-6 > div {
     grid-area: text;
+  }
+  #regions .beach #region-6 > div > p {
+    text-align: justify;
   }
   #regions .beach #region-6 #region6-image {
     grid-area: image1;
@@ -942,6 +1057,7 @@ button:hover {
   }
   #regions .beach #region-2 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-2 > div {
     grid-area: text;
@@ -970,6 +1086,7 @@ button:hover {
   }
   #regions .beach #region-4 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-4 > div {
     grid-area: text;
@@ -998,6 +1115,7 @@ button:hover {
   }
   #regions .beach #region-6 > h1 {
     grid-area: region;
+    text-align: right;
   }
   #regions .beach #region-6 > div {
     grid-area: text;
@@ -1019,7 +1137,7 @@ button:hover {
 }
 @media (min-width: 1024px) {
   #regions #beach-hero {
-    height: 730px;
+    height: 1000px;
   }
 }
 

@@ -1,5 +1,38 @@
 #regions {
 
+    margin: 48px 0px;
+    @include md{
+        margin: 72px 0px;
+       }
+       @include lg{
+        margin: 104px 0px;
+       }
+       @include xl{
+        margin: 112px 0px;
+       }
+    >div{
+
+        display: flex;
+        justify-content: center;
+        >h4{
+            font-variation-settings: "wght" 600;
+               font-size: rem-calc(50px);
+               color: $darkblue;
+
+            padding-bottom: 24px;
+
+            @include md{
+                font-variation-settings: "wght" 600;
+               font-size: rem-calc(100px);
+
+               padding-bottom: 32px;
+
+
+            }
+        }
+
+    }
+   
     #map-image {
         background-image: url("../img/regions/map.jpg");
         background-position: center;
@@ -9,6 +42,10 @@
         @include md{
             height: 515px;
         }
+
+        @include lg{
+            height: 1000px;
+        }
         
     }
 
@@ -16,29 +53,50 @@
     
 
    .region-formatting{
+       margin: 32px 0px;
+       @include md{
+           margin: 48px 0px;
+       }
        >h1{
            font-variation-settings: "wght" 300;
            font-size: rem-calc(72px);
            line-height: .85;
            color: $greenblue;
+           padding: 0px 0px 16px 0px;
 
            @include md{
             font-variation-settings: "wght" 200;
             font-size: rem-calc(150px);
+            
            }
        }
        >div{
         background-color: $lightblue;
+        padding: 16px;
+        >p{
+            line-height: 1.4;
+        }
 
-       }
-       >button{
-        &:hover {
-            background-color: $lightblue;
-            color: $green;
-            border: 1px solid $green;
+        @include md{
+            padding: 20px 22px;
+        }
+        @include lg{
+            padding: 10% 10%;
+        }
+
+        >div{
+            display: flex;
+            justify-content: flex-end;
+            >button{
+                margin-top: 16px;
+           }
          
-    }
+
+        }
+       
        }
+
+
 
    }
 
@@ -46,11 +104,11 @@
         height: 250px;;
 
         @include md{
-            height: 176px;;
+            height: 170px;;
         }
 
         @include lg{
-            height: 313px;;
+            height: 350px;;
         }
     }
 
@@ -94,13 +152,14 @@
 
     }
 
-    #shore-p2 {
+    .shore-p2 {
         display: none;
 
-        @include md {
+        @include lg {
             display: list-item;
         }
         
+        padding-top: 24px;
     }
 
     .beach {
@@ -144,7 +203,7 @@
         @include md {
             #region-1{
                 display: grid;
-                grid-template-columns: 60% 30% auto;
+                grid-template-columns: 50% 40% auto;
                 grid-template-areas: 
                 "region region ."
                 "text image1 .";
@@ -165,17 +224,22 @@
 
             #region-2{
                 display: grid;
-                grid-template-columns: auto 30% 60%;
+                grid-template-columns: auto 40% 50%;
                 grid-template-areas: 
                 ". region region"
                 ". image1 text";
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
                     grid-area: text;
+
+                    >p{
+                        text-align: right;
+                    }
                 }
                
                 #region2-image{
@@ -187,7 +251,7 @@
    
             #region-3{
                 display: grid;
-                grid-template-columns: 60% 30% auto;
+                grid-template-columns: 50% 40% auto;
                 grid-template-areas: 
                 "region region ."
                 "text image1 .";
@@ -211,17 +275,22 @@
 
             #region-4{
                 display: grid;
-                grid-template-columns: auto 30% 60%;
+                grid-template-columns: auto 40% 50%;
                 grid-template-areas: 
                 ". region region"
                 ". image1 text";
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
                     grid-area: text;
+
+                    >p{
+                        text-align: right;
+                    }
                 }
                
                 #region4-image{
@@ -232,7 +301,7 @@
 
             #region-5{
                 display: grid;
-                grid-template-columns: 60% 30% auto;
+                grid-template-columns: 50% 40% auto;
                 grid-template-areas: 
                 "region region ."
                 "text image1 .";
@@ -252,17 +321,22 @@
 
             #region-6{
                 display: grid;
-                grid-template-columns: auto 30% 60%;
+                grid-template-columns: auto 40% 50%;
                 grid-template-areas: 
                 ". region region"
                 ". image1 text";
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
                     grid-area: text;
+
+                    >p{
+                        text-align: right;
+                    }
                 }
                
                 #region6-image{
@@ -277,7 +351,7 @@
         @include lg {
             #region-1{
                 display: grid;
-                grid-template-columns: 60% 30% 16px;
+                grid-template-columns: 60% 30% auto;
                 grid-template-areas: 
                 "region region ."
                 "text image1 .";
@@ -288,6 +362,9 @@
 
                 >div{
                     grid-area: text;
+                    >p{
+                        text-align: justify;
+                    }
                 }
                
                 #region1-image{
@@ -305,10 +382,14 @@
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
                     grid-area: text;
+                    >p{
+                        text-align: justify;
+                    }
                 }
                
                 #region2-image{
@@ -320,7 +401,7 @@
    
                 #region-3{
                     display: grid;
-                    grid-template-columns: 60% 30% 16px;
+                    grid-template-columns: 60% 30% auto;
                     grid-template-areas: 
                     "region region ."
                 "text image1 .";
@@ -331,6 +412,9 @@
 
                 >div{
                     grid-area: text;
+                    >p{
+                        text-align: justify;
+                    }
                 }
                
                 #region3-image{
@@ -350,10 +434,14 @@
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
                     grid-area: text;
+                    >p{
+                        text-align: justify;
+                    }
                 }
                
                 #region4-image{
@@ -364,7 +452,7 @@
 
             #region-5{
                 display: grid;
-                grid-template-columns: 60% 30% 16px;
+                grid-template-columns: 60% 30% auto;
                 grid-template-areas: 
                 "region region ."
                 "text image1 .";
@@ -375,6 +463,9 @@
 
                 >div{
                     grid-area: text;
+                    >p{
+                        text-align: justify;
+                    }
                 }
                
                 #region5-image{
@@ -391,10 +482,14 @@
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
                     grid-area: text;
+                    >p{
+                        text-align: justify;
+                    }
                 }
                
                 #region6-image{
@@ -437,6 +532,7 @@
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
@@ -483,6 +579,7 @@
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
@@ -524,6 +621,7 @@
 
                 >h1{
                     grid-area: region;
+                    text-align: right;
                 }
 
                 >div{
@@ -549,7 +647,7 @@
         }
 
         @include lg{
-            height: 730px;
+            height: 1000px;
         }
     }
 

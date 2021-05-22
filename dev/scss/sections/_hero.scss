@@ -1,10 +1,14 @@
 
 #hero{
 
+    a{ 
+        text-decoration: none;
     #hero-image{
 
+
+
         background-image: url("../img/hero/hero.jpg");
-    background-position: center;
+    background-position: bottom left;
     background-size: cover;
     height: 360px;
 
@@ -12,32 +16,47 @@
         height: 840px;
     }
 
-   
+   >h1{
+    font-variation-settings: "wght" 300;
+    font-size: rem-calc(72);
+    color: $darkblue;
+    
+    line-height: .8;
+    padding: 16px;
 
-    >a{
-        height: 300px;
+   }
+
+  
         @include md{
             height: 785px;
         }
+        >div{
 
-        display: flex;
-        justify-content: center;
-
-        align-items: center;
-        i{
-            font-size: rem-calc(100);
-            text-decoration: none;
-
-            @include md{
-                font-size: rem-calc(150);
-            }
+            display: flex;
+            justify-content: center;
             
+    
+            align-items: center;
+            i{
+                font-size: rem-calc(100);
+                text-decoration: none;
+                color: white;
+
+    
+                @include md{
+                    font-size: rem-calc(150);
+                }
+
+
         }
+       
+            
+        
       
     }
 
 
     }
     
-
+    }
 }
