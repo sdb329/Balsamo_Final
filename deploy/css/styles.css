@@ -388,7 +388,7 @@ button {
   color: #B3ECFF;
   border: none;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-variation-settings: "wght" 600;
   font-weight: 600;
   padding: 10px;
@@ -414,6 +414,15 @@ button:hover {
 /* =============
     Header
 ============= */
+header #header-button {
+  display: flex;
+  justify-content: center;
+}
+header #header-button > button {
+  flex-grow: 1;
+  border-radius: 0px;
+}
+
 /* =============
     Footer
 ============= */
@@ -458,14 +467,33 @@ button:hover {
 }
 #hero a #hero-image > h1 {
   font-variation-settings: "wght" 300;
-  font-size: 4.5rem;
+  font-size: 3.75rem;
   color: #15344F;
   line-height: 0.8;
   padding: 16px;
 }
 @media (min-width: 768px) {
+  #hero a #hero-image > h1 {
+    font-variation-settings: "wght" 200;
+    font-size: 9.375rem;
+    padding: 24px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero a #hero-image > h1 {
+    font-variation-settings: "wght" 200;
+    font-size: 12.5rem;
+    padding: 24px 16px;
+  }
+}
+@media (min-width: 768px) {
   #hero a #hero-image {
     height: 785px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero a #hero-image {
+    height: 1200px;
   }
 }
 #hero a #hero-image > div {
@@ -477,6 +505,7 @@ button:hover {
   font-size: 6.25rem;
   text-decoration: none;
   color: white;
+  padding: 16px;
 }
 @media (min-width: 768px) {
   #hero a #hero-image > div i {
@@ -495,7 +524,6 @@ button:hover {
   }
 }
 #why-nj #new-jersey {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". title ." ". photo1 ." ". photo4 ." ". button .";
@@ -508,14 +536,42 @@ button:hover {
 #why-nj #new-jersey #nj-title {
   grid-area: title;
 }
+#why-nj #new-jersey #nj-title > section #nj-title-1 {
+  display: flex;
+  justify-content: center;
+}
+#why-nj #new-jersey #nj-title > section #nj-title-1 > h2 {
+  font-variation-settings: "wght" 600;
+  font-size: 3.125rem;
+  color: #15344F;
+  margin-top: 24px;
+}
+#why-nj #new-jersey #nj-title > section #nj-title-2 > h6 {
+  font-variation-settings: "wght" 400;
+  font-size: 1.5rem;
+  color: #15344F;
+  text-align: justify;
+  line-height: 1.3;
+  margin-top: 16px;
+}
 #why-nj #new-jersey #ig-contain-1 {
   grid-area: photo1;
+  padding: 32px 0px 16px 0px;
 }
 #why-nj #new-jersey #ig-contain-4 {
   grid-area: photo4;
+  padding-bottom: 32px;
 }
 #why-nj #new-jersey #ig-button {
   grid-area: button;
+}
+#why-nj #new-jersey #ig-button > div {
+  display: flex;
+  justify-content: center;
+}
+#why-nj #new-jersey #ig-button > div > button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
 }
 @media (min-width: 768px) {
   #why-nj #new-jersey #ig-button {
@@ -524,54 +580,114 @@ button:hover {
 }
 @media (min-width: 768px) {
   #why-nj #new-jersey {
-    grid-template-columns: 50% auto;
-    grid-template-areas: "title title" "photo1 p1" "photo2 photo3" "p2 photo4";
+    grid-template-columns: 10% auto auto 10%;
+    grid-template-areas: ". title title ." "photo1 photo1 p1 ." "photo2 photo2 photo3 photo3" ". p2 photo4 photo4";
   }
   #why-nj #new-jersey #nj-title {
     grid-area: title;
   }
+  #why-nj #new-jersey #nj-title > section #nj-title-1 > h2 {
+    font-size: 6.25rem;
+    text-align: center;
+    line-height: 0.9;
+    margin-top: 32px;
+  }
+  #why-nj #new-jersey #nj-title > section #nj-title-2 > h6 {
+    font-variation-settings: "wght" 400;
+    font-size: 2rem;
+    color: #15344F;
+    text-align: justify;
+    line-height: 1.3;
+    margin-top: 16px;
+  }
   #why-nj #new-jersey #ig-contain-1 {
     grid-area: photo1;
+    padding: 48px 0px 32px 0px;
   }
   #why-nj #new-jersey #ig-contain-2 {
     grid-area: photo2;
+    padding-right: 16px;
   }
   #why-nj #new-jersey #ig-p1 {
     grid-area: p1;
+    font-variation-settings: "wght" 300;
+    font-size: 1.5rem;
+    padding: 48px 0px 0px 16px;
+  }
+  #why-nj #new-jersey #ig-p1 #ig-par1 {
+    text-align: left;
   }
   #why-nj #new-jersey #ig-contain-3 {
     grid-area: photo3;
+    padding-left: 16px;
   }
   #why-nj #new-jersey #ig-p2 {
     grid-area: p2;
+    font-variation-settings: "wght" 300;
+    font-size: 1.5rem;
+    padding: 32px 16px 48px 0px;
+  }
+  #why-nj #new-jersey #ig-p2 #ig-par2 {
+    text-align: right;
   }
   #why-nj #new-jersey #ig-contain-4 {
     grid-area: photo4;
+    padding: 32px 0px 48px 0px;
   }
 }
 @media (min-width: 1024px) {
   #why-nj #new-jersey {
     grid-template-columns: 10% auto 10% 10% auto 10%;
-    grid-template-areas: "title title title title title title" "photo1 photo1 p1 p1 p1 p1" ". photo2 photo2 photo3 photo3 ." "p2 p2 p2 p2 photo4 photo4";
+    grid-template-areas: ". title title title title ." "photo1 photo1 p1 p1 p1 ." ". photo2 photo2 photo3 photo3 ." ". p2 p2 p2 photo4 photo4";
   }
   #why-nj #new-jersey #nj-title {
     grid-area: title;
   }
+  #why-nj #new-jersey #nj-title > section #nj-title-1 > h2 {
+    margin-top: 72px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #why-nj #new-jersey #nj-title > section #nj-title-1 > h2 {
+    margin-top: 104px;
+  }
+}
+@media (min-width: 1024px) {
+  #why-nj #new-jersey #nj-title > section #nj-title-2 > h6 {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #why-nj #new-jersey #nj-title > section #nj-title-2 > h6 {
+    margin-top: 48px;
+  }
+}
+@media (min-width: 1024px) {
   #why-nj #new-jersey #ig-contain-1 {
     grid-area: photo1;
   }
+}
+@media (min-width: 1024px) {
   #why-nj #new-jersey #ig-contain-2 {
     grid-area: photo2;
   }
+}
+@media (min-width: 1024px) {
   #why-nj #new-jersey #ig-p1 {
     grid-area: p1;
   }
+}
+@media (min-width: 1024px) {
   #why-nj #new-jersey #ig-contain-3 {
     grid-area: photo3;
   }
+}
+@media (min-width: 1024px) {
   #why-nj #new-jersey #ig-p2 {
     grid-area: p2;
   }
+}
+@media (min-width: 1024px) {
   #why-nj #new-jersey #ig-contain-4 {
     grid-area: photo4;
   }
@@ -711,6 +827,16 @@ button:hover {
 @media (min-width: 768px) {
   #regions .region-formatting {
     margin: 48px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #regions .region-formatting {
+    margin: 72px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #regions .region-formatting {
+    margin: 104px 0px;
   }
 }
 #regions .region-formatting > h1 {
@@ -1157,6 +1283,11 @@ button:hover {
     height: 380px;
   }
 }
+@media (min-width: 1024px) {
+  #places-to-visit .v-img-ht {
+    height: 380px;
+  }
+}
 #places-to-visit #v-img-1 {
   background-image: url("../img/places-to-visit/place1.jpg");
   background-position: center;
@@ -1184,6 +1315,31 @@ button:hover {
     grid-area: contain-visitplaces;
   }
 }
+#places-to-visit > section ul #visit-title > div > h1 {
+  line-height: 0.8;
+  text-align: center;
+  font-variation-settings: "wght" 600;
+  font-size: 3.125rem;
+  color: #15344F;
+}
+@media (min-width: 768px) {
+  #places-to-visit > section ul #visit-title > div > h1 {
+    font-size: 6.25rem;
+    padding-bottom: 16pt;
+  }
+}
+#places-to-visit > section ul #visit-title > div > h2 {
+  line-height: 0.8;
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 2.5rem;
+  color: #15344F;
+}
+@media (min-width: 768px) {
+  #places-to-visit > section ul #visit-title > div > h2 {
+    font-size: 4.5rem;
+  }
+}
 #places-to-visit > section ul #visit-1 {
   display: grid;
   grid-template-columns: 20% 70%;
@@ -1191,9 +1347,18 @@ button:hover {
 }
 #places-to-visit > section ul #visit-1 #no-1 {
   grid-area: nb;
+  text-align: center;
+  font-variation-settings: "wght" 600;
+  font-size: 9.375rem;
+  color: #249379;
+  line-height: 0.8;
 }
 #places-to-visit > section ul #visit-1 #v-content-1 {
   grid-area: content;
+  line-height: 0.8;
+  font-variation-settings: "wght" 300;
+  font-size: 3.125rem;
+  color: #249379;
 }
 #places-to-visit > section ul #visit-1 #v-button-1 {
   grid-area: button;
@@ -1210,9 +1375,18 @@ button:hover {
 }
 #places-to-visit > section ul #visit-2 #no-2 {
   grid-area: nb;
+  text-align: center;
+  font-variation-settings: "wght" 600;
+  font-size: 9.375rem;
+  color: #249379;
+  line-height: 0.8;
 }
 #places-to-visit > section ul #visit-2 #v-content-2 {
   grid-area: content;
+  line-height: 0.8;
+  font-variation-settings: "wght" 300;
+  font-size: 3.125rem;
+  color: #249379;
 }
 #places-to-visit > section ul #visit-2 #v-button-2 {
   grid-area: button;
@@ -1229,9 +1403,18 @@ button:hover {
 }
 #places-to-visit > section ul #visit-3 #no-3 {
   grid-area: nb;
+  text-align: center;
+  font-variation-settings: "wght" 600;
+  font-size: 9.375rem;
+  color: #249379;
+  line-height: 0.8;
 }
 #places-to-visit > section ul #visit-3 #v-content-3 {
   grid-area: content;
+  line-height: 0.8;
+  font-variation-settings: "wght" 300;
+  font-size: 3.125rem;
+  color: #249379;
 }
 #places-to-visit > section ul #visit-3 #v-button-3 {
   grid-area: button;
@@ -1243,46 +1426,77 @@ button:hover {
 }
 @media (min-width: 768px) {
   #places-to-visit > section ul #visit-1 {
+    padding: 32px 0px;
     display: grid;
     grid-template-columns: 30px 20% auto 150px;
     grid-template-areas: ". nb content ." ". nb button .";
   }
   #places-to-visit > section ul #visit-1 #no-1 {
     grid-area: nb;
+    font-size: 15.625rem;
+    padding-left: 16px;
   }
   #places-to-visit > section ul #visit-1 #v-content-1 {
     grid-area: content;
+    padding: 45px 16px 0px 16px;
+  }
+  #places-to-visit > section ul #visit-1 #v-content-1 > h2 {
+    padding-bottom: 16px;
   }
   #places-to-visit > section ul #visit-1 > aside {
     grid-area: button;
+    font-variation-settings: "wght" 400;
+    font-size: 1rem;
+    color: #15344F;
+    line-height: 1.5;
   }
   #places-to-visit > section ul #visit-2 {
+    padding: 32px 0px;
     display: grid;
     grid-template-columns: 30px 20% auto 150px;
     grid-template-areas: ". nb content ." ". nb button .";
   }
   #places-to-visit > section ul #visit-2 #no-2 {
     grid-area: nb;
+    font-size: 15.625rem;
   }
   #places-to-visit > section ul #visit-2 #v-content-2 {
     grid-area: content;
+    padding: 45px 16px 0px 16px;
+  }
+  #places-to-visit > section ul #visit-2 #v-content-2 > h2 {
+    padding-bottom: 16px;
   }
   #places-to-visit > section ul #visit-2 > aside {
     grid-area: button;
+    font-variation-settings: "wght" 400;
+    font-size: 1rem;
+    color: #15344F;
+    line-height: 1.5;
   }
   #places-to-visit > section ul #visit-3 {
+    padding: 32px 0px;
     display: grid;
     grid-template-columns: 30px 20% auto 150px;
     grid-template-areas: ". nb content ." ". nb button .";
   }
   #places-to-visit > section ul #visit-3 #no-3 {
     grid-area: nb;
+    font-size: 15.625rem;
   }
   #places-to-visit > section ul #visit-3 #v-content-3 {
     grid-area: content;
+    padding: 45px 16px 0px 16px;
+  }
+  #places-to-visit > section ul #visit-3 #v-content-3 > h2 {
+    padding-bottom: 16px;
   }
   #places-to-visit > section ul #visit-3 > aside {
     grid-area: button;
+    font-variation-settings: "wght" 400;
+    font-size: 1rem;
+    color: #15344F;
+    line-height: 1.5;
   }
 }
 @media (min-width: 1024px) {

@@ -57,6 +57,12 @@
        @include md{
            margin: 48px 0px;
        }
+       @include lg{
+        margin: 72px 0px;
+    }
+    @include xl{
+        margin: 104px 0px;
+    }
        >h1{
            font-variation-settings: "wght" 300;
            font-size: rem-calc(72px);

@@ -15,6 +15,9 @@
         height: 380px;
     }
 
+    @include lg{
+        height: 380px;
+    }
 
 
    }
@@ -51,6 +54,37 @@
     grid-area: contain-visitplaces;
 
 }
+
+#visit-title{
+
+    >div{
+        >h1{
+            line-height: .8;
+            text-align: center;
+            font-variation-settings: "wght" 600;
+                        font-size: rem-calc(50);
+                        color: $darkblue;
+
+
+        @include md{
+            font-size: rem-calc(100);
+            padding-bottom: 16pt;
+        }
+        }
+        >h2{
+            line-height: .8;
+            text-align: center;
+            font-variation-settings: "wght" 300;
+                        font-size: rem-calc(40);
+                        color: $darkblue;
+
+
+        @include md{
+            font-size: rem-calc(72);
+        }
+        }
+    }
+}
     #visit-1{
     display: grid;
     grid-template-columns: 20% 70%;
@@ -59,10 +93,23 @@
     "nb button";
 
     #no-1{
+
         grid-area: nb;
+        text-align: center;
+            font-variation-settings: "wght" 600;
+                        font-size: rem-calc(150);
+                        color: $greenblue;
+                        line-height: .8;
+
     }
     #v-content-1{
         grid-area: content;
+
+
+        line-height: .8;
+        font-variation-settings: "wght" 300;
+                    font-size: rem-calc(50);
+                    color: $greenblue;
     }
     #v-button-1{
         grid-area: button;
@@ -82,9 +129,21 @@
 
     #no-2{
         grid-area: nb;
+
+
+        text-align: center;
+        font-variation-settings: "wght" 600;
+                    font-size: rem-calc(150);
+                    color: $greenblue;
+                    line-height: .8;
     }
     #v-content-2{
         grid-area: content;
+
+        line-height: .8;
+        font-variation-settings: "wght" 300;
+                    font-size: rem-calc(50);
+                    color: $greenblue;
     }
     #v-button-2{
         grid-area: button;
@@ -103,9 +162,20 @@
 
     #no-3{
         grid-area: nb;
+
+        text-align: center;
+        font-variation-settings: "wght" 600;
+                    font-size: rem-calc(150);
+                    color: $greenblue;
+                    line-height: .8;
     }
     #v-content-3{
         grid-area: content;
+
+        line-height: .8;
+        font-variation-settings: "wght" 300;
+                    font-size: rem-calc(50);
+                    color: $greenblue;
     }
     #v-button-3{
         grid-area: button;
@@ -118,6 +188,7 @@
    @include md{
 
     #visit-1{
+        padding: 32px 0px;
         display: grid;
         grid-template-columns: 30px 20% auto 150px;
         grid-template-areas: 
@@ -126,15 +197,27 @@
     
         #no-1{
             grid-area: nb;
+            font-size: rem-calc(250);
+            padding-left: 16px;
         }
         #v-content-1{
+            >h2{
+                padding-bottom: 16px;
+            }
             grid-area: content;
+            padding: 45px 16px 0px 16px;
         }
         >aside{
             grid-area: button;
+
+            font-variation-settings: "wght" 400;
+            font-size: rem-calc(16);
+            color: $darkblue;
+            line-height: 1.5;
         }
        }
        #visit-2{
+        padding: 32px 0px;
         display: grid;
         grid-template-columns: 30px 20% auto 150px;
         grid-template-areas: 
@@ -143,15 +226,28 @@
     
         #no-2{
             grid-area: nb;
+            font-size: rem-calc(250);
+ 
         }
         #v-content-2{
+           
+            >h2{
+                padding-bottom: 16px;
+            }
             grid-area: content;
+            padding: 45px 16px 0px 16px;
         }
         >aside{
             grid-area: button;
+
+            font-variation-settings: "wght" 400;
+            font-size: rem-calc(16);
+            color: $darkblue;
+            line-height: 1.5;
         }
        }
        #visit-3{
+        padding: 32px 0px;
         display: grid;
         grid-template-columns: 30px 20% auto 150px;
         grid-template-areas: 
@@ -160,12 +256,22 @@
     
         #no-3{
             grid-area: nb;
+            font-size: rem-calc(250);
         }
         #v-content-3{
+            >h2{
+                padding-bottom: 16px;
+            }
             grid-area: content;
+            padding: 45px 16px 0px 16px;
         }
         >aside{
             grid-area: button;
+
+            font-variation-settings: "wght" 400;
+            font-size: rem-calc(16);
+            color: $darkblue;
+            line-height: 1.5;
         }
        }
     

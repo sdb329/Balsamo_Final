@@ -2,3 +2,20 @@
     Header
 ============= */
 
+header{
+
+    
+    #header-button{
+        display: flex;
+
+justify-content: center;
+
+>button{
+    flex-grow: 1;
+    border-radius: 0px;
+
+
+}
+
+    }
+}

@@ -18,17 +18,35 @@
 
    >h1{
     font-variation-settings: "wght" 300;
-    font-size: rem-calc(72);
+    font-size: rem-calc(60);
     color: $darkblue;
     
     line-height: .8;
     padding: 16px;
+
+    @include md{
+        font-variation-settings: "wght" 200;
+    font-size: rem-calc(150);
+
+    padding: 24px 16px;
+    }
+
+
+    @include lg{
+        font-variation-settings: "wght" 200;
+    font-size: rem-calc(200);
+
+    padding: 24px 16px;
+    }
 
    }
 
   
         @include md{
             height: 785px;
+        }
+        @include lg{
+            height: 1200px;
         }
         >div{
 
@@ -41,6 +59,8 @@
                 font-size: rem-calc(100);
                 text-decoration: none;
                 color: white;
+
+                padding: 16px;
 
     
                 @include md{
