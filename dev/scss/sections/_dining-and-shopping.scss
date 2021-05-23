@@ -214,12 +214,72 @@ ul{
        ". mall .";
        #ds-sub2{
         grid-area: sub2;
+
+        text-align: center;
+        font-variation-settings: "wght" 300;
+                    font-size: rem-calc(40);
+                    color: $darkblue;
+                    line-height: .8;
+
+        padding-top: 16px;
     }
     #ds-outlet{
         grid-area: outlet;
+
+        >h3{
+            text-align: center;
+            font-variation-settings: "wght" 300;
+                        font-size: rem-calc(40);
+                        color: $lightblue;
+                        line-height: .8;
+
+                        padding: 32px 0px 16px;
+        }
+
+        #img-outlet{
+            margin-bottom: 16px;
+        }
+
+
+        .flex-ds-button{
+
+            display: flex;
+            justify-content: center;
+
+            @include lg{
+                justify-content: flex-start;
+            }
+          
+        }
     }
     #ds-mall{
         grid-area: mall;
+
+        >h3{
+            text-align: center;
+            font-variation-settings: "wght" 300;
+                        font-size: rem-calc(40);
+                        color: $lightblue;
+                        line-height: .8;
+
+                        padding: 32px 0px 16px;
+        }
+
+        #img-mall{
+            margin-bottom: 16px;
+        }
+
+
+        .flex-ds-button{
+
+            display: flex;
+            justify-content: center;
+
+            @include lg{
+                justify-content: flex-end;
+            }
+ 
+        }
     }
 
     @include md{
@@ -229,7 +289,7 @@ ul{
        ". sub2 ."
        ". outlet ."
        ". mall .";
-       #ds-sub2{
+    #ds-sub2{
         grid-area: sub2;
     }
     #ds-outlet{
@@ -301,5 +361,28 @@ ul{
 
     }
 
+}
+
+>article{
+    >h3{
+
+        text-align: center;
+            font-variation-settings: "wght" 300;
+                        font-size: rem-calc(60);
+                        color: $lightblue;
+                        line-height: .8;
+
+                        padding: 32px 0px 16px;
+
+    }
+
+    #business-button-flex{
+        display: flex;
+        justify-content: center;
+
+        >button{
+            margin: 16px 0px 48px 0px;
+        }
+    }
 }
 }

@@ -3,6 +3,8 @@
 ============= */
 #footer{
     >ul{
+
+        background-color: $darkblue;
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-areas: 
@@ -16,10 +18,85 @@
 
         #footer-travel{
             grid-area: travel;
-        }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           >a{
 
+                text-decoration: none;
+
+                
+
+                >h6{
+                    font-variation-settings: "wght" 400;
+                        font-size: rem-calc(24);
+                        line-height: .9;
+                        padding: 0px 32px;
+                }
+            
+           } 
+
+            a:link,
+            a:visited {
+                color: $lightgreen;
+
+  
+                transition: 00.25s;
+
+                &:hover,
+                &:active {
+                    
+
+                    h6 {
+                        color: $lightblue;
+
+                    }
+
+                   
+                }
+        }
+    }
         #footer-socials{
+
+            padding: 20px 0px;
             grid-area: socials;
+
+            >h4{
+                font-variation-settings: "wght" 400;
+                        font-size: rem-calc(16);
+                        line-height: .9;
+                        color: $lightblue;
+            }
+
+            #social-media{
+                display: flex;
+                justify-content: space-between;
+
+                padding-right: 24px;
+
+                font-size: rem-calc(50);
+
+                >li{
+
+                    a:link,
+                    a:visited {
+                        color: $lightgreen;
+        
+          
+                        transition: 00.25s;
+        
+                        &:hover,
+                        &:active {
+                            
+                                color: $lightblue;
+
+        
+                           
+                        }
+                    }
+
+                }
+            }
         }
 
         #footer-info{

@@ -427,6 +427,7 @@ header #header-button > button {
     Footer
 ============= */
 #footer > ul {
+  background-color: #15344F;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-areas: "travel phone" "travel socials" "info info";
@@ -436,9 +437,54 @@ header #header-button > button {
 }
 #footer > ul #footer-travel {
   grid-area: travel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer > ul #footer-travel > a {
+  text-decoration: none;
+}
+#footer > ul #footer-travel > a > h6 {
+  font-variation-settings: "wght" 400;
+  font-size: 1.5rem;
+  line-height: 0.9;
+  padding: 0px 32px;
+}
+#footer > ul #footer-travel a:link,
+#footer > ul #footer-travel a:visited {
+  color: #C8F8D6;
+  transition: 0.25s;
+}
+#footer > ul #footer-travel a:link:hover h6, #footer > ul #footer-travel a:link:active h6,
+#footer > ul #footer-travel a:visited:hover h6,
+#footer > ul #footer-travel a:visited:active h6 {
+  color: #B3ECFF;
 }
 #footer > ul #footer-socials {
+  padding: 20px 0px;
   grid-area: socials;
+}
+#footer > ul #footer-socials > h4 {
+  font-variation-settings: "wght" 400;
+  font-size: 1rem;
+  line-height: 0.9;
+  color: #B3ECFF;
+}
+#footer > ul #footer-socials #social-media {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 24px;
+  font-size: 3.125rem;
+}
+#footer > ul #footer-socials #social-media > li a:link,
+#footer > ul #footer-socials #social-media > li a:visited {
+  color: #C8F8D6;
+  transition: 0.25s;
+}
+#footer > ul #footer-socials #social-media > li a:link:hover, #footer > ul #footer-socials #social-media > li a:link:active,
+#footer > ul #footer-socials #social-media > li a:visited:hover,
+#footer > ul #footer-socials #social-media > li a:visited:active {
+  color: #B3ECFF;
 }
 #footer > ul #footer-info {
   grid-area: info;
@@ -602,7 +648,7 @@ header #header-button > button {
   }
   #why-nj #new-jersey #ig-contain-1 {
     grid-area: photo1;
-    padding: 48px 0px 32px 0px;
+    padding: 48px 16px 32px 0px;
   }
   #why-nj #new-jersey #ig-contain-2 {
     grid-area: photo2;
@@ -632,7 +678,7 @@ header #header-button > button {
   }
   #why-nj #new-jersey #ig-contain-4 {
     grid-area: photo4;
-    padding: 32px 0px 48px 0px;
+    padding: 32px 0px 48px 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -1617,18 +1663,85 @@ header #header-button > button {
 }
 #places-to-stay ul #pts-title {
   grid-area: title;
+  line-height: 0.8;
+  text-align: center;
+  font-variation-settings: "wght" 600;
+  font-size: 3.125rem;
+  color: #15344F;
+}
+@media (min-width: 1024px) {
+  #places-to-stay ul #pts-title > h1 {
+    padding-bottom: 32px;
+    padding-top: 72px;
+  }
 }
 #places-to-stay ul #pts-content1 {
   grid-area: c1;
 }
+#places-to-stay ul #pts-content1 > div > h2 {
+  line-height: 0.8;
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 2.5rem;
+  color: #B3ECFF;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #places-to-stay ul #pts-content1 > div > h2 {
+    font-size: 4.5rem;
+    padding-bottom: 32px;
+  }
+}
 #places-to-stay ul #pts-content2 {
   grid-area: c2;
+}
+#places-to-stay ul #pts-content2 > div > h2 {
+  line-height: 0.8;
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 2.5rem;
+  color: #B3ECFF;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #places-to-stay ul #pts-content2 > div > h2 {
+    font-size: 4.5rem;
+    padding-bottom: 32px;
+  }
 }
 #places-to-stay ul #pts-content3 {
   grid-area: c3;
 }
+#places-to-stay ul #pts-content3 > div > h2 {
+  line-height: 0.8;
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 2.5rem;
+  color: #B3ECFF;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #places-to-stay ul #pts-content3 > div > h2 {
+    font-size: 4.5rem;
+    padding-bottom: 32px;
+  }
+}
 #places-to-stay ul #pts-content4 {
   grid-area: c4;
+}
+#places-to-stay ul #pts-content4 > div > h2 {
+  line-height: 0.8;
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 2.5rem;
+  color: #B3ECFF;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #places-to-stay ul #pts-content4 > div > h2 {
+    font-size: 4.5rem;
+    padding-bottom: 32px;
+  }
 }
 @media (min-width: 1024px) {
   #places-to-stay ul {
@@ -1658,6 +1771,33 @@ header #header-button > button {
 @media (min-width: 768px) {
   #places-to-stay ul li .pts-par {
     display: list-item;
+    line-height: 1.5;
+    text-align: justify;
+    font-variation-settings: "wght" 400;
+    font-size: 1.5rem;
+    color: #15344F;
+    padding: 32px 100px;
+  }
+}
+@media (min-width: 1024px) {
+  #places-to-stay ul li .pts-par {
+    font-size: 1.5rem;
+    padding: 32px 0px;
+  }
+}
+@media (min-width: 768px) {
+  #places-to-stay ul .pts-padding {
+    padding: 32px 0px 48px;
+  }
+}
+@media (min-width: 1024px) {
+  #places-to-stay ul .pts-padding {
+    padding: 0px 18px 72px;
+  }
+}
+@media (min-width: 1200px) {
+  #places-to-stay ul .pts-padding {
+    padding: 0px 18px 104px;
   }
 }
 
@@ -1846,12 +1986,58 @@ header #header-button > button {
 }
 #shopping ul #ds-sub2 {
   grid-area: sub2;
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 2.5rem;
+  color: #15344F;
+  line-height: 0.8;
+  padding-top: 16px;
 }
 #shopping ul #ds-outlet {
   grid-area: outlet;
 }
+#shopping ul #ds-outlet > h3 {
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 2.5rem;
+  color: #B3ECFF;
+  line-height: 0.8;
+  padding: 32px 0px 16px;
+}
+#shopping ul #ds-outlet #img-outlet {
+  margin-bottom: 16px;
+}
+#shopping ul #ds-outlet .flex-ds-button {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #shopping ul #ds-outlet .flex-ds-button {
+    justify-content: flex-start;
+  }
+}
 #shopping ul #ds-mall {
   grid-area: mall;
+}
+#shopping ul #ds-mall > h3 {
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 2.5rem;
+  color: #B3ECFF;
+  line-height: 0.8;
+  padding: 32px 0px 16px;
+}
+#shopping ul #ds-mall #img-mall {
+  margin-bottom: 16px;
+}
+#shopping ul #ds-mall .flex-ds-button {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #shopping ul #ds-mall .flex-ds-button {
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 768px) {
   #shopping ul {
@@ -1914,4 +2100,19 @@ header #header-button > button {
   #shopping ul #ds-mall {
     grid-area: mall;
   }
+}
+#shopping > article > h3 {
+  text-align: center;
+  font-variation-settings: "wght" 300;
+  font-size: 3.75rem;
+  color: #B3ECFF;
+  line-height: 0.8;
+  padding: 32px 0px 16px;
+}
+#shopping > article #business-button-flex {
+  display: flex;
+  justify-content: center;
+}
+#shopping > article #business-button-flex > button {
+  margin: 16px 0px 48px 0px;
 }

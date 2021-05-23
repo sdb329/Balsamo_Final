@@ -79,18 +79,119 @@
 
         #pts-title{
             grid-area: title;
+
+            line-height: .8;
+            text-align: center;
+            font-variation-settings: "wght" 600;
+                        font-size: rem-calc(50);
+                        color: $darkblue;
+
+            >h1{
+
+                @include lg{
+
+                    padding-bottom: 32px;
+
+                    padding-top: 72px;
+                }
+            }
         }
         #pts-content1{
             grid-area: c1;
+
+            >div{
+
+                >h2{
+
+                    line-height: .8;
+                    text-align: center;
+                    font-variation-settings: "wght" 300;
+                    font-size: rem-calc(40);
+                    color: $lightblue;
+                    padding-bottom: 16px;
+
+                    @include md{
+                        font-size: rem-calc(72);
+                        padding-bottom: 32px;
+                    }
+
+                  
+
+
+                }
+            }
+
+            
         }
         #pts-content2{
             grid-area: c2;
+            
+            >div{
+
+                >h2{
+
+                    line-height: .8;
+                    text-align: center;
+                    font-variation-settings: "wght" 300;
+                    font-size: rem-calc(40);
+                    color: $lightblue;
+                    padding-bottom: 16px;
+
+                    @include md{
+                        font-size: rem-calc(72);
+                        padding-bottom: 32px;
+                    }
+
+
+                }
+            }
+            
         }
         #pts-content3{
             grid-area: c3;
+
+            >div{
+
+                >h2{
+
+                    line-height: .8;
+                    text-align: center;
+                    font-variation-settings: "wght" 300;
+                    font-size: rem-calc(40);
+                    color: $lightblue;
+                    padding-bottom: 16px;
+
+                    @include md{
+                        font-size: rem-calc(72);
+                        padding-bottom: 32px;
+                    }
+
+
+                }
+            }
         }
         #pts-content4{
             grid-area: c4;
+
+            >div{
+
+                >h2{
+
+                    line-height: .8;
+                    text-align: center;
+                    font-variation-settings: "wght" 300;
+                    font-size: rem-calc(40);
+                    color: $lightblue;
+                    padding-bottom: 16px;
+
+                    @include md{
+                        font-size: rem-calc(72);
+                        padding-bottom: 32px;
+                    }
+
+
+                }
+            }
         }
 
         @include lg{
@@ -128,9 +229,44 @@
                 display: none;
                 @include md{
                     display: list-item;
+
+
+                    line-height: 1.5;
+                    text-align: justify;
+                    font-variation-settings: "wght" 400;
+                    font-size: rem-calc(24);
+                    color: $darkblue;
+                    padding: 32px 100px;
+
+
+
+                }
+
+                @include lg{
+
+
+                   
+                    
+                    font-size: rem-calc(24);
+                   
+                    padding: 32px 0px;
                 }
             }
 
+        }
+
+        .pts-padding{
+            @include md{
+                padding: 32px 0px 48px;
+            }
+
+            @include lg{
+                padding: 0px 18px 72px;
+            }
+
+            @include xl{
+                padding: 0px 18px 104px;
+            }
         }
     }
 
