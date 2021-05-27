@@ -414,6 +414,45 @@ button:hover {
 /* =============
     Header
 ============= */
+header {
+  background-color: #15344F;
+}
+header #search-flex {
+  display: flex;
+  justify-content: center;
+}
+header #search-flex #search-bar {
+  border: 4px #0A7A2A solid;
+  border-radius: 40px;
+  width: 90%;
+  margin: 10px;
+  background-color: #fff;
+}
+header #search-flex #search-bar > form {
+  padding: 5px;
+}
+header #search-flex #search-bar > form > i {
+  color: #0A7A2A;
+  font-size: 1.5rem;
+}
+header #search-flex #search-bar > form > input {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  color: #0A7A2A;
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-variation-settings: "wght" 600;
+}
+header #search-flex #search-bar > form > input::placeholder {
+  color: #0A7A2A;
+}
+header #search-flex #search-bar > form > input:-ms-input-placeholder {
+  color: #0A7A2A;
+}
+header #search-flex #search-bar > form > input::-ms-input-placeholder {
+  color: #0A7A2A;
+}
 header #header-button {
   display: flex;
   justify-content: center;
@@ -421,6 +460,24 @@ header #header-button {
 header #header-button > button {
   flex-grow: 1;
   border-radius: 0px;
+}
+@media (min-width: 768px) {
+  header #search-md-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  header #search-md-flex #header-button {
+    flex-grow: 0.2;
+    order: 1;
+  }
+  header #search-md-flex #header-button > button {
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  header #search-md-flex #search-flex {
+    flex-grow: 0.2;
+    order: 2;
+  }
 }
 
 /* =============
@@ -434,12 +491,47 @@ header #header-button > button {
 }
 #footer > ul #footer-phone {
   grid-area: phone;
+  padding-top: 16px;
+}
+#footer > ul #footer-phone > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  #footer > ul #footer-phone > a {
+    justify-content: center;
+  }
+}
+#footer > ul #footer-phone > a > i {
+  padding-right: 16px;
+  font-size: 3.125rem;
+}
+#footer > ul #footer-phone > a > h6 {
+  font-variation-settings: "wght" 400;
+  font-size: 1rem;
+  line-height: 0.9;
+}
+#footer > ul #footer-phone a:link,
+#footer > ul #footer-phone a:visited {
+  color: #C8F8D6;
+  transition: 0.25s;
+}
+#footer > ul #footer-phone a:link:hover, #footer > ul #footer-phone a:link:active,
+#footer > ul #footer-phone a:visited:hover,
+#footer > ul #footer-phone a:visited:active {
+  color: #B3ECFF;
 }
 #footer > ul #footer-travel {
   grid-area: travel;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 1024px) {
+  #footer > ul #footer-travel {
+    justify-content: left;
+  }
 }
 #footer > ul #footer-travel > a {
   text-decoration: none;
@@ -464,11 +556,11 @@ header #header-button > button {
   padding: 20px 0px;
   grid-area: socials;
 }
-#footer > ul #footer-socials > h4 {
+#footer > ul #footer-socials #follow-us {
   font-variation-settings: "wght" 400;
   font-size: 1rem;
   line-height: 0.9;
-  color: #B3ECFF;
+  color: #C8F8D6;
 }
 #footer > ul #footer-socials #social-media {
   display: flex;
@@ -478,7 +570,7 @@ header #header-button > button {
 }
 #footer > ul #footer-socials #social-media > li a:link,
 #footer > ul #footer-socials #social-media > li a:visited {
-  color: #C8F8D6;
+  color: #fff;
   transition: 0.25s;
 }
 #footer > ul #footer-socials #social-media > li a:link:hover, #footer > ul #footer-socials #social-media > li a:link:active,
@@ -489,11 +581,32 @@ header #header-button > button {
 #footer > ul #footer-info {
   grid-area: info;
 }
+#footer > ul #footer-info > p {
+  font-variation-settings: "wght" 400;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: #B3ECFF;
+  padding: 0px 16px 32px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #footer > ul {
+    grid-template-columns: 40% 40% auto;
+    grid-template-areas: "travel phone ." "travel socials ." "info info info";
+  }
+}
 @media (min-width: 1024px) {
   #footer > ul {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: "phone travel socials" "info info info";
+    grid-template-columns: auto 300px 300px 300px auto;
+    grid-template-areas: ". phone travel socials ." "info info info info info";
+  }
+}
+@media (min-width: 1200px) {
+  #footer > ul {
+    display: grid;
+    grid-template-columns: auto 400px 400px 400px auto;
+    grid-template-areas: ". phone travel socials ." "info info info info info";
   }
 }
 
@@ -501,6 +614,9 @@ header #header-button > button {
   text-decoration: none;
 }
 #hero a #hero-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url("../img/hero/hero.jpg");
   background-position: bottom left;
   background-size: cover;
@@ -509,6 +625,16 @@ header #header-button > button {
 @media (min-width: 768px) {
   #hero a #hero-image {
     height: 840px;
+  }
+}
+@media (min-width: 768px) {
+  #hero a #hero-image {
+    height: 785px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero a #hero-image {
+    height: 1200px;
   }
 }
 #hero a #hero-image > h1 {
@@ -532,31 +658,26 @@ header #header-button > button {
     padding: 24px 16px;
   }
 }
-@media (min-width: 768px) {
-  #hero a #hero-image {
-    height: 785px;
-  }
-}
-@media (min-width: 1024px) {
-  #hero a #hero-image {
-    height: 1200px;
-  }
-}
 #hero a #hero-image > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-self: center;
 }
 #hero a #hero-image > div i {
   font-size: 6.25rem;
   text-decoration: none;
-  color: white;
+  color: #fff;
+  transition: 0.25s;
   padding: 16px;
+}
+#hero a #hero-image > div i:hover {
+  color: #15344F;
 }
 @media (min-width: 768px) {
   #hero a #hero-image > div i {
     font-size: 9.375rem;
   }
+}
+#hero a #hero-image > p {
+  color: transparent;
 }
 
 /* =============
@@ -1367,6 +1488,7 @@ header #header-button > button {
   font-variation-settings: "wght" 600;
   font-size: 3.125rem;
   color: #15344F;
+  padding-bottom: 16px;
 }
 @media (min-width: 768px) {
   #places-to-visit > section ul #visit-title > div > h1 {
@@ -1387,6 +1509,7 @@ header #header-button > button {
   }
 }
 #places-to-visit > section ul #visit-1 {
+  padding: 32px 0px;
   display: grid;
   grid-template-columns: 20% 70%;
   grid-template-areas: "nb content" "nb button";
@@ -1406,7 +1529,11 @@ header #header-button > button {
   font-size: 3.125rem;
   color: #249379;
 }
+#places-to-visit > section ul #visit-1 #v-content-1 > h2 {
+  margin-bottom: 10px;
+}
 #places-to-visit > section ul #visit-1 #v-button-1 {
+  margin-top: 16px;
   grid-area: button;
 }
 @media (min-width: 768px) {
@@ -1415,6 +1542,7 @@ header #header-button > button {
   }
 }
 #places-to-visit > section ul #visit-2 {
+  padding: 32px 0px;
   display: grid;
   grid-template-columns: 20% 70%;
   grid-template-areas: "nb content" "nb button";
@@ -1434,7 +1562,11 @@ header #header-button > button {
   font-size: 3.125rem;
   color: #249379;
 }
+#places-to-visit > section ul #visit-2 #v-content-2 > h2 {
+  margin-bottom: 10px;
+}
 #places-to-visit > section ul #visit-2 #v-button-2 {
+  margin-top: 16px;
   grid-area: button;
 }
 @media (min-width: 768px) {
@@ -1443,6 +1575,7 @@ header #header-button > button {
   }
 }
 #places-to-visit > section ul #visit-3 {
+  padding: 32px 0px;
   display: grid;
   grid-template-columns: 20% 70%;
   grid-template-areas: "nb content" "nb button";
@@ -1462,7 +1595,11 @@ header #header-button > button {
   font-size: 3.125rem;
   color: #249379;
 }
+#places-to-visit > section ul #visit-3 #v-content-3 > h2 {
+  margin-bottom: 10px;
+}
 #places-to-visit > section ul #visit-3 #v-button-3 {
+  margin-top: 16px;
   grid-area: button;
 }
 @media (min-width: 768px) {
@@ -1652,6 +1789,7 @@ header #header-button > button {
   grid-template-areas: ". title ." ". c1 ." ". c2 ." ". c3 ." ". c4 .";
 }
 #places-to-stay ul > li .pts-button {
+  margin-top: 16px;
   display: flex;
   justify-content: center;
   text-align: flex-end;
@@ -1665,12 +1803,16 @@ header #header-button > button {
   grid-area: title;
   line-height: 0.8;
   text-align: center;
+  padding-top: 48px;
+}
+#places-to-stay ul #pts-title > h1 {
   font-variation-settings: "wght" 600;
   font-size: 3.125rem;
   color: #15344F;
 }
 @media (min-width: 1024px) {
   #places-to-stay ul #pts-title > h1 {
+    font-size: 6.25rem;
     padding-bottom: 32px;
     padding-top: 72px;
   }
@@ -1785,6 +1927,9 @@ header #header-button > button {
     padding: 32px 0px;
   }
 }
+#places-to-stay ul .pts-padding {
+  padding: 24px 0px 32px;
+}
 @media (min-width: 768px) {
   #places-to-stay ul .pts-padding {
     padding: 32px 0px 48px;
@@ -1792,12 +1937,12 @@ header #header-button > button {
 }
 @media (min-width: 1024px) {
   #places-to-stay ul .pts-padding {
-    padding: 0px 18px 72px;
+    padding: 24px 18px 72px;
   }
 }
 @media (min-width: 1200px) {
   #places-to-stay ul .pts-padding {
-    padding: 0px 18px 104px;
+    padding: 24px 18px 104px;
   }
 }
 
@@ -1983,6 +2128,13 @@ header #header-button > button {
   #shopping ul li > div > aside {
     display: list-item;
   }
+  #shopping ul li > div > aside > p {
+    font-variation-settings: "wght" 400;
+    text-align: justify;
+    padding: 0px 16px 16px 16px;
+    color: #15344F;
+    line-height: 1.2;
+  }
 }
 #shopping ul #ds-sub2 {
   grid-area: sub2;
@@ -2008,6 +2160,7 @@ header #header-button > button {
   margin-bottom: 16px;
 }
 #shopping ul #ds-outlet .flex-ds-button {
+  padding: 0px 16px;
   display: flex;
   justify-content: center;
 }
@@ -2031,6 +2184,7 @@ header #header-button > button {
   margin-bottom: 16px;
 }
 #shopping ul #ds-mall .flex-ds-button {
+  padding: 0px 16px;
   display: flex;
   justify-content: center;
 }

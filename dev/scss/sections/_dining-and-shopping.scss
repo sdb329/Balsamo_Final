@@ -201,6 +201,15 @@ ul{
 
                 @include md{
                     display: list-item;
+
+                    >p{
+                       font-variation-settings: "wght" 400;
+                       text-align: justify;
+                       padding: 0px 16px 16px 16px;
+                       color: $darkblue;
+
+                       line-height: 1.2;
+                    }
                 }
             }
         }
@@ -243,6 +252,7 @@ ul{
 
         .flex-ds-button{
 
+            padding: 0px 16px;
             display: flex;
             justify-content: center;
 
@@ -271,7 +281,7 @@ ul{
 
 
         .flex-ds-button{
-
+            padding: 0px 16px;
             display: flex;
             justify-content: center;
 
@@ -317,6 +327,9 @@ ul{
            }
            #outlet-content{
                grid-area: content;
+
+
+
            }
           }
        

@@ -55,6 +55,8 @@
         >li{
 
 .pts-button{
+    margin-top: 16px;
+
     display: flex;
     justify-content: center;
     text-align: flex-end;
@@ -82,13 +84,19 @@
 
             line-height: .8;
             text-align: center;
-            font-variation-settings: "wght" 600;
-                        font-size: rem-calc(50);
-                        color: $darkblue;
+
+            padding-top: 48px;
+         
 
             >h1{
 
+                font-variation-settings: "wght" 600;
+                font-size: rem-calc(50);
+                color: $darkblue;
+
                 @include lg{
+
+                    font-size: rem-calc(100);
 
                     padding-bottom: 32px;
 
@@ -98,6 +106,7 @@
         }
         #pts-content1{
             grid-area: c1;
+
 
             >div{
 
@@ -125,6 +134,8 @@
         }
         #pts-content2{
             grid-area: c2;
+
+           
             
             >div{
 
@@ -149,6 +160,8 @@
         }
         #pts-content3{
             grid-area: c3;
+
+
 
             >div{
 
@@ -256,16 +269,21 @@
         }
 
         .pts-padding{
+            padding: 24px 0px 32px;
             @include md{
                 padding: 32px 0px 48px;
             }
 
             @include lg{
-                padding: 0px 18px 72px;
+                padding: 24px 18px 72px;
+
+               
+
+
             }
 
             @include xl{
-                padding: 0px 18px 104px;
+                padding: 24px 18px 104px;
             }
         }
     }

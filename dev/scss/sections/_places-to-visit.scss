@@ -65,6 +65,8 @@
                         font-size: rem-calc(50);
                         color: $darkblue;
 
+            padding-bottom: 16px;
+
 
         @include md{
             font-size: rem-calc(100);
@@ -86,6 +88,8 @@
     }
 }
     #visit-1{
+
+        padding: 32px 0px;
     display: grid;
     grid-template-columns: 20% 70%;
     grid-template-areas: 
@@ -110,8 +114,13 @@
         font-variation-settings: "wght" 300;
                     font-size: rem-calc(50);
                     color: $greenblue;
+
+        >h2{
+            margin-bottom: 10px;
+        }
     }
     #v-button-1{
+        margin-top: 16px;
         grid-area: button;
         @include md{
             display: none;
@@ -121,6 +130,7 @@
 
 
    #visit-2{
+    padding: 32px 0px;
     display: grid;
     grid-template-columns: 20% 70%;
     grid-template-areas: 
@@ -144,8 +154,13 @@
         font-variation-settings: "wght" 300;
                     font-size: rem-calc(50);
                     color: $greenblue;
+
+                    >h2{
+                        margin-bottom: 10px;
+                    }
     }
     #v-button-2{
+        margin-top: 16px;
         grid-area: button;
         @include md{
             display: none;
@@ -154,6 +169,7 @@
    }
 
    #visit-3{
+    padding: 32px 0px;
     display: grid;
     grid-template-columns: 20% 70%;
     grid-template-areas: 
@@ -176,8 +192,13 @@
         font-variation-settings: "wght" 300;
                     font-size: rem-calc(50);
                     color: $greenblue;
+
+                    >h2{
+                        margin-bottom: 10px;
+                    }
     }
     #v-button-3{
+        margin-top: 16px;
         grid-area: button;
         @include md{
             display: none;
