@@ -379,6 +379,12 @@ p, input, button, address, h6 {
   font-family: "Karla", sans-serif;
 }
 
+nav {
+  font-family: "Karla", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
 /* =============
     Buttons
 ============= */
@@ -395,8 +401,8 @@ button {
   transition: 0.25s;
 }
 button:hover {
-  background-color: #15344F;
-  color: #B3ECFF;
+  background-color: #C8F8D6;
+  color: #15344F;
 }
 @media (min-width: 768px) {
   button {
@@ -411,11 +417,126 @@ button:hover {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#nav-container ul li {
+  text-align: right;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #C8F8D6;
+  padding: 0px 0px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    color: #C8F8D6;
+  }
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #0A7A2A;
+}
+
 /* =============
     Header
 ============= */
 header {
   background-color: #15344F;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header #navigation-header {
+  padding-top: 32px;
+  display: grid;
+  grid-template-areas: "survival burger" "nav nav";
+  grid-template-columns: 90% auto;
+}
+@media (min-width: 1024px) {
+  header #navigation-header {
+    grid-template-areas: "survival nav";
+    grid-template-columns: 35% auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  header #navigation-header {
+    grid-template-areas: "survival nav";
+    grid-template-columns: 40% auto;
+  }
+}
+header #navigation-header #logo-container {
+  grid-area: survival;
+}
+header #navigation-header #logo-container button {
+  background-color: #B3ECFF;
+  color: #15344F;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 10px 20px;
+  transition: 0.25s;
+}
+header #navigation-header #logo-container button:hover {
+  background-color: #15344F;
+  border: 1px solid #B3ECFF;
+  color: #B3ECFF;
+}
+header #navigation-header #burger-container {
+  grid-area: burger;
+}
+@media (min-width: 1024px) {
+  header #navigation-header #burger-container {
+    display: none !important;
+  }
+}
+header #navigation-header #burger-container i {
+  color: #C8F8D6;
+  cursor: pointer;
+  font-size: 3.125rem;
+}
+header #navigation-header #nav-container {
+  background-color: #15344F;
+  display: none;
+  grid-area: nav;
+  padding: 20px 10px 10px;
+}
+@media (min-width: 1024px) {
+  header #navigation-header #nav-container {
+    background-color: #15344F;
+    display: block !important;
+  }
+}
+header #search-md-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+@media (min-width: 1024px) {
+  header #search-md-flex {
+    padding-top: 100px;
+  }
 }
 header #search-flex {
   display: flex;
@@ -465,10 +586,12 @@ header #header-button > button {
   header #search-md-flex {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
   header #search-md-flex #header-button {
     flex-grow: 0.2;
     order: 1;
+    padding-left: 16px;
   }
   header #search-md-flex #header-button > button {
     border-radius: 20px;
@@ -610,6 +733,14 @@ header #header-button > button {
   }
 }
 
+#hero {
+  padding-top: 210px;
+}
+@media (min-width: 768px) {
+  #hero {
+    padding-top: 160px;
+  }
+}
 #hero a {
   text-decoration: none;
 }
@@ -675,9 +806,6 @@ header #header-button > button {
   #hero a #hero-image > div i {
     font-size: 9.375rem;
   }
-}
-#hero a #hero-image > p {
-  color: transparent;
 }
 
 /* =============
@@ -782,12 +910,21 @@ header #header-button > button {
     padding: 48px 0px 0px 16px;
   }
   #why-nj #new-jersey #ig-p1 #ig-par1 {
-    text-align: left;
+    padding-top: 40px;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  #why-nj #new-jersey #ig-p1 #ig-par1 {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 768px) {
   #why-nj #new-jersey #ig-contain-3 {
     grid-area: photo3;
     padding-left: 16px;
   }
+}
+@media (min-width: 768px) {
   #why-nj #new-jersey #ig-p2 {
     grid-area: p2;
     font-variation-settings: "wght" 300;
@@ -796,7 +933,15 @@ header #header-button > button {
   }
   #why-nj #new-jersey #ig-p2 #ig-par2 {
     text-align: right;
+    padding-top: 40px;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  #why-nj #new-jersey #ig-p2 #ig-par2 {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 768px) {
   #why-nj #new-jersey #ig-contain-4 {
     grid-area: photo4;
     padding: 32px 0px 48px 16px;
@@ -1006,41 +1151,45 @@ header #header-button > button {
     margin: 104px 0px;
   }
 }
-#regions .region-formatting > h1 {
-  font-variation-settings: "wght" 300;
+#regions .region-formatting .r-title {
+  font-variation-settings: "wght" 200;
   font-size: 4.5rem;
   line-height: 0.85;
   color: #249379;
   padding: 0px 0px 16px 0px;
 }
 @media (min-width: 768px) {
-  #regions .region-formatting > h1 {
-    font-variation-settings: "wght" 200;
-    font-size: 9.375rem;
+  #regions .region-formatting .r-title {
+    font-size: 4.5rem;
   }
 }
-#regions .region-formatting > div {
+@media (min-width: 1024px) {
+  #regions .region-formatting .r-title {
+    font-size: 6.25rem;
+  }
+}
+#regions .region-formatting .r-background {
   background-color: #B3ECFF;
   padding: 16px;
 }
-#regions .region-formatting > div > p {
+#regions .region-formatting .r-background > p {
   line-height: 1.4;
 }
 @media (min-width: 768px) {
-  #regions .region-formatting > div {
+  #regions .region-formatting .r-background {
     padding: 20px 22px;
   }
 }
 @media (min-width: 1024px) {
-  #regions .region-formatting > div {
+  #regions .region-formatting .r-background {
     padding: 10% 10%;
   }
 }
-#regions .region-formatting > div > div {
+#regions .region-formatting .r-background > div {
   display: flex;
   justify-content: flex-end;
 }
-#regions .region-formatting > div > div > button {
+#regions .region-formatting .r-background > div > button {
   margin-top: 16px;
 }
 #regions .region-img-ht {
@@ -1048,12 +1197,12 @@ header #header-button > button {
 }
 @media (min-width: 768px) {
   #regions .region-img-ht {
-    height: 170px;
+    height: 250px;
   }
 }
 @media (min-width: 1024px) {
   #regions .region-img-ht {
-    height: 350px;
+    height: 400px;
   }
 }
 #regions #region1-image {
@@ -1068,8 +1217,13 @@ header #header-button > button {
 }
 #regions #region3-image {
   background-image: url("../img/regions/region3.jpg");
-  background-position: top;
+  background-position: 0px -130px;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  #regions #region3-image {
+    background-position: top;
+  }
 }
 #regions #region4-image {
   background-image: url("../img/regions/region4.jpg");
@@ -1129,7 +1283,7 @@ header #header-button > button {
     grid-template-columns: 50% 40% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-1 > h1 {
+  #regions .beach #region-1 .r-title {
     grid-area: region;
   }
   #regions .beach #region-1 > div {
@@ -1143,7 +1297,7 @@ header #header-button > button {
     grid-template-columns: auto 40% 50%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-2 > h1 {
+  #regions .beach #region-2 .r-title {
     grid-area: region;
     text-align: right;
   }
@@ -1161,7 +1315,7 @@ header #header-button > button {
     grid-template-columns: 50% 40% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-3 > h1 {
+  #regions .beach #region-3 .r-title {
     grid-area: region;
   }
   #regions .beach #region-3 > div {
@@ -1175,7 +1329,7 @@ header #header-button > button {
     grid-template-columns: auto 40% 50%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-4 > h1 {
+  #regions .beach #region-4 .r-title {
     grid-area: region;
     text-align: right;
   }
@@ -1193,7 +1347,7 @@ header #header-button > button {
     grid-template-columns: 50% 40% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-5 > h1 {
+  #regions .beach #region-5 .r-title {
     grid-area: region;
   }
   #regions .beach #region-5 > div {
@@ -1207,7 +1361,7 @@ header #header-button > button {
     grid-template-columns: auto 40% 50%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-6 > h1 {
+  #regions .beach #region-6 .r-title {
     grid-area: region;
     text-align: right;
   }
@@ -1227,7 +1381,7 @@ header #header-button > button {
     grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-1 > h1 {
+  #regions .beach #region-1 .r-title {
     grid-area: region;
   }
   #regions .beach #region-1 > div {
@@ -1244,7 +1398,7 @@ header #header-button > button {
     grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-2 > h1 {
+  #regions .beach #region-2 .r-title {
     grid-area: region;
     text-align: right;
   }
@@ -1262,7 +1416,7 @@ header #header-button > button {
     grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-3 > h1 {
+  #regions .beach #region-3 .r-title {
     grid-area: region;
   }
   #regions .beach #region-3 > div {
@@ -1279,7 +1433,7 @@ header #header-button > button {
     grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-4 > h1 {
+  #regions .beach #region-4 .r-title {
     grid-area: region;
     text-align: right;
   }
@@ -1297,7 +1451,7 @@ header #header-button > button {
     grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-5 > h1 {
+  #regions .beach #region-5 .r-title {
     grid-area: region;
   }
   #regions .beach #region-5 > div {
@@ -1314,7 +1468,7 @@ header #header-button > button {
     grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-6 > h1 {
+  #regions .beach #region-6 .r-title {
     grid-area: region;
     text-align: right;
   }
@@ -1334,7 +1488,7 @@ header #header-button > button {
     grid-template-columns: 40% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-1 > h1 {
+  #regions .beach #region-1 .r-title {
     grid-area: region;
   }
   #regions .beach #region-1 > div {
@@ -1348,7 +1502,7 @@ header #header-button > button {
     grid-template-columns: auto 30% 40%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-2 > h1 {
+  #regions .beach #region-2 .r-title {
     grid-area: region;
     text-align: right;
   }
@@ -1363,7 +1517,7 @@ header #header-button > button {
     grid-template-columns: 40% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-3 > h1 {
+  #regions .beach #region-3 .r-title {
     grid-area: region;
   }
   #regions .beach #region-3 > div {
@@ -1377,7 +1531,7 @@ header #header-button > button {
     grid-template-columns: auto 30% 40%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-4 > h1 {
+  #regions .beach #region-4 .r-title {
     grid-area: region;
     text-align: right;
   }
@@ -1392,7 +1546,7 @@ header #header-button > button {
     grid-template-columns: 40% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
   }
-  #regions .beach #region-5 > h1 {
+  #regions .beach #region-5 .r-title {
     grid-area: region;
   }
   #regions .beach #region-5 > div {
@@ -1406,7 +1560,7 @@ header #header-button > button {
     grid-template-columns: auto 30% 40%;
     grid-template-areas: ". region region" ". image1 text";
   }
-  #regions .beach #region-6 > h1 {
+  #regions .beach #region-6 .r-title {
     grid-area: region;
     text-align: right;
   }

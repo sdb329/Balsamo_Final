@@ -4,9 +4,103 @@
 
 header{
     background-color: $darkblue;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    #navigation-header{
+        padding-top: 32px;
+        display: grid;
+        grid-template-areas: 
+            "survival burger"
+            "nav nav";
+        grid-template-columns: 90% auto;
+
+        @include lg {
+            grid-template-areas: "survival nav";
+            grid-template-columns: 35% auto;
+
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        @include xl {
+            grid-template-areas: "survival nav";
+            grid-template-columns: 40% auto;
+        }
+
+        #logo-container {
+            grid-area: survival;
+
+
+            button {
+                background-color: $lightblue;
+                color: $darkblue;
+                display: inline-block;
+                font-size: rem-calc(18);
+                padding: 10px 20px;
+                transition: 0.25s;
+
+                &:hover {
+                    background-color: $darkblue;
+                    border: 1px solid $lightblue;
+                    color: $lightblue;
+                }
+            }
+        }
+
+        #burger-container {
+
+            grid-area: burger;
+
+            @include lg {
+                display: none !important;
+            }
+
+            i {
+                color: $lightgreen;
+                cursor: pointer;
+                font-size: rem-calc(50);
+            }
+        }
+
+        #nav-container {
+            background-color: $darkblue;
+            display: none;
+            grid-area: nav;
+            padding: 20px 10px 10px;
+
+            @include lg {
+                background-color: $darkblue;
+                display: block !important;
+            }
+        }
+    }
+
+
+
+
+
+
+
+#search-md-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 100px;
+
+    @include lg{
+        padding-top: 100px;
+    }
+
+}
+
     #search-flex{
         display: flex;
         justify-content: center;
+        
 
         #search-bar{
             border: 4px $green solid;
@@ -76,11 +170,13 @@ justify-content: center;
         #search-md-flex{
             display: flex;
             justify-content: space-between;
+            flex-direction: row;
 
 
             #header-button{
                 flex-grow: .2;
                 order: 1;
+                padding-left: 16px;
 
                 >button{
                     border-radius: 20px;

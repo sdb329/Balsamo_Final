@@ -1,6 +1,12 @@
 
 #hero{
 
+    padding-top: 210px;
+
+    @include md{
+        padding-top: 160px;
+    }
+
     a{ 
         text-decoration: none;
     #hero-image{
@@ -87,9 +93,7 @@
       
     }
 
-    >p{
-        color: transparent;
-    }
+    
 
 
     }

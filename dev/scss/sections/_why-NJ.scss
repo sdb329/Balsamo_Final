@@ -94,6 +94,8 @@
             }
         }
 
+
+
         @include md {
 
 
@@ -157,7 +159,11 @@
                     padding: 48px 0px 0px 16px;
 
                 #ig-par1{
-                    text-align: left;
+                    padding-top: 40px;
+
+                    @include lg{
+                        padding-top: 100px;
+                    }
                 }
 
             }
@@ -177,6 +183,11 @@
                     padding: 32px 16px 48px 0px;
                     #ig-par2{
                         text-align: right;
+                        padding-top: 40px;
+
+                        @include lg{
+                            padding-top: 100px;
+                        }
                     }
             }
 
