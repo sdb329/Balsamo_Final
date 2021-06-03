@@ -10,6 +10,8 @@ header{
     width: 100%;
 
     #navigation-header{
+        padding-left: 16px;
+
         padding-top: 32px;
         display: grid;
         grid-template-areas: 
@@ -20,8 +22,6 @@ header{
         @include lg {
             grid-template-areas: "survival nav";
             grid-template-columns: 35% auto;
-
-            padding-left: 16px;
             padding-right: 16px;
         }
 

@@ -467,6 +467,7 @@ header {
   width: 100%;
 }
 header #navigation-header {
+  padding-left: 16px;
   padding-top: 32px;
   display: grid;
   grid-template-areas: "survival burger" "nav nav";
@@ -476,7 +477,6 @@ header #navigation-header {
   header #navigation-header {
     grid-template-areas: "survival nav";
     grid-template-columns: 35% auto;
-    padding-left: 16px;
     padding-right: 16px;
   }
 }
