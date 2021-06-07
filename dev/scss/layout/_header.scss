@@ -2,19 +2,19 @@
     Header
 ============= */
 
-header{
+header {
     background-color: $darkblue;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
 
-    #navigation-header{
+    #navigation-header {
         padding-left: 16px;
 
         padding-top: 32px;
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "survival burger"
             "nav nav";
         grid-template-columns: 90% auto;
@@ -84,109 +84,111 @@ header{
 
 
 
-#search-md-flex{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    padding-top: 100px;
-
-    @include lg{
-        padding-top: 100px;
-    }
-
-}
-
-    #search-flex{
+    #search-md-flex {
         display: flex;
         justify-content: center;
-        
+        flex-direction: column;
 
-        #search-bar{
+        padding-top: 100px;
+
+        @include lg {
+            padding-top: 100px;
+        }
+
+    }
+
+    #search-flex {
+        display: flex;
+        justify-content: center;
+
+
+        #search-bar {
             border: 4px $green solid;
-                            border-radius: 40px;
-                            width: 90%;
-                            margin: 10px;
+            border-radius: 40px;
+            width: 90%;
+            margin: 10px;
 
-                            background-color:$white;
+            background-color: $white;
 
-            
 
-            >form{
 
-                
+            >form {
+
+
                 padding: 5px;
 
-                
-                >i{
-                    color:$green;
+
+                >i {
+                    color: $green;
                     font-size: rem-calc(24);
                 }
-                >input{
-                    background-color:transparent;
+
+                >input {
+                    background-color: transparent;
                     border: none;
 
                     border-radius: 0px;
                     color: $green;
                     font-weight: 300;
-    
+
                     &::placeholder {
                         color: $green;
                     }
-    
+
                     &:-ms-input-placeholder {
                         color: $green;
                     }
-    
+
                     &::-ms-input-placeholder {
                         color: $green;
                     }
 
                     font-size: rem-calc(24);
-                    font-variation-settings: "wght" 600;
+                    font-variation-settings: "wght"600;
                 }
 
             }
-    
-    
+
+
         }
     }
 
-  
-    
-    #header-button{
+
+
+    #header-button {
         display: flex;
 
-justify-content: center;
+        justify-content: center;
 
->button{
-    flex-grow: 1;
-    border-radius: 0px;
-}
+        >button {
+            flex-grow: 1;
+            border-radius: 0px;
+        }
     }
 
 
-    @include md{
-        #search-md-flex{
+    @include md {
+        #search-md-flex {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
 
 
-            #header-button{
+            #header-button {
                 flex-grow: .2;
                 order: 1;
                 padding-left: 16px;
 
-                >button{
+                >button {
                     border-radius: 20px;
 
                     margin-bottom: 10px;
-                    
+
                 }
-                
+
             }
-            #search-flex{
+
+            #search-flex {
                 flex-grow: .2;
                 order: 2;
 

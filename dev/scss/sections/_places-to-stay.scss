@@ -1,100 +1,101 @@
-#places-to-stay{
+#places-to-stay {
 
-    .pts-img-ht{
+    .pts-img-ht {
         height: 220px;
 
-        @include md{
-        height: 439px;
+        @include md {
+            height: 439px;
         }
 
-        @include lg{
+        @include lg {
             height: 940px;
         }
 
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        h2{
+
+        h2 {
             color: white;
         }
 
     }
 
-    #pts-img1{
+    #pts-img1 {
         background-image: url("../img/places-to-stay/stay1.jpg");
-    background-position: center;
-    background-size: cover;
+        background-position: center;
+        background-size: cover;
     }
 
-    #pts-img2{
+    #pts-img2 {
         background-image: url("../img/places-to-stay/stay2.jpg");
-    background-position: center;
-    background-size: cover;
+        background-position: center;
+        background-size: cover;
     }
 
-    #pts-img3{
+    #pts-img3 {
         background-image: url("../img/places-to-stay/stay3.jpg");
-    background-position: center;
-    background-size: cover;
+        background-position: center;
+        background-size: cover;
     }
 
-    #pts-img4{
+    #pts-img4 {
         background-image: url("../img/places-to-stay/stay4.jpg");
-    background-position: center;
-    background-size: cover;
+        background-position: center;
+        background-size: cover;
     }
 
-    @include xl{
+    @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". content .";
     }
 
-    ul{
+    ul {
 
-        >li{
+        >li {
 
-.pts-button{
-    margin-top: 16px;
+            .pts-button {
+                margin-top: 16px;
 
-    display: flex;
-    justify-content: center;
-    text-align: flex-end;
-            >button{
                 display: flex;
-                border: none;
-                border-radius: 5px;
+                justify-content: center;
+                text-align: flex-end;
+
+                >button {
+                    display: flex;
+                    border: none;
+                    border-radius: 5px;
+                }
             }
-        }
         }
 
         grid-area: content;
 
         display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: 
-        ". title ."
+        grid-template-areas: ". title ."
         ". c1 ."
         ". c2 ."
         ". c3 ."
         ". c4 .";
 
-        #pts-title{
+        #pts-title {
             grid-area: title;
 
             line-height: .8;
             text-align: center;
 
             padding-top: 48px;
-         
 
-            >h1{
 
-                font-variation-settings: "wght" 600;
+            >h1 {
+
+                font-variation-settings: "wght"600;
                 font-size: rem-calc(50);
                 color: $darkblue;
 
-                @include lg{
+                @include lg {
 
                     font-size: rem-calc(100);
 
@@ -104,51 +105,53 @@
                 }
             }
         }
-        #pts-content1{
+
+        #pts-content1 {
             grid-area: c1;
 
 
-            >div{
+            >div {
 
-                >h2{
+                >h2 {
 
                     line-height: .8;
                     text-align: center;
-                    font-variation-settings: "wght" 300;
+                    font-variation-settings: "wght"300;
                     font-size: rem-calc(40);
                     color: $lightblue;
                     padding-bottom: 16px;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(72);
                         padding-bottom: 32px;
                     }
 
-                  
+
 
 
                 }
             }
 
-            
+
         }
-        #pts-content2{
+
+        #pts-content2 {
             grid-area: c2;
 
-           
-            
-            >div{
 
-                >h2{
+
+            >div {
+
+                >h2 {
 
                     line-height: .8;
                     text-align: center;
-                    font-variation-settings: "wght" 300;
+                    font-variation-settings: "wght"300;
                     font-size: rem-calc(40);
                     color: $lightblue;
                     padding-bottom: 16px;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(72);
                         padding-bottom: 32px;
                     }
@@ -156,25 +159,26 @@
 
                 }
             }
-            
+
         }
-        #pts-content3{
+
+        #pts-content3 {
             grid-area: c3;
 
 
 
-            >div{
+            >div {
 
-                >h2{
+                >h2 {
 
                     line-height: .8;
                     text-align: center;
-                    font-variation-settings: "wght" 300;
+                    font-variation-settings: "wght"300;
                     font-size: rem-calc(40);
                     color: $lightblue;
                     padding-bottom: 16px;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(72);
                         padding-bottom: 32px;
                     }
@@ -183,21 +187,22 @@
                 }
             }
         }
-        #pts-content4{
+
+        #pts-content4 {
             grid-area: c4;
 
-            >div{
+            >div {
 
-                >h2{
+                >h2 {
 
                     line-height: .8;
                     text-align: center;
-                    font-variation-settings: "wght" 300;
+                    font-variation-settings: "wght"300;
                     font-size: rem-calc(40);
                     color: $lightblue;
                     padding-bottom: 16px;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(72);
                         padding-bottom: 32px;
                     }
@@ -207,28 +212,31 @@
             }
         }
 
-        @include lg{
+        @include lg {
             display: grid;
             grid-template-columns: 50% auto;
-            grid-template-areas: 
-            "title title"
-            "c1 c2"
-            "c3 c4";
+            grid-template-areas:
+                "title title"
+                "c1 c2"
+                "c3 c4";
 
-            #pts-title{
+            #pts-title {
                 grid-area: title;
             }
 
-            #pts-content1{
+            #pts-content1 {
                 grid-area: c1;
             }
-            #pts-content2{
+
+            #pts-content2 {
                 grid-area: c2;
             }
-            #pts-content3{
+
+            #pts-content3 {
                 grid-area: c3;
             }
-            #pts-content4{
+
+            #pts-content4 {
                 grid-area: c4;
             }
         }
@@ -236,17 +244,18 @@
 
 
 
-        li{
+        li {
 
-            .pts-par{
+            .pts-par {
                 display: none;
-                @include md{
+
+                @include md {
                     display: list-item;
 
 
                     line-height: 1.5;
                     text-align: justify;
-                    font-variation-settings: "wght" 400;
+                    font-variation-settings: "wght"400;
                     font-size: rem-calc(24);
                     color: $darkblue;
                     padding: 32px 100px;
@@ -255,40 +264,41 @@
 
                 }
 
-                @include lg{
+                @include lg {
 
 
-                   
-                    
+
+
                     font-size: rem-calc(24);
-                   
+
                     padding: 32px 0px;
                 }
             }
 
         }
 
-        .pts-padding{
+        .pts-padding {
             padding: 24px 0px 32px;
-            @include md{
+
+            @include md {
                 padding: 32px 0px 48px;
             }
 
-            @include lg{
+            @include lg {
                 padding: 24px 18px 72px;
 
-               
+
 
 
             }
 
-            @include xl{
+            @include xl {
                 padding: 24px 18px 104px;
             }
         }
     }
 
-    
 
-   
+
+
 }

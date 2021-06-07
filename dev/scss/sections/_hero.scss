@@ -1,102 +1,103 @@
-
-#hero{
+#hero {
 
     padding-top: 210px;
 
-    @include md{
+    @include md {
         padding-top: 160px;
     }
 
-    a{ 
+    a {
         text-decoration: none;
-    #hero-image{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+
+        #hero-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
 
-        background-image: url("../img/hero/hero.jpg");
-    background-position: bottom left;
-    background-size: cover;
-    height: 360px;
+            background-image: url("../img/hero/hero.jpg");
+            background-position: bottom left;
+            background-size: cover;
+            height: 360px;
 
-    @include md{
-        height: 840px;
-    }
-
- 
-
-  
-        @include md{
-            height: 785px;
-        }
-        @include lg{
-            height: 1200px;
-        }
-
-        >h1{
-            font-variation-settings: "wght" 300;
-            font-size: rem-calc(60);
-            color: $darkblue;
-            
-            line-height: .8;
-            padding: 16px;
-        
-            @include md{
-                font-variation-settings: "wght" 200;
-            font-size: rem-calc(150);
-        
-            padding: 24px 16px;
+            @include md {
+                height: 840px;
             }
-        
-        
-            @include lg{
-                font-variation-settings: "wght" 200;
-            font-size: rem-calc(200);
-        
-            padding: 24px 16px;
+
+
+
+
+            @include md {
+                height: 785px;
             }
-        
-           }
 
+            @include lg {
+                height: 1200px;
+            }
 
+            >h1 {
+                font-variation-settings: "wght"300;
+                font-size: rem-calc(60);
+                color: $darkblue;
 
-        
-
-        >div{
-          align-self: center;
-          
-
-           
-            i{
-                font-size: rem-calc(100);
-                text-decoration: none;
-                color: $white;
-                transition: 0.25s;
-
+                line-height: .8;
                 padding: 16px;
 
-                &:hover{
-                    color: $darkblue;
+                @include md {
+                    font-variation-settings: "wght"200;
+                    font-size: rem-calc(150);
+
+                    padding: 24px 16px;
                 }
 
-    
-                @include md{
-                    font-size: rem-calc(150);
+
+                @include lg {
+                    font-variation-settings: "wght"200;
+                    font-size: rem-calc(200);
+
+                    padding: 24px 16px;
                 }
+
+            }
+
+
+
+
+
+            >div {
+                align-self: center;
+
+
+
+                i {
+                    font-size: rem-calc(100);
+                    text-decoration: none;
+                    color: $white;
+                    transition: 0.25s;
+
+                    padding: 16px;
+
+                    &:hover {
+                        color: $darkblue;
+                    }
+
+
+                    @include md {
+                        font-size: rem-calc(150);
+                    }
+
+
+                }
+
+
+
+
+            }
+
+
 
 
         }
-       
-            
-        
-      
-    }
 
-    
-
-
-    }
-    
     }
 }
