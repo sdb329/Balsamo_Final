@@ -377,13 +377,13 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 p {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 p,
@@ -404,10 +404,10 @@ nav {
     Buttons
 ============= */
 button {
-  border-radius: 10px;
   background-color: #0A7A2A;
-  color: #B3ECFF;
   border: none;
+  border-radius: 10px;
+  color: #B3ECFF;
   cursor: pointer;
   font-size: 1.5rem;
   font-variation-settings: "wght" 600;
@@ -441,8 +441,8 @@ button:hover {
   }
 }
 #nav-container ul li {
-  text-align: right;
   margin-bottom: 20px;
+  text-align: right;
 }
 @media (min-width: 1024px) {
   #nav-container ul li {
@@ -481,11 +481,11 @@ header {
   width: 100%;
 }
 header #navigation-header {
-  padding-left: 16px;
-  padding-top: 32px;
   display: grid;
   grid-template-areas: "survival burger" "nav nav";
   grid-template-columns: 90% auto;
+  padding-left: 16px;
+  padding-top: 32px;
 }
 @media (min-width: 1024px) {
   header #navigation-header {
@@ -543,8 +543,8 @@ header #navigation-header #nav-container {
 }
 header #search-md-flex {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   padding-top: 100px;
 }
 @media (min-width: 1024px) {
@@ -557,11 +557,11 @@ header #search-flex {
   justify-content: center;
 }
 header #search-flex #search-bar {
+  background-color: #fff;
   border: 4px #0A7A2A solid;
   border-radius: 40px;
-  width: 90%;
   margin: 10px;
-  background-color: #fff;
+  width: 90%;
 }
 header #search-flex #search-bar > form {
   padding: 5px;
@@ -575,9 +575,9 @@ header #search-flex #search-bar > form > input {
   border: none;
   border-radius: 0px;
   color: #0A7A2A;
-  font-weight: 300;
   font-size: 1.5rem;
   font-variation-settings: "wght" 600;
+  font-weight: 300;
 }
 header #search-flex #search-bar > form > input::placeholder {
   color: #0A7A2A;
@@ -593,14 +593,14 @@ header #header-button {
   justify-content: center;
 }
 header #header-button > button {
-  flex-grow: 1;
   border-radius: 0px;
+  flex-grow: 1;
 }
 @media (min-width: 768px) {
   header #search-md-flex {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
   }
   header #search-md-flex #header-button {
     flex-grow: 0.2;
@@ -623,8 +623,8 @@ header #header-button > button {
 #footer > ul {
   background-color: #15344F;
   display: grid;
-  grid-template-columns: 40% 60%;
   grid-template-areas: "travel phone" "travel socials" "info info";
+  grid-template-columns: 40% 60%;
 }
 #footer > ul #footer-phone {
   grid-area: phone;
@@ -636,8 +636,8 @@ header #header-button > button {
   }
 }
 #footer > ul #footer-phone > a {
-  display: flex;
   align-items: center;
+  display: flex;
   text-decoration: none;
 }
 @media (min-width: 1024px) {
@@ -646,12 +646,12 @@ header #header-button > button {
   }
 }
 #footer > ul #footer-phone > a > i {
-  padding-right: 16px;
   font-size: 3.125rem;
+  padding-right: 16px;
 }
 #footer > ul #footer-phone > a > h6 {
-  font-variation-settings: "wght" 400;
   font-size: 1rem;
+  font-variation-settings: "wght" 400;
   line-height: 0.9;
 }
 #footer > ul #footer-phone a:link,
@@ -665,9 +665,9 @@ header #header-button > button {
   color: #B3ECFF;
 }
 #footer > ul #footer-travel {
-  grid-area: travel;
-  display: flex;
   align-items: center;
+  display: flex;
+  grid-area: travel;
   justify-content: center;
 }
 @media (min-width: 1024px) {
@@ -679,8 +679,8 @@ header #header-button > button {
   text-decoration: none;
 }
 #footer > ul #footer-travel > a > h6 {
-  font-variation-settings: "wght" 400;
   font-size: 1.5rem;
+  font-variation-settings: "wght" 400;
   line-height: 0.9;
   padding: 0px 32px;
 }
@@ -695,20 +695,20 @@ header #header-button > button {
   color: #B3ECFF;
 }
 #footer > ul #footer-socials {
-  padding: 20px 0px;
   grid-area: socials;
+  padding: 20px 0px;
 }
 #footer > ul #footer-socials #follow-us {
-  font-variation-settings: "wght" 400;
-  font-size: 1rem;
-  line-height: 0.9;
   color: #C8F8D6;
+  font-size: 1rem;
+  font-variation-settings: "wght" 400;
+  line-height: 0.9;
 }
 #footer > ul #footer-socials #social-media {
   display: flex;
+  font-size: 3.125rem;
   justify-content: space-between;
   padding-right: 24px;
-  font-size: 3.125rem;
 }
 #footer > ul #footer-socials #social-media > li a:link,
 #footer > ul #footer-socials #social-media > li a:visited {
@@ -724,31 +724,31 @@ header #header-button > button {
   grid-area: info;
 }
 #footer > ul #footer-info > p {
-  font-variation-settings: "wght" 400;
-  font-size: 0.75rem;
-  line-height: 1.2;
   color: #B3ECFF;
+  font-size: 0.75rem;
+  font-variation-settings: "wght" 400;
+  line-height: 1.2;
   padding: 0px 16px 32px;
   text-align: center;
 }
 @media (min-width: 768px) {
   #footer > ul {
-    grid-template-columns: 40% 40% auto;
     grid-template-areas: "travel phone ." "travel socials ." "info info info";
+    grid-template-columns: 40% 40% auto;
   }
 }
 @media (min-width: 1024px) {
   #footer > ul {
     display: grid;
-    grid-template-columns: auto 300px 300px 300px auto;
     grid-template-areas: ". phone travel socials ." "info info info info info";
+    grid-template-columns: auto 300px 300px 300px auto;
   }
 }
 @media (min-width: 1200px) {
   #footer > ul {
     display: grid;
-    grid-template-columns: auto 400px 400px 400px auto;
     grid-template-areas: ". phone travel socials ." "info info info info info";
+    grid-template-columns: auto 400px 400px 400px auto;
   }
 }
 
@@ -764,18 +764,13 @@ header #header-button > button {
   text-decoration: none;
 }
 #hero a #hero-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-image: url("../img/hero/hero.jpg");
   background-position: bottom left;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   height: 360px;
-}
-@media (min-width: 768px) {
-  #hero a #hero-image {
-    height: 840px;
-  }
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   #hero a #hero-image {
@@ -788,23 +783,23 @@ header #header-button > button {
   }
 }
 #hero a #hero-image > h1 {
-  font-variation-settings: "wght" 300;
-  font-size: 3.75rem;
   color: #15344F;
+  font-size: 3.75rem;
+  font-variation-settings: "wght" 300;
   line-height: 0.8;
   padding: 16px;
 }
 @media (min-width: 768px) {
   #hero a #hero-image > h1 {
-    font-variation-settings: "wght" 200;
     font-size: 9.375rem;
+    font-variation-settings: "wght" 200;
     padding: 24px 16px;
   }
 }
 @media (min-width: 1024px) {
   #hero a #hero-image > h1 {
-    font-variation-settings: "wght" 200;
     font-size: 12.5rem;
+    font-variation-settings: "wght" 200;
     padding: 24px 16px;
   }
 }
@@ -812,11 +807,11 @@ header #header-button > button {
   align-self: center;
 }
 #hero a #hero-image > div i {
-  font-size: 6.25rem;
-  text-decoration: none;
   color: #fff;
-  transition: 0.25s;
+  font-size: 6.25rem;
   padding: 16px;
+  text-decoration: none;
+  transition: 0.25s;
 }
 #hero a #hero-image > div i:hover {
   color: #15344F;
@@ -833,14 +828,14 @@ header #header-button > button {
 @media (min-width: 1200px) {
   #why-nj {
     display: grid;
-    grid-template-columns: auto 1200px auto;
     grid-template-areas: ". content-nj .";
+    grid-template-columns: auto 1200px auto;
   }
 }
 #why-nj #new-jersey {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". title ." ". photo1 ." ". photo4 ." ". button .";
+  grid-template-columns: 16px auto 16px;
 }
 @media (min-width: 1200px) {
   #why-nj #new-jersey {
@@ -855,18 +850,18 @@ header #header-button > button {
   justify-content: center;
 }
 #why-nj #new-jersey #nj-title > section #nj-title-1 > h2 {
-  font-variation-settings: "wght" 600;
-  font-size: 3.125rem;
   color: #15344F;
+  font-size: 3.125rem;
+  font-variation-settings: "wght" 600;
   margin-top: 24px;
 }
 #why-nj #new-jersey #nj-title > section #nj-title-2 > h6 {
-  font-variation-settings: "wght" 400;
-  font-size: 1.5rem;
   color: #15344F;
-  text-align: justify;
+  font-size: 1.5rem;
+  font-variation-settings: "wght" 400;
   line-height: 1.3;
   margin-top: 16px;
+  text-align: justify;
 }
 #why-nj #new-jersey #ig-contain-1 {
   grid-area: photo1;
@@ -884,8 +879,8 @@ header #header-button > button {
   justify-content: center;
 }
 #why-nj #new-jersey #ig-button > div > button {
-  padding: 10px 20px;
   font-size: 1.5rem;
+  padding: 10px 20px;
 }
 @media (min-width: 768px) {
   #why-nj #new-jersey #ig-button {
@@ -894,25 +889,25 @@ header #header-button > button {
 }
 @media (min-width: 768px) {
   #why-nj #new-jersey {
-    grid-template-columns: 10% auto auto 10%;
     grid-template-areas: ". title title ." "photo1 photo1 p1 ." "photo2 photo2 photo3 photo3" ". p2 photo4 photo4";
+    grid-template-columns: 10% auto auto 10%;
   }
   #why-nj #new-jersey #nj-title {
     grid-area: title;
   }
   #why-nj #new-jersey #nj-title > section #nj-title-1 > h2 {
     font-size: 6.25rem;
-    text-align: center;
     line-height: 0.9;
     margin-top: 32px;
+    text-align: center;
   }
   #why-nj #new-jersey #nj-title > section #nj-title-2 > h6 {
-    font-variation-settings: "wght" 400;
-    font-size: 2rem;
     color: #15344F;
-    text-align: justify;
+    font-size: 2rem;
+    font-variation-settings: "wght" 400;
     line-height: 1.3;
     margin-top: 16px;
+    text-align: justify;
   }
   #why-nj #new-jersey #ig-contain-1 {
     grid-area: photo1;
@@ -923,9 +918,9 @@ header #header-button > button {
     padding-right: 16px;
   }
   #why-nj #new-jersey #ig-p1 {
-    grid-area: p1;
-    font-variation-settings: "wght" 300;
     font-size: 1.5rem;
+    font-variation-settings: "wght" 300;
+    grid-area: p1;
     padding: 48px 0px 0px 16px;
   }
   #why-nj #new-jersey #ig-p1 #ig-par1 {
@@ -945,14 +940,14 @@ header #header-button > button {
 }
 @media (min-width: 768px) {
   #why-nj #new-jersey #ig-p2 {
-    grid-area: p2;
-    font-variation-settings: "wght" 300;
     font-size: 1.5rem;
+    font-variation-settings: "wght" 300;
+    grid-area: p2;
     padding: 32px 16px 48px 0px;
   }
   #why-nj #new-jersey #ig-p2 #ig-par2 {
-    text-align: right;
     padding-top: 40px;
+    text-align: right;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
@@ -968,8 +963,8 @@ header #header-button > button {
 }
 @media (min-width: 1024px) {
   #why-nj #new-jersey {
-    grid-template-columns: 10% auto 10% 10% auto 10%;
     grid-template-areas: ". title title title title ." "photo1 photo1 p1 p1 p1 ." ". photo2 photo2 photo3 photo3 ." ". p2 p2 p2 photo4 photo4";
+    grid-template-columns: 10% auto 10% 10% auto 10%;
   }
   #why-nj #new-jersey #nj-title {
     grid-area: title;
@@ -1043,13 +1038,13 @@ header #header-button > button {
   background-image: url("../img/why-NJ/ig2.jpg");
   background-position: center;
   background-size: cover;
-  height: 228px;
   display: none;
+  height: 228px;
 }
 @media (min-width: 768px) {
   #why-nj #ig2 {
-    height: 330px;
     display: list-item;
+    height: 330px;
   }
 }
 @media (min-width: 1024px) {
@@ -1061,13 +1056,13 @@ header #header-button > button {
   background-image: url("../img/why-NJ/ig3.jpg");
   background-position: center;
   background-size: cover;
-  height: 228px;
   display: none;
+  height: 228px;
 }
 @media (min-width: 768px) {
   #why-nj #ig3 {
-    height: 330px;
     display: list-item;
+    height: 330px;
   }
 }
 @media (min-width: 1024px) {
@@ -1124,15 +1119,15 @@ header #header-button > button {
   justify-content: center;
 }
 #regions > div > h4 {
-  font-variation-settings: "wght" 600;
-  font-size: 3.125rem;
   color: #15344F;
+  font-size: 3.125rem;
+  font-variation-settings: "wght" 600;
   padding-bottom: 24px;
 }
 @media (min-width: 768px) {
   #regions > div > h4 {
-    font-variation-settings: "wght" 600;
     font-size: 6.25rem;
+    font-variation-settings: "wght" 600;
     padding-bottom: 32px;
   }
 }
@@ -1171,10 +1166,10 @@ header #header-button > button {
   }
 }
 #regions .region-formatting .r-title {
-  font-variation-settings: "wght" 200;
-  font-size: 3.125rem;
-  line-height: 0.85;
   color: #249379;
+  font-size: 3.125rem;
+  font-variation-settings: "wght" 200;
+  line-height: 0.85;
   padding: 0px 0px 16px 0px;
 }
 @media (min-width: 768px) {
@@ -1270,12 +1265,105 @@ header #header-button > button {
 }
 #regions .beach {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". region1 ." ". region2 ." ". region3 ." ". region4 ." ". region5 ." ". region6 .";
+  grid-template-columns: 16px auto 16px;
 }
 @media (min-width: 768px) {
-  #regions .beach {
-    display: list-item;
+  #regions .beach #region-1 {
+    display: grid;
+    grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 50% 40% auto;
+  }
+  #regions .beach #region-1 .r-title {
+    grid-area: region;
+  }
+  #regions .beach #region-1 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-1 #region1-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-2 {
+    display: grid;
+    grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 40% 50%;
+  }
+  #regions .beach #region-2 .r-title {
+    grid-area: region;
+    text-align: right;
+  }
+  #regions .beach #region-2 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-2 > div > p {
+    text-align: right;
+  }
+  #regions .beach #region-2 #region2-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-3 {
+    display: grid;
+    grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 50% 40% auto;
+  }
+  #regions .beach #region-3 .r-title {
+    grid-area: region;
+  }
+  #regions .beach #region-3 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-3 #region3-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-4 {
+    display: grid;
+    grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 40% 50%;
+  }
+  #regions .beach #region-4 .r-title {
+    grid-area: region;
+    text-align: right;
+  }
+  #regions .beach #region-4 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-4 > div > p {
+    text-align: right;
+  }
+  #regions .beach #region-4 #region4-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-5 {
+    display: grid;
+    grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 50% 40% auto;
+  }
+  #regions .beach #region-5 .r-title {
+    grid-area: region;
+  }
+  #regions .beach #region-5 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-5 #region5-image {
+    grid-area: image1;
+  }
+  #regions .beach #region-6 {
+    display: grid;
+    grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 40% 50%;
+  }
+  #regions .beach #region-6 .r-title {
+    grid-area: region;
+    text-align: right;
+  }
+  #regions .beach #region-6 > div {
+    grid-area: text;
+  }
+  #regions .beach #region-6 > div > p {
+    text-align: right;
+  }
+  #regions .beach #region-6 #region6-image {
+    grid-area: image1;
   }
 }
 #regions .beach #region-1 {
@@ -1296,109 +1384,11 @@ header #header-button > button {
 #regions .beach #region-6 {
   grid-area: region6;
 }
-@media (min-width: 768px) {
-  #regions .beach #region-1 {
-    display: grid;
-    grid-template-columns: 50% 40% auto;
-    grid-template-areas: "region region ." "text image1 .";
-  }
-  #regions .beach #region-1 .r-title {
-    grid-area: region;
-  }
-  #regions .beach #region-1 > div {
-    grid-area: text;
-  }
-  #regions .beach #region-1 #region1-image {
-    grid-area: image1;
-  }
-  #regions .beach #region-2 {
-    display: grid;
-    grid-template-columns: auto 40% 50%;
-    grid-template-areas: ". region region" ". image1 text";
-  }
-  #regions .beach #region-2 .r-title {
-    grid-area: region;
-    text-align: right;
-  }
-  #regions .beach #region-2 > div {
-    grid-area: text;
-  }
-  #regions .beach #region-2 > div > p {
-    text-align: right;
-  }
-  #regions .beach #region-2 #region2-image {
-    grid-area: image1;
-  }
-  #regions .beach #region-3 {
-    display: grid;
-    grid-template-columns: 50% 40% auto;
-    grid-template-areas: "region region ." "text image1 .";
-  }
-  #regions .beach #region-3 .r-title {
-    grid-area: region;
-  }
-  #regions .beach #region-3 > div {
-    grid-area: text;
-  }
-  #regions .beach #region-3 #region3-image {
-    grid-area: image1;
-  }
-  #regions .beach #region-4 {
-    display: grid;
-    grid-template-columns: auto 40% 50%;
-    grid-template-areas: ". region region" ". image1 text";
-  }
-  #regions .beach #region-4 .r-title {
-    grid-area: region;
-    text-align: right;
-  }
-  #regions .beach #region-4 > div {
-    grid-area: text;
-  }
-  #regions .beach #region-4 > div > p {
-    text-align: right;
-  }
-  #regions .beach #region-4 #region4-image {
-    grid-area: image1;
-  }
-  #regions .beach #region-5 {
-    display: grid;
-    grid-template-columns: 50% 40% auto;
-    grid-template-areas: "region region ." "text image1 .";
-  }
-  #regions .beach #region-5 .r-title {
-    grid-area: region;
-  }
-  #regions .beach #region-5 > div {
-    grid-area: text;
-  }
-  #regions .beach #region-5 #region5-image {
-    grid-area: image1;
-  }
-  #regions .beach #region-6 {
-    display: grid;
-    grid-template-columns: auto 40% 50%;
-    grid-template-areas: ". region region" ". image1 text";
-  }
-  #regions .beach #region-6 .r-title {
-    grid-area: region;
-    text-align: right;
-  }
-  #regions .beach #region-6 > div {
-    grid-area: text;
-  }
-  #regions .beach #region-6 > div > p {
-    text-align: right;
-  }
-  #regions .beach #region-6 #region6-image {
-    grid-area: image1;
-  }
-}
 @media (min-width: 1024px) {
   #regions .beach #region-1 {
     display: grid;
-    grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 60% 30% auto;
   }
   #regions .beach #region-1 .r-title {
     grid-area: region;
@@ -1414,8 +1404,8 @@ header #header-button > button {
   }
   #regions .beach #region-2 {
     display: grid;
-    grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 30% 60%;
   }
   #regions .beach #region-2 .r-title {
     grid-area: region;
@@ -1432,8 +1422,8 @@ header #header-button > button {
   }
   #regions .beach #region-3 {
     display: grid;
-    grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 60% 30% auto;
   }
   #regions .beach #region-3 .r-title {
     grid-area: region;
@@ -1449,8 +1439,8 @@ header #header-button > button {
   }
   #regions .beach #region-4 {
     display: grid;
-    grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 30% 60%;
   }
   #regions .beach #region-4 .r-title {
     grid-area: region;
@@ -1467,8 +1457,8 @@ header #header-button > button {
   }
   #regions .beach #region-5 {
     display: grid;
-    grid-template-columns: 60% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 60% 30% auto;
   }
   #regions .beach #region-5 .r-title {
     grid-area: region;
@@ -1484,8 +1474,8 @@ header #header-button > button {
   }
   #regions .beach #region-6 {
     display: grid;
-    grid-template-columns: auto 30% 60%;
     grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 30% 60%;
   }
   #regions .beach #region-6 .r-title {
     grid-area: region;
@@ -1504,8 +1494,8 @@ header #header-button > button {
 @media (min-width: 1200px) {
   #regions .beach #region-1 {
     display: grid;
-    grid-template-columns: 40% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 40% 30% auto;
   }
   #regions .beach #region-1 .r-title {
     grid-area: region;
@@ -1518,8 +1508,8 @@ header #header-button > button {
   }
   #regions .beach #region-2 {
     display: grid;
-    grid-template-columns: auto 30% 40%;
     grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 30% 40%;
   }
   #regions .beach #region-2 .r-title {
     grid-area: region;
@@ -1533,8 +1523,8 @@ header #header-button > button {
   }
   #regions .beach #region-3 {
     display: grid;
-    grid-template-columns: 40% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 40% 30% auto;
   }
   #regions .beach #region-3 .r-title {
     grid-area: region;
@@ -1547,8 +1537,8 @@ header #header-button > button {
   }
   #regions .beach #region-4 {
     display: grid;
-    grid-template-columns: auto 30% 40%;
     grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 30% 40%;
   }
   #regions .beach #region-4 .r-title {
     grid-area: region;
@@ -1562,8 +1552,8 @@ header #header-button > button {
   }
   #regions .beach #region-5 {
     display: grid;
-    grid-template-columns: 40% 30% auto;
     grid-template-areas: "region region ." "text image1 .";
+    grid-template-columns: 40% 30% auto;
   }
   #regions .beach #region-5 .r-title {
     grid-area: region;
@@ -1576,8 +1566,8 @@ header #header-button > button {
   }
   #regions .beach #region-6 {
     display: grid;
-    grid-template-columns: auto 30% 40%;
     grid-template-areas: ". region region" ". image1 text";
+    grid-template-columns: auto 30% 40%;
   }
   #regions .beach #region-6 .r-title {
     grid-area: region;
@@ -1805,6 +1795,7 @@ header #header-button > button {
     font-size: 1rem;
     color: #15344F;
     line-height: 1.5;
+    padding-left: 16px;
   }
   #places-to-visit > section ul #visit-2 {
     padding: 32px 0px;
@@ -1829,6 +1820,7 @@ header #header-button > button {
     font-size: 1rem;
     color: #15344F;
     line-height: 1.5;
+    padding-left: 16px;
   }
   #places-to-visit > section ul #visit-3 {
     padding: 32px 0px;
@@ -1853,6 +1845,7 @@ header #header-button > button {
     font-size: 1rem;
     color: #15344F;
     line-height: 1.5;
+    padding-left: 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -1872,6 +1865,8 @@ header #header-button > button {
     display: flex;
     margin-top: auto;
     text-align: justify;
+    padding-left: 0px;
+    margin-bottom: -7px;
   }
   #places-to-visit > section ul #visit-2 {
     display: grid;
@@ -1889,6 +1884,8 @@ header #header-button > button {
     display: flex;
     margin-top: auto;
     text-align: justify;
+    padding-left: 0px;
+    margin-bottom: -7px;
   }
   #places-to-visit > section ul #visit-3 {
     display: grid;
@@ -1906,14 +1903,16 @@ header #header-button > button {
     display: flex;
     margin-top: auto;
     text-align: justify;
+    padding-left: 0px;
+    margin-bottom: -7px;
   }
 }
 
 #places-to-stay .pts-img-ht {
-  height: 220px;
-  display: flex;
-  justify-content: center;
   align-items: flex-end;
+  display: flex;
+  height: 220px;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   #places-to-stay .pts-img-ht {
@@ -1951,37 +1950,37 @@ header #header-button > button {
 @media (min-width: 1200px) {
   #places-to-stay {
     display: grid;
-    grid-template-columns: auto 1200px auto;
     grid-template-areas: ". content .";
+    grid-template-columns: auto 1200px auto;
   }
 }
 #places-to-stay ul {
-  grid-area: content;
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-area: content;
   grid-template-areas: ". title ." ". c1 ." ". c2 ." ". c3 ." ". c4 .";
+  grid-template-columns: 16px auto 16px;
 }
 #places-to-stay ul > li .pts-button {
-  margin-top: 16px;
   display: flex;
   justify-content: center;
+  margin-top: 16px;
   text-align: flex-end;
 }
 #places-to-stay ul > li .pts-button > button {
-  display: flex;
   border: none;
   border-radius: 5px;
+  display: flex;
 }
 #places-to-stay ul #pts-title {
   grid-area: title;
   line-height: 0.8;
-  text-align: center;
   padding-top: 48px;
+  text-align: center;
 }
 #places-to-stay ul #pts-title > h1 {
-  font-variation-settings: "wght" 600;
-  font-size: 3.125rem;
   color: #15344F;
+  font-size: 3.125rem;
+  font-variation-settings: "wght" 600;
 }
 @media (min-width: 1024px) {
   #places-to-stay ul #pts-title > h1 {
@@ -1994,12 +1993,12 @@ header #header-button > button {
   grid-area: c1;
 }
 #places-to-stay ul #pts-content1 > div > h2 {
-  line-height: 0.8;
-  text-align: center;
-  font-variation-settings: "wght" 300;
-  font-size: 2.5rem;
   color: #B3ECFF;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 300;
+  line-height: 0.8;
   padding-bottom: 16px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #places-to-stay ul #pts-content1 > div > h2 {
@@ -2011,12 +2010,12 @@ header #header-button > button {
   grid-area: c2;
 }
 #places-to-stay ul #pts-content2 > div > h2 {
-  line-height: 0.8;
-  text-align: center;
-  font-variation-settings: "wght" 300;
-  font-size: 2.5rem;
   color: #B3ECFF;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 300;
+  line-height: 0.8;
   padding-bottom: 16px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #places-to-stay ul #pts-content2 > div > h2 {
@@ -2028,12 +2027,12 @@ header #header-button > button {
   grid-area: c3;
 }
 #places-to-stay ul #pts-content3 > div > h2 {
-  line-height: 0.8;
-  text-align: center;
-  font-variation-settings: "wght" 300;
-  font-size: 2.5rem;
   color: #B3ECFF;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 300;
+  line-height: 0.8;
   padding-bottom: 16px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #places-to-stay ul #pts-content3 > div > h2 {
@@ -2045,12 +2044,12 @@ header #header-button > button {
   grid-area: c4;
 }
 #places-to-stay ul #pts-content4 > div > h2 {
-  line-height: 0.8;
-  text-align: center;
-  font-variation-settings: "wght" 300;
-  font-size: 2.5rem;
   color: #B3ECFF;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 300;
+  line-height: 0.8;
   padding-bottom: 16px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #places-to-stay ul #pts-content4 > div > h2 {
@@ -2061,8 +2060,8 @@ header #header-button > button {
 @media (min-width: 1024px) {
   #places-to-stay ul {
     display: grid;
-    grid-template-columns: 50% auto;
     grid-template-areas: "title title" "c1 c2" "c3 c4";
+    grid-template-columns: 50% auto;
   }
   #places-to-stay ul #pts-title {
     grid-area: title;
@@ -2085,13 +2084,13 @@ header #header-button > button {
 }
 @media (min-width: 768px) {
   #places-to-stay ul li .pts-par {
-    display: list-item;
-    line-height: 1.5;
-    text-align: justify;
-    font-variation-settings: "wght" 400;
-    font-size: 1.5rem;
     color: #15344F;
+    display: list-item;
+    font-size: 1.5rem;
+    font-variation-settings: "wght" 400;
+    line-height: 1.5;
     padding: 32px 100px;
+    text-align: justify;
   }
 }
 @media (min-width: 1024px) {
@@ -2119,134 +2118,134 @@ header #header-button > button {
   }
 }
 
-#dining ul {
+#dining-and-shopping ul {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". title ." ". sub ." ". b1 ." ". b2 ." ". b3 ." ". b4 ." ". b5 .";
+  grid-template-columns: 16px auto 16px;
 }
-#dining ul > li > button {
-  width: 100%;
-  margin: 24px 0px;
-  font-variation-settings: "wght" 290;
-  font-size: 2.5rem;
+#dining-and-shopping ul > li > button {
   border-radius: 20px;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 290;
+  margin: 24px 0px;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  #dining ul > li > button {
+  #dining-and-shopping ul > li > button {
     font-size: 4.5rem;
     margin: 32px 0px;
   }
 }
 @media (min-width: 1024px) {
-  #dining ul > li > button {
+  #dining-and-shopping ul > li > button {
     padding: 20px 0;
   }
 }
-#dining ul #ds-title {
-  grid-area: title;
-  text-align: center;
+#dining-and-shopping ul #ds-title {
+  color: #15344F;
   font-size: 2.5rem;
   font-variation-settings: "wght" 600;
+  grid-area: title;
   line-height: 0.85;
-  color: #15344F;
   margin-bottom: 30px;
   margin-top: 52px;
+  text-align: center;
 }
 @media (min-width: 768px) {
-  #dining ul #ds-title {
+  #dining-and-shopping ul #ds-title {
     font-size: 4.0625rem;
   }
 }
 @media (min-width: 1200px) {
-  #dining ul #ds-title {
+  #dining-and-shopping ul #ds-title {
     display: list-item;
   }
 }
-#dining ul #ds-sub1 {
-  grid-area: sub;
-  text-align: center;
+#dining-and-shopping ul #ds-sub1 {
+  color: #15344F;
   font-size: 2.5rem;
   font-variation-settings: "wght" 290;
-  color: #15344F;
+  grid-area: sub;
+  text-align: center;
 }
 @media (min-width: 768px) {
-  #dining ul #ds-sub1 {
+  #dining-and-shopping ul #ds-sub1 {
     font-size: 4.5rem;
   }
 }
-#dining ul #ds-button1 {
+#dining-and-shopping ul #ds-button1 {
   grid-area: b1;
   text-align: center;
 }
-#dining ul #ds-button2 {
+#dining-and-shopping ul #ds-button2 {
   grid-area: b2;
   text-align: center;
 }
-#dining ul #ds-button3 {
+#dining-and-shopping ul #ds-button3 {
   grid-area: b3;
   text-align: center;
 }
-#dining ul #ds-button4 {
+#dining-and-shopping ul #ds-button4 {
   grid-area: b4;
   text-align: center;
 }
-#dining ul #ds-button5 {
+#dining-and-shopping ul #ds-button5 {
   grid-area: b5;
   text-align: center;
 }
 @media (min-width: 1024px) {
-  #dining ul {
+  #dining-and-shopping ul {
     display: grid;
-    grid-template-columns: 95px auto 95px;
     grid-template-areas: ". title ." ". sub ." ". b1 ." ". b2 ." ". b3 ." ". b4 ." ". b5 .";
+    grid-template-columns: 95px auto 95px;
   }
-  #dining ul #ds-title {
+  #dining-and-shopping ul #ds-title {
     grid-area: title;
   }
-  #dining ul #ds-sub1 {
+  #dining-and-shopping ul #ds-sub1 {
     grid-area: sub;
   }
-  #dining ul #ds-button1 {
+  #dining-and-shopping ul #ds-button1 {
     grid-area: b1;
   }
-  #dining ul #ds-button2 {
+  #dining-and-shopping ul #ds-button2 {
     grid-area: b2;
   }
-  #dining ul #ds-button3 {
+  #dining-and-shopping ul #ds-button3 {
     grid-area: b3;
   }
-  #dining ul #ds-button4 {
+  #dining-and-shopping ul #ds-button4 {
     grid-area: b4;
   }
-  #dining ul #ds-button5 {
+  #dining-and-shopping ul #ds-button5 {
     grid-area: b5;
   }
 }
 @media (min-width: 1200px) {
-  #dining ul {
+  #dining-and-shopping ul {
     display: grid;
-    grid-template-columns: auto 1200px auto;
     grid-template-areas: ". title ." ". sub ." ". b1 ." ". b2 ." ". b3 ." ". b4 ." ". b5 .";
+    grid-template-columns: auto 1200px auto;
   }
-  #dining ul #ds-title {
+  #dining-and-shopping ul #ds-title {
     grid-area: title;
   }
-  #dining ul #ds-sub1 {
+  #dining-and-shopping ul #ds-sub1 {
     grid-area: sub;
   }
-  #dining ul #ds-button1 {
+  #dining-and-shopping ul #ds-button1 {
     grid-area: b1;
   }
-  #dining ul #ds-button2 {
+  #dining-and-shopping ul #ds-button2 {
     grid-area: b2;
   }
-  #dining ul #ds-button3 {
+  #dining-and-shopping ul #ds-button3 {
     grid-area: b3;
   }
-  #dining ul #ds-button4 {
+  #dining-and-shopping ul #ds-button4 {
     grid-area: b4;
   }
-  #dining ul #ds-button5 {
+  #dining-and-shopping ul #ds-button5 {
     grid-area: b5;
   }
 }
@@ -2281,18 +2280,13 @@ header #header-button > button {
 }
 @media (min-width: 768px) {
   #shopping #img-business {
-    height: 479px;
-  }
-}
-@media (min-width: 768px) {
-  #shopping #img-business {
     height: 679px;
   }
 }
 #shopping ul {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". sub2 ." ". outlet ." ". mall .";
+  grid-template-columns: 16px auto 16px;
 }
 #shopping ul li > div > aside {
   display: none;
@@ -2302,40 +2296,40 @@ header #header-button > button {
     display: list-item;
   }
   #shopping ul li > div > aside > p {
-    font-variation-settings: "wght" 400;
-    text-align: justify;
-    padding: 0px 16px 16px 16px;
     color: #15344F;
+    font-variation-settings: "wght" 400;
     line-height: 1.2;
+    padding: 0px 16px 16px 16px;
+    text-align: justify;
   }
 }
 #shopping ul #ds-sub2 {
-  grid-area: sub2;
-  text-align: center;
-  font-variation-settings: "wght" 300;
-  font-size: 2.5rem;
   color: #15344F;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 300;
+  grid-area: sub2;
   line-height: 0.8;
   padding-top: 16px;
+  text-align: center;
 }
 #shopping ul #ds-outlet {
   grid-area: outlet;
 }
 #shopping ul #ds-outlet > h3 {
-  text-align: center;
-  font-variation-settings: "wght" 300;
-  font-size: 2.5rem;
   color: #B3ECFF;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 300;
   line-height: 0.8;
   padding: 32px 0px 16px;
+  text-align: center;
 }
 #shopping ul #ds-outlet #img-outlet {
   margin-bottom: 16px;
 }
 #shopping ul #ds-outlet .flex-ds-button {
-  padding: 0px 16px;
   display: flex;
   justify-content: center;
+  padding: 0px 16px;
 }
 @media (min-width: 1024px) {
   #shopping ul #ds-outlet .flex-ds-button {
@@ -2346,20 +2340,20 @@ header #header-button > button {
   grid-area: mall;
 }
 #shopping ul #ds-mall > h3 {
-  text-align: center;
-  font-variation-settings: "wght" 300;
-  font-size: 2.5rem;
   color: #B3ECFF;
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 300;
   line-height: 0.8;
   padding: 32px 0px 16px;
+  text-align: center;
 }
 #shopping ul #ds-mall #img-mall {
   margin-bottom: 16px;
 }
 #shopping ul #ds-mall .flex-ds-button {
-  padding: 0px 16px;
   display: flex;
   justify-content: center;
+  padding: 0px 16px;
 }
 @media (min-width: 1024px) {
   #shopping ul #ds-mall .flex-ds-button {
@@ -2369,8 +2363,8 @@ header #header-button > button {
 @media (min-width: 768px) {
   #shopping ul {
     display: grid;
-    grid-template-columns: 140px auto 140px;
     grid-template-areas: ". sub2 ." ". outlet ." ". mall .";
+    grid-template-columns: 140px auto 140px;
   }
   #shopping ul #ds-sub2 {
     grid-area: sub2;
@@ -2385,8 +2379,8 @@ header #header-button > button {
 @media (min-width: 1024px) {
   #shopping ul #ds-outlet {
     display: grid;
-    grid-template-columns: 50% 40% auto;
     grid-template-areas: "title . ." "image content .";
+    grid-template-columns: 50% 40% auto;
   }
   #shopping ul #ds-outlet #outlet {
     grid-area: title;
@@ -2399,8 +2393,8 @@ header #header-button > button {
   }
   #shopping ul #ds-mall {
     display: grid;
-    grid-template-columns: auto 40% 50%;
     grid-template-areas: ". . title" ". content image";
+    grid-template-columns: auto 40% 50%;
   }
   #shopping ul #ds-mall #mall {
     grid-area: title;
@@ -2415,8 +2409,8 @@ header #header-button > button {
 @media (min-width: 1200px) {
   #shopping ul {
     display: grid;
-    grid-template-columns: auto 1200px auto;
     grid-template-areas: ". sub2 ." ". outlet ." ". mall .";
+    grid-template-columns: auto 1200px auto;
   }
   #shopping ul #ds-sub2 {
     grid-area: sub2;
@@ -2429,12 +2423,12 @@ header #header-button > button {
   }
 }
 #shopping > article > h3 {
-  text-align: center;
-  font-variation-settings: "wght" 300;
-  font-size: 3.75rem;
   color: #B3ECFF;
+  font-size: 3.75rem;
+  font-variation-settings: "wght" 300;
   line-height: 0.8;
   padding: 32px 0px 16px;
+  text-align: center;
 }
 #shopping > article #business-button-flex {
   display: flex;
